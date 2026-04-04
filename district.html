@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CivicClaw — District Report</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="/">CivicClaw</a></h1>
+      <nav>
+        <a href="/">&larr; All Districts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="loading" class="loading">Loading report...</div>
+    <div id="no-report" class="no-report" hidden>
+      <h2>No report yet</h2>
+      <p>We don't have a report for this district yet. Check back soon, or read the <a href="district.html?d=citywide">citywide report</a>.</p>
+    </div>
+    <article id="report" class="report" hidden></article>
+    <div id="meta" class="report-meta" hidden></div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Powered by <a href="https://github.com/sgillen/sf-civic-digest" target="_blank">sf-civic-digest</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (async function () {
+      const params = new URLSearchParams(window.location.search);
+      const d = params.get("d");
+
+      if (!d) {
+        window.location.href = "/";
+        return;
+      }
+
+      const file = d === "citywide" ? "data/citywide.md" : `data/d${d}.md`;
+      const label = d === "citywide" ? "Citywide" : `District ${d}`;
+      document.title = `CivicClaw — ${label}`;
+
+      try {
+        const resp = await fetch(file);
+        if (!resp.ok) throw new Error(resp.status);
+        const md = await resp.text();
+
+        document.getElementById("loading").hidden = true;
+        const reportEl = document.getElementById("report");
+        reportEl.hidden = false;
+        reportEl.innerHTML = marked.parse(md);
+
+        // Make external links open in new tab
+        reportEl.querySelectorAll('a[href^="http"]').forEach(a => {
+          a.target = "_blank";
+          a.rel = "noopener";
+        });
+      } catch (e) {
+        document.getElementById("loading").hidden = true;
+        document.getElementById("no-report").hidden = false;
+      }
+    })();
+  </script>
+</body>
+</html>

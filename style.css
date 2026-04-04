@@ -1,0 +1,170 @@
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #fafaf8;
+  --fg: #1a1a1a;
+  --fg-muted: #555;
+  --accent: #2c5f8a;
+  --accent-hover: #1e4468;
+  --border: #ddd;
+  --card-bg: #fff;
+  --card-hover: #f5f8fb;
+  --radius: 8px;
+  --max-w: 780px;
+}
+
+html { font-size: 16px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 1.25rem; width: 100%; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); text-decoration: underline; }
+
+/* ── Header ── */
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+  background: var(--card-bg);
+}
+header .container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+header h1 { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em; }
+header h1 a { color: var(--fg); }
+header h1 a:hover { text-decoration: none; }
+header nav a { font-size: 0.9rem; color: var(--fg-muted); }
+.tagline { font-size: 0.9rem; color: var(--fg-muted); }
+
+/* ── Main ── */
+main { flex: 1; padding: 2rem 0; }
+
+/* ── Landing Page ── */
+.intro { margin-bottom: 2rem; font-size: 1.05rem; color: var(--fg-muted); }
+
+.citywide-card { margin-bottom: 2.5rem; }
+
+.card {
+  display: block;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  color: var(--fg);
+  transition: background 0.15s, border-color 0.15s;
+  position: relative;
+}
+.card:hover {
+  background: var(--card-hover);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+.card-arrow {
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  color: var(--fg-muted);
+}
+.card:hover .card-arrow { color: var(--accent); }
+
+.card-citywide h2 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+.card-citywide p { font-size: 0.9rem; color: var(--fg-muted); }
+
+.districts h2 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--fg-muted); font-weight: 600; }
+
+.district-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+@media (min-width: 540px) {
+  .district-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.card-district { padding: 0.85rem 1.25rem; }
+.card-header { display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.2rem; }
+.district-num { font-weight: 700; font-size: 1rem; color: var(--accent); }
+.supervisor { font-weight: 600; font-size: 0.95rem; }
+.neighborhoods { font-size: 0.82rem; color: var(--fg-muted); line-height: 1.4; }
+
+.about { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+.about h2 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--fg-muted); font-weight: 600; }
+.about p { font-size: 0.9rem; color: var(--fg-muted); margin-bottom: 0.5rem; }
+
+/* ── Report Page ── */
+.loading { padding: 2rem 0; color: var(--fg-muted); }
+.no-report { padding: 2rem 0; }
+.no-report h2 { margin-bottom: 0.5rem; }
+
+.report {
+  line-height: 1.7;
+}
+.report h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; letter-spacing: -0.02em; }
+.report h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+}
+.report h3 { font-size: 1rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.report p { margin-bottom: 0.75rem; }
+.report ul, .report ol { margin-bottom: 0.75rem; padding-left: 1.5rem; }
+.report li { margin-bottom: 0.35rem; }
+.report strong { font-weight: 600; }
+.report hr { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+.report blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  color: var(--fg-muted);
+  margin: 1rem 0;
+}
+
+/* Tables */
+.report table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.88rem;
+}
+.report th, .report td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+.report th {
+  font-weight: 600;
+  background: var(--card-bg);
+  border-bottom: 2px solid var(--border);
+}
+.report tr:hover { background: var(--card-hover); }
+
+/* Responsive table scroll */
+@media (max-width: 600px) {
+  .report table { display: block; overflow-x: auto; white-space: nowrap; }
+}
+
+/* ── Footer ── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: var(--fg-muted);
+}
+footer p { margin-bottom: 0.25rem; }

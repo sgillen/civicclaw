@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CivicClaw — SF Civic Digest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="/">CivicClaw</a></h1>
+      <p class="tagline">Weekly civic intelligence for San Francisco</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <p>Know what's happening at City Hall, in your neighborhood, and on your ballot. Pick your district or read the citywide report.</p>
+    </section>
+
+    <section class="citywide-card">
+      <a href="district.html?d=citywide" class="card card-citywide">
+        <h2>Citywide Report</h2>
+        <p>Board of Supervisors, housing pipeline, ethics, journalism roundup, and more across all 11 districts.</p>
+        <span class="card-arrow">&rarr;</span>
+      </a>
+    </section>
+
+    <section class="districts">
+      <h2>Pick Your District</h2>
+      <div class="district-grid" id="district-grid">
+        <!-- Populated by JS -->
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>What is this?</h2>
+      <p>CivicClaw is powered by <a href="https://github.com/sgillen/sf-civic-digest" target="_blank">sf-civic-digest</a>, an open-source data skill that collects information from 10+ government sources and 5 local newsrooms. Scripts run weekly, an AI agent writes the narrative, and the result lands here.</p>
+      <p>No ads, no paywall, no account required. Just civic data, clearly presented.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Data sources: Legistar, SFMTA, SF Planning, Socrata, SF Ethics, Mission Local, 48 Hills, SF Standard, Streetsblog SF, SF YIMBY</p>
+      <p><a href="https://github.com/sgillen/sf-civic-digest" target="_blank">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const districts = [
+      { d: 1, supervisor: "Connie Chan", neighborhoods: "Richmond, Sea Cliff, Jordan Park" },
+      { d: 2, supervisor: "Stephen Sherrill", neighborhoods: "Marina, Cow Hollow, Pacific Heights" },
+      { d: 3, supervisor: "Danny Sauter", neighborhoods: "North Beach, Chinatown, Russian Hill" },
+      { d: 4, supervisor: "Alan Wong", neighborhoods: "Sunset, Parkside" },
+      { d: 5, supervisor: "Bilal Mahmood", neighborhoods: "NOPA, Western Addition, Hayes Valley, Haight" },
+      { d: 6, supervisor: "Matt Dorsey", neighborhoods: "SoMa, Tenderloin, Civic Center" },
+      { d: 7, supervisor: "Myrna Melgar", neighborhoods: "West Portal, Forest Hill, Twin Peaks, Glen Park" },
+      { d: 8, supervisor: "Rafael Mandelman", neighborhoods: "Castro, Noe Valley, Duboce Triangle" },
+      { d: 9, supervisor: "Jackie Fielder", neighborhoods: "Mission, Bernal Heights, Portola" },
+      { d: 10, supervisor: "Shamann Walton", neighborhoods: "Bayview, Hunters Point, Visitacion Valley" },
+      { d: 11, supervisor: "Chyanne Chen", neighborhoods: "Excelsior, Ingleside, Oceanview" },
+    ];
+
+    const grid = document.getElementById("district-grid");
+    districts.forEach(({ d, supervisor, neighborhoods }) => {
+      const a = document.createElement("a");
+      a.href = `district.html?d=${d}`;
+      a.className = "card card-district";
+      a.innerHTML = `
+        <div class="card-header">
+          <span class="district-num">D${d}</span>
+          <span class="supervisor">${supervisor}</span>
+        </div>
+        <p class="neighborhoods">${neighborhoods}</p>
+        <span class="card-arrow">&rarr;</span>
+      `;
+      grid.appendChild(a);
+    });
+  </script>
+</body>
+</html>
