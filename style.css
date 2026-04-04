@@ -84,7 +84,8 @@ main { flex: 1; padding: 2rem 0; }
 .card-citywide h2 { font-size: 1.1rem; margin-bottom: 0.25rem; }
 .card-citywide p { font-size: 0.9rem; color: var(--fg-muted); }
 
-.districts h2 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--fg-muted); font-weight: 600; }
+.districts h2 { font-size: 1.1rem; margin-bottom: 0.35rem; color: var(--fg-muted); font-weight: 600; }
+.district-help { font-size: 0.85rem; color: var(--fg-muted); margin-bottom: 1rem; }
 
 .district-grid {
   display: grid;
