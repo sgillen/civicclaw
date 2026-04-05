@@ -82,25 +82,8 @@ main { flex: 1; padding: 2rem 0; }
 
 /* Map */
 .map-section { margin-bottom: 2rem; }
-.map-wrap { max-width: 500px; margin: 0 auto; }
-#sf-map { width: 100%; height: auto; }
-.district {
-  fill: #e8eff5;
-  stroke: #fff;
-  stroke-width: 2;
-  cursor: pointer;
-  transition: fill 0.15s;
-}
-.district:hover { fill: var(--accent); }
-a:hover .district { fill: var(--accent); }
-.district-label {
-  font-size: 16px;
-  font-weight: 700;
-  fill: var(--fg-muted);
-  text-anchor: middle;
-  pointer-events: none;
-}
-a:hover .district-label { fill: #fff; }
+.map-wrap { max-width: 600px; margin: 0 auto; }
+.map-wrap svg { width: 100%; height: auto; display: block; }
 .map-info {
   text-align: center;
   min-height: 2.5rem;
