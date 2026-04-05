@@ -146,7 +146,6 @@ main { flex: 1; padding: 2rem 0; }
 }
 .tier-row:last-child { border-bottom: none; }
 .tier-row strong { color: var(--fg); }
-.tier-icon { font-size: 1rem; flex-shrink: 0; }
 .copy-confirm { font-size: 0.85rem; color: #2a7d2a; font-weight: 500; }
 
 /* Tiers */
