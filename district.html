@@ -24,8 +24,13 @@
       <p>We don't have a report for this district yet. Check back soon, or read the <a href="district.html?d=citywide">citywide report</a>.</p>
     </div>
     <div id="ask-bar" class="ask-bar" hidden>
-      <button id="copy-prompt" class="btn btn-ask btn-ask-lg">Copy prompt — paste into any AI chat</button>
-      <span id="copy-confirm" class="copy-confirm" hidden>Copied!</span>
+      <div class="ask-bar-text">
+        <strong>Want to dig deeper?</strong> Copy this report as a prompt and paste it into ChatGPT, Claude, or any AI chat.
+      </div>
+      <div class="ask-bar-action">
+        <button id="copy-prompt" class="btn btn-ask btn-ask-lg">Copy prompt</button>
+        <span id="copy-confirm" class="copy-confirm" hidden>Copied!</span>
+      </div>
     </div>
     <article id="report" class="report" hidden></article>
   </main>
