@@ -16,23 +16,73 @@
 
   <main class="container">
     <section class="intro">
-      <p>Know what's happening at City Hall, in your neighborhood, and on your ballot. Pick your district or read the citywide report.</p>
+      <p>Know what's happening at City Hall, in your neighborhood, and on your ballot. Click your district to read this week's digest.</p>
     </section>
 
-    <section class="citywide-card">
-      <a href="district.html?d=citywide" class="card card-citywide">
-        <h2>Citywide Report</h2>
-        <p>Board of Supervisors, housing pipeline, ethics, journalism roundup, and more across all 11 districts.</p>
-        <span class="card-arrow">&rarr;</span>
-      </a>
-    </section>
-
-    <section class="districts">
-      <h2>Pick Your District</h2>
-      <p class="district-help">Not sure which district you're in? <a href="https://sfplanninggis.org/pim/" target="_blank">Look up your address on the SF Planning map</a></p>
-      <div class="district-grid" id="district-grid">
-        <!-- Populated by JS -->
+    <section class="map-section">
+      <div class="map-wrap">
+        <svg id="sf-map" viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg">
+          <!-- District 1: Richmond -->
+          <a href="district.html?d=1">
+            <polygon class="district" data-d="1" points="0,135 230,135 230,250 250,250 250,310 0,310" />
+            <text x="100" y="225" class="district-label">D1</text>
+          </a>
+          <!-- District 2: Marina, Pacific Heights -->
+          <a href="district.html?d=2">
+            <polygon class="district" data-d="2" points="230,135 400,100 440,135 440,210 355,210 355,250 250,250 230,250" />
+            <text x="330" y="185" class="district-label">D2</text>
+          </a>
+          <!-- District 3: North Beach, Chinatown, FiDi -->
+          <a href="district.html?d=3">
+            <polygon class="district" data-d="3" points="440,135 530,80 600,100 600,280 530,280 480,250 440,210" />
+            <text x="520" y="190" class="district-label">D3</text>
+          </a>
+          <!-- District 4: Sunset -->
+          <a href="district.html?d=4">
+            <polygon class="district" data-d="4" points="0,310 250,310 250,430 190,430 190,540 0,540" />
+            <text x="95" y="420" class="district-label">D4</text>
+          </a>
+          <!-- District 5: NOPA, Western Addition, Hayes Valley, Haight -->
+          <a href="district.html?d=5">
+            <polygon class="district" data-d="5" points="250,250 355,250 355,210 440,210 440,280 420,310 370,340 310,340 250,370 250,310" />
+            <text x="335" y="285" class="district-label">D5</text>
+          </a>
+          <!-- District 6: SoMa, Tenderloin, Civic Center -->
+          <a href="district.html?d=6">
+            <polygon class="district" data-d="6" points="440,280 600,280 600,420 500,440 420,400 370,340 420,310" />
+            <text x="500" y="360" class="district-label">D6</text>
+          </a>
+          <!-- District 7: West Portal, Forest Hill, Twin Peaks -->
+          <a href="district.html?d=7">
+            <polygon class="district" data-d="7" points="190,430 250,430 250,370 310,340 310,410 280,470 240,510 190,540" />
+            <text x="240" y="460" class="district-label">D7</text>
+          </a>
+          <!-- District 8: Castro, Noe Valley -->
+          <a href="district.html?d=8">
+            <polygon class="district" data-d="8" points="310,340 370,340 420,400 400,440 360,470 310,470 280,470 310,410" />
+            <text x="350" y="405" class="district-label">D8</text>
+          </a>
+          <!-- District 9: Mission, Bernal Heights -->
+          <a href="district.html?d=9">
+            <polygon class="district" data-d="9" points="420,400 500,440 520,520 460,560 380,540 310,530 310,470 360,470 400,440" />
+            <text x="420" y="490" class="district-label">D9</text>
+          </a>
+          <!-- District 10: Bayview, Hunters Point -->
+          <a href="district.html?d=10">
+            <polygon class="district" data-d="10" points="500,440 600,420 600,700 460,680 380,620 380,540 460,560 520,520" />
+            <text x="510" y="570" class="district-label">D10</text>
+          </a>
+          <!-- District 11: Excelsior, Ingleside, Oceanview -->
+          <a href="district.html?d=11">
+            <polygon class="district" data-d="11" points="190,540 240,510 280,470 310,470 310,530 380,540 380,620 300,650 190,640" />
+            <text x="280" y="580" class="district-label">D11</text>
+          </a>
+        </svg>
       </div>
+      <div class="map-info" id="map-info">
+        <p class="map-hint">Hover over a district to see details</p>
+      </div>
+      <p class="district-help">Not sure which district you're in? <a href="https://sfplanninggis.org/pim/" target="_blank">Look up your address</a></p>
     </section>
 
     <section class="tiers">
@@ -63,35 +113,31 @@
   </footer>
 
   <script>
-    const districts = [
-      { d: 1, supervisor: "Connie Chan", neighborhoods: "Richmond, Sea Cliff, Jordan Park" },
-      { d: 2, supervisor: "Stephen Sherrill", neighborhoods: "Marina, Cow Hollow, Pacific Heights" },
-      { d: 3, supervisor: "Danny Sauter", neighborhoods: "North Beach, Chinatown, Russian Hill" },
-      { d: 4, supervisor: "Alan Wong", neighborhoods: "Sunset, Parkside" },
-      { d: 5, supervisor: "Bilal Mahmood", neighborhoods: "NOPA, Western Addition, Hayes Valley, Haight" },
-      { d: 6, supervisor: "Matt Dorsey", neighborhoods: "SoMa, Tenderloin, Civic Center" },
-      { d: 7, supervisor: "Myrna Melgar", neighborhoods: "West Portal, Forest Hill, Twin Peaks, Glen Park" },
-      { d: 8, supervisor: "Rafael Mandelman", neighborhoods: "Castro, Noe Valley, Duboce Triangle" },
-      { d: 9, supervisor: "Jackie Fielder", neighborhoods: "Mission, Bernal Heights, Portola" },
-      { d: 10, supervisor: "Shamann Walton", neighborhoods: "Bayview, Hunters Point, Visitacion Valley" },
-      { d: 11, supervisor: "Chyanne Chen", neighborhoods: "Excelsior, Ingleside, Oceanview" },
-    ];
+    const districts = {
+      1: { supervisor: "Connie Chan", neighborhoods: "Richmond, Sea Cliff, Jordan Park" },
+      2: { supervisor: "Stephen Sherrill", neighborhoods: "Marina, Cow Hollow, Pacific Heights" },
+      3: { supervisor: "Danny Sauter", neighborhoods: "North Beach, Chinatown, Russian Hill" },
+      4: { supervisor: "Alan Wong", neighborhoods: "Sunset, Parkside" },
+      5: { supervisor: "Bilal Mahmood", neighborhoods: "NOPA, Western Addition, Hayes Valley, Haight" },
+      6: { supervisor: "Matt Dorsey", neighborhoods: "SoMa, Tenderloin, Civic Center" },
+      7: { supervisor: "Myrna Melgar", neighborhoods: "West Portal, Forest Hill, Twin Peaks, Glen Park" },
+      8: { supervisor: "Rafael Mandelman", neighborhoods: "Castro, Noe Valley, Duboce Triangle" },
+      9: { supervisor: "Jackie Fielder", neighborhoods: "Mission, Bernal Heights, Portola" },
+      10: { supervisor: "Shamann Walton", neighborhoods: "Bayview, Hunters Point, Visitacion Valley" },
+      11: { supervisor: "Chyanne Chen", neighborhoods: "Excelsior, Ingleside, Oceanview" },
+    };
 
-    const grid = document.getElementById("district-grid");
-    districts.forEach(({ d, supervisor, neighborhoods }) => {
-      const card = document.createElement("div");
-      card.className = "card card-district";
-      card.innerHTML = `
-        <div class="card-header">
-          <span class="district-num">D${d}</span>
-          <span class="supervisor">${supervisor}</span>
-        </div>
-        <p class="neighborhoods">${neighborhoods}</p>
-        <div class="card-actions">
-          <a href="district.html?d=${d}" class="btn btn-read">Read report</a>
-        </div>
-      `;
-      grid.appendChild(card);
+    const info = document.getElementById("map-info");
+
+    document.querySelectorAll(".district").forEach(el => {
+      el.addEventListener("mouseenter", () => {
+        const d = el.dataset.d;
+        const { supervisor, neighborhoods } = districts[d];
+        info.innerHTML = `<strong>District ${d} — ${supervisor}</strong><br><span class="map-neighborhoods">${neighborhoods}</span>`;
+      });
+      el.addEventListener("mouseleave", () => {
+        info.innerHTML = `<p class="map-hint">Hover over a district to see details</p>`;
+      });
     });
   </script>
 </body>
