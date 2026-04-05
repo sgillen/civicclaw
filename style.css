@@ -132,7 +132,8 @@ main { flex: 1; padding: 2rem 0; }
 }
 
 /* Ask bar on district page */
-.ask-bar { margin-bottom: 1.5rem; }
+.ask-bar { margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
+.copy-confirm { font-size: 0.85rem; color: #2a7d2a; font-weight: 500; }
 
 .about { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); }
 .about h2 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--fg-muted); font-weight: 600; }

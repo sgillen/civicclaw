@@ -24,7 +24,8 @@
       <p>We don't have a report for this district yet. Check back soon, or read the <a href="district.html?d=citywide">citywide report</a>.</p>
     </div>
     <div id="ask-bar" class="ask-bar" hidden>
-      <a id="ask-link" href="#" target="_blank" class="btn btn-ask btn-ask-lg">Have questions? Ask CivicClaw about this district</a>
+      <button id="copy-prompt" class="btn btn-ask btn-ask-lg">Copy prompt — paste into any AI chat</button>
+      <span id="copy-confirm" class="copy-confirm" hidden>Copied!</span>
     </div>
     <article id="report" class="report" hidden></article>
   </main>
@@ -45,41 +46,75 @@
         return;
       }
 
-      // Replace with your Custom GPT URL once published
-      const GPT_URL = "https://chatgpt.com/g/PLACEHOLDER-civicclaw";
-
       const file = d === "citywide" ? "data/citywide.md" : `data/d${d}.md`;
       const label = d === "citywide" ? "Citywide" : `District ${d}`;
       document.title = `CivicClaw — ${label}`;
 
-      // Show ask button for district pages
-      if (d !== "citywide") {
-        const askBar = document.getElementById("ask-bar");
-        const askLink = document.getElementById("ask-link");
-        askBar.hidden = false;
-        askLink.href = GPT_URL;
-        askLink.textContent = `Have questions? Ask CivicClaw about District ${d}`;
-      }
+      let reportMd = "";
 
       try {
         const resp = await fetch(file);
         if (!resp.ok) throw new Error(resp.status);
-        const md = await resp.text();
+        reportMd = await resp.text();
 
         document.getElementById("loading").hidden = true;
         const reportEl = document.getElementById("report");
         reportEl.hidden = false;
-        reportEl.innerHTML = marked.parse(md);
+        reportEl.innerHTML = marked.parse(reportMd);
 
         // Make external links open in new tab
         reportEl.querySelectorAll('a[href^="http"]').forEach(a => {
           a.target = "_blank";
           a.rel = "noopener";
         });
+
+        // Show copy-prompt button for district pages
+        if (d !== "citywide") {
+          document.getElementById("ask-bar").hidden = false;
+        }
       } catch (e) {
         document.getElementById("loading").hidden = true;
         document.getElementById("no-report").hidden = false;
       }
+
+      // Copy prompt handler
+      document.getElementById("copy-prompt").addEventListener("click", async () => {
+        const prompt = `Here is the latest civic digest for San Francisco District ${d} (as of this week). Use it to answer my questions about what's happening in my district.
+
+When answering:
+- Be concise. Lead with the answer.
+- When citing meetings or deadlines, include the date, time, and what I can do (public comment, email address).
+- If I ask about something not in the report, say so and suggest where to look:
+  Board agendas: sfgov.legistar.com | Permits: sfplanninggis.org/pim | 311: sf311.org
+  Elections: sfelections.org | Ethics: sfethics.org | Cleanups: refuserefusesf.org/cleanups
+  Meeting transcripts: sfgovernmentconnection.com | Rent Board: sf.gov/departments/rent-board
+
+---
+
+${reportMd}
+
+---
+
+What should I know about what's happening in my district this week?`;
+
+        try {
+          await navigator.clipboard.writeText(prompt);
+          const confirm = document.getElementById("copy-confirm");
+          confirm.hidden = false;
+          setTimeout(() => { confirm.hidden = true; }, 2000);
+        } catch (e) {
+          // Fallback for older browsers
+          const ta = document.createElement("textarea");
+          ta.value = prompt;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand("copy");
+          document.body.removeChild(ta);
+          const confirm = document.getElementById("copy-confirm");
+          confirm.hidden = false;
+          setTimeout(() => { confirm.hidden = true; }, 2000);
+        }
+      });
     })();
   </script>
 </body>
