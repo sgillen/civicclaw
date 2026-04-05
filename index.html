@@ -64,20 +64,25 @@
       { d: 11, supervisor: "Chyanne Chen", neighborhoods: "Excelsior, Ingleside, Oceanview" },
     ];
 
+    // Replace with your Custom GPT URL once published
+    const GPT_URL = "https://chatgpt.com/g/PLACEHOLDER-civicclaw";
+
     const grid = document.getElementById("district-grid");
     districts.forEach(({ d, supervisor, neighborhoods }) => {
-      const a = document.createElement("a");
-      a.href = `district.html?d=${d}`;
-      a.className = "card card-district";
-      a.innerHTML = `
+      const card = document.createElement("div");
+      card.className = "card card-district";
+      card.innerHTML = `
         <div class="card-header">
           <span class="district-num">D${d}</span>
           <span class="supervisor">${supervisor}</span>
         </div>
         <p class="neighborhoods">${neighborhoods}</p>
-        <span class="card-arrow">&rarr;</span>
+        <div class="card-actions">
+          <a href="district.html?d=${d}" class="btn btn-read">Read report</a>
+          <a href="${GPT_URL}" target="_blank" class="btn btn-ask">Ask about D${d}</a>
+        </div>
       `;
-      grid.appendChild(a);
+      grid.appendChild(card);
     });
   </script>
 </body>

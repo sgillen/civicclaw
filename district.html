@@ -23,8 +23,10 @@
       <h2>No report yet</h2>
       <p>We don't have a report for this district yet. Check back soon, or read the <a href="district.html?d=citywide">citywide report</a>.</p>
     </div>
+    <div id="ask-bar" class="ask-bar" hidden>
+      <a id="ask-link" href="#" target="_blank" class="btn btn-ask btn-ask-lg">Have questions? Ask CivicClaw about this district</a>
+    </div>
     <article id="report" class="report" hidden></article>
-    <div id="meta" class="report-meta" hidden></div>
   </main>
 
   <footer>
@@ -43,9 +45,21 @@
         return;
       }
 
+      // Replace with your Custom GPT URL once published
+      const GPT_URL = "https://chatgpt.com/g/PLACEHOLDER-civicclaw";
+
       const file = d === "citywide" ? "data/citywide.md" : `data/d${d}.md`;
       const label = d === "citywide" ? "Citywide" : `District ${d}`;
       document.title = `CivicClaw — ${label}`;
+
+      // Show ask button for district pages
+      if (d !== "citywide") {
+        const askBar = document.getElementById("ask-bar");
+        const askLink = document.getElementById("ask-link");
+        askBar.hidden = false;
+        askLink.href = GPT_URL;
+        askLink.textContent = `Have questions? Ask CivicClaw about District ${d}`;
+      }
 
       try {
         const resp = await fetch(file);

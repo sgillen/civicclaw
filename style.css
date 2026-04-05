@@ -96,11 +96,43 @@ main { flex: 1; padding: 2rem 0; }
   .district-grid { grid-template-columns: 1fr 1fr; }
 }
 
-.card-district { padding: 0.85rem 1.25rem; }
+.card-district { padding: 0.85rem 1.25rem; cursor: default; }
+.card-district:hover { background: var(--card-bg); border-color: var(--border); }
 .card-header { display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.2rem; }
 .district-num { font-weight: 700; font-size: 1rem; color: var(--accent); }
 .supervisor { font-weight: 600; font-size: 0.95rem; }
 .neighborhoods { font-size: 0.82rem; color: var(--fg-muted); line-height: 1.4; }
+
+/* Buttons */
+.card-actions { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
+.btn {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.btn-read {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-read:hover { background: var(--accent-hover); color: #fff; text-decoration: none; }
+.btn-ask {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+.btn-ask:hover { background: var(--accent); color: #fff; text-decoration: none; }
+.btn-ask-lg {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+}
+
+/* Ask bar on district page */
+.ask-bar { margin-bottom: 1.5rem; }
 
 .about { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); }
 .about h2 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--fg-muted); font-weight: 600; }
