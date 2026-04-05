@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CivicClaw — SF Civic Digest</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body>
   <header>
@@ -20,9 +22,7 @@
     </section>
 
     <section class="map-section">
-      <div class="map-wrap" id="map-wrap">
-        <!-- SVG loaded here by JS -->
-      </div>
+      <div id="map"></div>
       <div class="map-info" id="map-info">
         <p class="map-hint">Click a district to read the report</p>
       </div>
@@ -57,39 +57,85 @@
   </footer>
 
   <script>
-    const districts = {
-      1: { supervisor: "Connie Chan", neighborhoods: "Richmond, Sea Cliff, Jordan Park" },
-      2: { supervisor: "Stephen Sherrill", neighborhoods: "Marina, Cow Hollow, Pacific Heights" },
-      3: { supervisor: "Danny Sauter", neighborhoods: "North Beach, Chinatown, Russian Hill" },
-      4: { supervisor: "Alan Wong", neighborhoods: "Sunset, Parkside" },
-      5: { supervisor: "Bilal Mahmood", neighborhoods: "NOPA, Western Addition, Hayes Valley, Haight" },
-      6: { supervisor: "Matt Dorsey", neighborhoods: "SoMa, Tenderloin, Civic Center" },
-      7: { supervisor: "Myrna Melgar", neighborhoods: "West Portal, Forest Hill, Twin Peaks, Glen Park" },
-      8: { supervisor: "Rafael Mandelman", neighborhoods: "Castro, Noe Valley, Duboce Triangle" },
-      9: { supervisor: "Jackie Fielder", neighborhoods: "Mission, Bernal Heights, Portola" },
-      10: { supervisor: "Shamann Walton", neighborhoods: "Bayview, Hunters Point, Visitacion Valley" },
-      11: { supervisor: "Chyanne Chen", neighborhoods: "Excelsior, Ingleside, Oceanview" },
+    const supervisors = {
+      "1": { supervisor: "Connie Chan", neighborhoods: "Richmond, Sea Cliff, Jordan Park" },
+      "2": { supervisor: "Stephen Sherrill", neighborhoods: "Marina, Cow Hollow, Pacific Heights" },
+      "3": { supervisor: "Danny Sauter", neighborhoods: "North Beach, Chinatown, Russian Hill" },
+      "4": { supervisor: "Alan Wong", neighborhoods: "Sunset, Parkside" },
+      "5": { supervisor: "Bilal Mahmood", neighborhoods: "NOPA, Western Addition, Hayes Valley, Haight" },
+      "6": { supervisor: "Matt Dorsey", neighborhoods: "SoMa, Tenderloin, Civic Center" },
+      "7": { supervisor: "Myrna Melgar", neighborhoods: "West Portal, Forest Hill, Twin Peaks, Glen Park" },
+      "8": { supervisor: "Rafael Mandelman", neighborhoods: "Castro, Noe Valley, Duboce Triangle" },
+      "9": { supervisor: "Jackie Fielder", neighborhoods: "Mission, Bernal Heights, Portola" },
+      "10": { supervisor: "Shamann Walton", neighborhoods: "Bayview, Hunters Point, Visitacion Valley" },
+      "11": { supervisor: "Chyanne Chen", neighborhoods: "Excelsior, Ingleside, Oceanview" },
     };
 
-    // Load SVG inline so links and hover work
-    fetch("map.svg")
-      .then(r => r.text())
-      .then(svg => {
-        document.getElementById("map-wrap").innerHTML = svg;
+    const COLORS = [
+      "#2c5f8a", "#3a8c6e", "#c2553a", "#7b5ea7", "#d4943a",
+      "#4a90a4", "#8b6d47", "#c44d76", "#5b8c3e", "#9a6b8c", "#3d7878"
+    ];
 
-        const info = document.getElementById("map-info");
-        document.querySelectorAll("#map-wrap path[data-district]").forEach(el => {
-          const d = el.dataset.district;
-          const dist = districts[d];
-          if (!dist) return;
+    const map = L.map("map", {
+      center: [37.76, -122.44],
+      zoom: 12,
+      zoomControl: true,
+      scrollWheelZoom: false,
+      attributionControl: false,
+    });
 
-          el.addEventListener("mouseenter", () => {
-            info.innerHTML = `<strong>District ${d} — ${dist.supervisor}</strong><br><span class="map-neighborhoods">${dist.neighborhoods}</span>`;
-          });
-          el.addEventListener("mouseleave", () => {
-            info.innerHTML = `<p class="map-hint">Click a district to read the report</p>`;
-          });
-        });
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+      maxZoom: 16,
+      attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
+    }).addTo(map);
+
+    const info = document.getElementById("map-info");
+    let highlighted = null;
+
+    fetch("districts.geojson")
+      .then(r => r.json())
+      .then(geojson => {
+        const districtLayer = L.geoJSON(geojson, {
+          style: feature => {
+            const d = parseInt(feature.properties.sup_dist_num);
+            return {
+              fillColor: COLORS[d - 1],
+              fillOpacity: 0.35,
+              color: "#fff",
+              weight: 2,
+            };
+          },
+          onEachFeature: (feature, layer) => {
+            const d = feature.properties.sup_dist_num;
+            const sup = supervisors[d];
+            if (!sup) return;
+
+            // Add district number label
+            const center = layer.getBounds().getCenter();
+            L.marker(center, {
+              icon: L.divIcon({
+                className: "district-label-icon",
+                html: `<span>${d}</span>`,
+                iconSize: [30, 30],
+              }),
+              interactive: false,
+            }).addTo(map);
+
+            layer.on("mouseover", e => {
+              e.target.setStyle({ fillOpacity: 0.6, weight: 3 });
+              info.innerHTML = `<strong>District ${d} — ${sup.supervisor}</strong><br><span class="map-neighborhoods">${sup.neighborhoods}</span>`;
+            });
+
+            layer.on("mouseout", e => {
+              districtLayer.resetStyle(e.target);
+              info.innerHTML = `<p class="map-hint">Click a district to read the report</p>`;
+            });
+
+            layer.on("click", () => {
+              window.location.href = `district.html?d=${d}`;
+            });
+          },
+        }).addTo(map);
       });
   </script>
 </body>
