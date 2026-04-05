@@ -131,8 +131,9 @@
               info.innerHTML = `<p class="map-hint">Click a district to read the report</p>`;
             });
 
-            layer.on("click", () => {
-              window.location.href = `district.html?d=${d}`;
+            layer.on("click", e => {
+              L.DomEvent.stopPropagation(e);
+              window.location.href = "district.html?d=" + d;
             });
           },
         }).addTo(map);
