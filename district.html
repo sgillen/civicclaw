@@ -23,35 +23,26 @@
       <h2>No report yet</h2>
       <p>We don't have a report for this district yet. Check back soon, or read the <a href="district.html?d=citywide">citywide report</a>.</p>
     </div>
-    <div id="ask-bar" class="ask-bar" hidden>
-      <div class="ask-bar-text">
-        <strong>Want to dig deeper?</strong> Copy this report as a prompt and paste it into ChatGPT, Claude, or any AI chat.
+    <div id="tiers" class="tiers-stacked" hidden>
+      <div class="tier-row">
+        <span class="tier-icon">💬</span>
+        <div>
+          <strong>Want to dig deeper?</strong>
+          <button id="copy-prompt" class="btn btn-ask">Copy prompt</button>
+          <span id="copy-confirm" class="copy-confirm" hidden>Copied!</span>
+          — paste into ChatGPT, Claude, or any AI chat. Free, no account needed.
+        </div>
       </div>
-      <div class="ask-bar-action">
-        <button id="copy-prompt" class="btn btn-ask btn-ask-lg">Copy prompt</button>
-        <span id="copy-confirm" class="copy-confirm" hidden>Copied!</span>
+      <div class="tier-row">
+        <span class="tier-icon">🤖</span>
+        <div><strong>Want automated digests?</strong> Point your AI agent at the <a href="https://github.com/sgillen/sf-civic-digest" target="_blank">sf-civic-digest</a> skill for personalized weekly reports.</div>
+      </div>
+      <div class="tier-row">
+        <span class="tier-icon">😉</span>
+        <div><strong>Want this for your city?</strong> <a href="https://github.com/sgillen/sf-civic-digest" target="_blank">Fork it</a> — scripts, style guide, and data pipeline are all open source.</div>
       </div>
     </div>
     <article id="report" class="report" hidden></article>
-
-    <section class="tiers">
-      <h2>Three ways to use this</h2>
-      <div class="tier-grid">
-        <div class="tier-card">
-          <h3>Read &amp; ask</h3>
-          <p>Read your district's weekly digest right here. Want to ask follow-up questions? Copy the report as a prompt and paste it into ChatGPT, Claude, or any AI chat. Free, no account needed.</p>
-        </div>
-        <div class="tier-card">
-          <h3>Automated digests</h3>
-          <p>Point your AI agent at the <a href="https://github.com/sgillen/sf-civic-digest" target="_blank">sf-civic-digest</a> skill and get personalized weekly reports and interactive Q&amp;A. Set your district, your streets, what you care about.</p>
-        </div>
-        <div class="tier-card">
-          <h3>Build your own 😉</h3>
-          <p>Fork the repo and adapt it for your city. The scripts, style guide, and data pipeline are all open source.</p>
-          <p><a href="https://github.com/sgillen/sf-civic-digest" target="_blank">GitHub &rarr;</a></p>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer>
@@ -92,9 +83,9 @@
           a.rel = "noopener";
         });
 
-        // Show copy-prompt button for district pages
+        // Show tiers for district pages
         if (d !== "citywide") {
-          document.getElementById("ask-bar").hidden = false;
+          document.getElementById("tiers").hidden = false;
         }
       } catch (e) {
         document.getElementById("loading").hidden = true;
@@ -103,23 +94,21 @@
 
       // Copy prompt handler
       document.getElementById("copy-prompt").addEventListener("click", async () => {
-        const prompt = `Here is the latest civic digest for San Francisco District ${d} (as of this week). Use it to answer my questions about what's happening in my district.
+        const prompt = `I just read the weekly civic digest for San Francisco District ${d}. I have follow-up questions.
 
-When answering:
+Here's the report I read:
+
+${reportMd}
+
+Help me understand what's in this report. When I ask questions:
 - Be concise. Lead with the answer.
 - When citing meetings or deadlines, include the date, time, and what I can do (public comment, email address).
-- If I ask about something not in the report, say so and suggest where to look:
+- If I ask about something not covered, say so and suggest where to look:
   Board agendas: sfgov.legistar.com | Permits: sfplanninggis.org/pim | 311: sf311.org
   Elections: sfelections.org | Ethics: sfethics.org | Cleanups: refuserefusesf.org/cleanups
   Meeting transcripts: sfgovernmentconnection.com | Rent Board: sf.gov/departments/rent-board
 
----
-
-${reportMd}
-
----
-
-What should I know about what's happening in my district this week?`;
+Don't repeat the report back to me — I already read it. Just ask me what I want to know more about.`;
 
         try {
           await navigator.clipboard.writeText(prompt);

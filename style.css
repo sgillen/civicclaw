@@ -133,22 +133,20 @@ main { flex: 1; padding: 2rem 0; }
   font-size: 0.95rem;
 }
 
-/* Ask bar on district page */
-.ask-bar {
-  margin-bottom: 1.5rem;
-  padding: 1rem 1.25rem;
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+/* Stacked tiers on district page */
+.tiers-stacked { margin-bottom: 1.5rem; }
+.tier-row {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--fg-muted);
+  border-bottom: 1px solid var(--border);
 }
-.ask-bar-text { font-size: 0.9rem; color: var(--fg-muted); }
-.ask-bar-text strong { color: var(--fg); }
-.ask-bar-action { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; }
+.tier-row:last-child { border-bottom: none; }
+.tier-row strong { color: var(--fg); }
+.tier-icon { font-size: 1rem; flex-shrink: 0; }
 .copy-confirm { font-size: 0.85rem; color: #2a7d2a; font-weight: 500; }
 
 /* Tiers */
