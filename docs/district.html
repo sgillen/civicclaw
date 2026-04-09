@@ -67,14 +67,7 @@
 
       const feedbackEmail = "seangillen1887@gmail.com";
       const feedbackSubject = encodeURIComponent("CivicClaw feedback");
-      const feedbackBody = encodeURIComponent([
-        `page: district ${d}`,
-        `district: ${d}`,
-        "what I expected:",
-        "feedback:",
-        ""
-      ].join("\n"));
-      document.getElementById("feedback-link").href = `mailto:${feedbackEmail}?subject=${feedbackSubject}&body=${feedbackBody}`;
+      document.getElementById("feedback-link").href = `mailto:${feedbackEmail}?subject=${feedbackSubject}`;
 
       let reportMd = "";
 

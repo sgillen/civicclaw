@@ -34,14 +34,7 @@
   <script>
     const feedbackEmail = "seangillen1887@gmail.com";
     const feedbackSubject = encodeURIComponent("CivicClaw feedback");
-    const feedbackBody = encodeURIComponent([
-      "page: homepage",
-      "district: ",
-      "what I expected:",
-      "feedback:",
-      ""
-    ].join("\n"));
-    document.getElementById("feedback-link").href = `mailto:${feedbackEmail}?subject=${feedbackSubject}&body=${feedbackBody}`;
+    document.getElementById("feedback-link").href = `mailto:${feedbackEmail}?subject=${feedbackSubject}`;
 
     const districts = [
       { d: 1, supervisor: "Connie Chan", neighborhoods: "Richmond, Sea Cliff, Jordan Park" },
