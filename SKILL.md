@@ -39,8 +39,6 @@ python3 "$SKILL_DIR/scripts/sf_weekly_digest.py" --district 5 --json
 
 The scripts fetch, parse, dedup, and output JSON. The agent (you) reads that JSON and synthesizes it into a report following the style guide. There is no auto-generated report — the editorial judgment is yours.
 
-For the public site, the intended artifact is **one report per district (D1–D11)**. Each district report should already include its own relevant citywide section; do not rely on a separate citywide page.
-
 ```
 sf_weekly_digest.py --json
     └── calls all subscripts → returns combined JSON
@@ -145,23 +143,6 @@ python3 scripts/sf_volunteer_cleanups.py --district 5 --days 14 --json >> /tmp/c
 # 2. Agent synthesizes following STYLE.md
 # Read STYLE.md, read the JSON, write narrative to reports/
 ```
-
-### Generate all district site reports and push
-
-Use this mode when refreshing the static site / GitHub Pages demo.
-
-```bash
-python3 /absolute/path/to/scripts/generate_site_data.py
-cd /absolute/path/to/repo
-git add docs/data docs/district.html docs/index.html docs/style.css scripts/generate_site_data.py SKILL.md
-git commit -m "refresh district site reports"
-git push origin main
-```
-
-What this does:
-- regenerates **D1–D11** markdown under `docs/data/`
-- regenerates per-district source manifests (`dN-sources.json`) for the site links UI
-- does **not** generate a separate citywide page; district pages already include citywide context
 
 ### Agent-driven reports (quarterly, annual, deep dives)
 

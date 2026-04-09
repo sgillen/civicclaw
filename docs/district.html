@@ -21,7 +21,7 @@
     <div id="loading" class="loading">Loading report...</div>
     <div id="no-report" class="no-report" hidden>
       <h2>No report yet</h2>
-      <p>We don't have a report for this district yet. Check back soon.</p>
+      <p>We don't have a report for this district yet. Check back soon, or read the <a href="district.html?d=citywide">citywide report</a>.</p>
     </div>
     <div id="tiers" class="tiers-stacked" hidden>
       <div class="tier-row">
@@ -31,9 +31,6 @@
           <span id="copy-confirm" class="copy-confirm" hidden>Copied!</span>
           — paste into ChatGPT, Claude, or any AI chat.
         </div>
-      </div>
-      <div class="tier-row" id="source-links-row" hidden>
-        <div><strong>Sources:</strong> <span id="source-links"></span></div>
       </div>
       <div class="tier-row">
         <div><strong>Want this integrated with your own agent?</strong> Point it at the <a href="https://github.com/sgillen/civicclaw" target="_blank">CivicClaw</a> skill — reports, Q&A, alerts, whatever you need.</div>
@@ -64,55 +61,20 @@
         return;
       }
 
-      const file = `data/d${d}.md`;
-      const label = `District ${d}`;
+      const file = d === "citywide" ? "data/citywide.md" : `data/d${d}.md`;
+      const label = d === "citywide" ? "Citywide" : `District ${d}`;
       document.title = `CivicClaw — ${label}`;
 
       const feedbackEmail = "seangillen1887@gmail.com";
       const feedbackSubject = encodeURIComponent("CivicClaw feedback");
       document.getElementById("feedback-link").href = `mailto:${feedbackEmail}?subject=${feedbackSubject}`;
 
-      const sourceManifestPath = `data/d${d}-sources.json`;
       let reportMd = "";
 
-      function renderSourceLinks(manifest) {
-        if (!manifest || !Array.isArray(manifest.sources) || manifest.sources.length === 0) return;
-        const row = document.getElementById("source-links-row");
-        const container = document.getElementById("source-links");
-        container.innerHTML = "";
-
-        manifest.sources.forEach((source, idx) => {
-          const a = document.createElement("a");
-          a.href = source.url;
-          a.textContent = source.label;
-          a.target = "_blank";
-          a.rel = "noopener";
-          container.appendChild(a);
-          if (source.note) {
-            const note = document.createElement("span");
-            note.className = "source-note";
-            note.textContent = ` (${source.note})`;
-            container.appendChild(note);
-          }
-          if (idx < manifest.sources.length - 1) {
-            container.appendChild(document.createTextNode(" · "));
-          }
-        });
-
-        row.hidden = false;
-      }
-
       try {
-        const [resp, manifestResp] = await Promise.all([
-          fetch(file),
-          fetch(sourceManifestPath).catch(() => null)
-        ]);
+        const resp = await fetch(file);
         if (!resp.ok) throw new Error(resp.status);
         reportMd = await resp.text();
-        if (manifestResp && manifestResp.ok) {
-          const manifest = await manifestResp.json();
-          renderSourceLinks(manifest);
-        }
 
         document.getElementById("loading").hidden = true;
         const reportEl = document.getElementById("report");
@@ -125,7 +87,10 @@
           a.rel = "noopener";
         });
 
-        document.getElementById("tiers").hidden = false;
+        // Show tiers for district pages
+        if (d !== "citywide") {
+          document.getElementById("tiers").hidden = false;
+        }
       } catch (e) {
         document.getElementById("loading").hidden = true;
         document.getElementById("no-report").hidden = false;
