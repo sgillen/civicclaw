@@ -1,9 +1,9 @@
 ---
-name: sf-civic-digest
+name: civicclaw
 description: Track San Francisco city government activity — Board of Supervisors, Land Use committee, Public Safety committee, SFMTA Engineering Public Hearings, SF Planning Commission, Historic Preservation Commission, Zoning Administrator hearings, Planning project notices, and SF.gov district events. Fetches agendas and recaps from SF Legistar, sfmta.com, sfplanning.org, the sf.gov Wagtail CMS API (api.sf.gov), and Socrata open data via curl-based scraping. Filtered by supervisorial district, neighborhood, streets, or topic keywords. Use when a user asks what's happening at City Hall, wants to track legislation or development in their neighborhood, wants a weekly or daily SF civic digest, asks about upcoming public hearings, planning variances, or wants to know what their supervisor is working on. SF-specific.
 ---
 
-# SF Civic Digest — SKILL.md
+# CivicClaw — SKILL.md
 
 > **Cold-start note:** This file is designed to be self-sufficient. An agent reading only SKILL.md should be able to run reports, generate digests, and understand the full data stack. No other context required.
 
@@ -22,14 +22,14 @@ python3 "$SKILL_DIR/scripts/sf_weekly_digest.py" --district 5 --json
 # Step 3: Synthesize the JSON output into a narrative report (see STYLE.md)
 ```
 
-**District:** Pass `--district N` (1–11) to any script. User preferences and neighborhood context live in `USER.md` — read it before writing a report. There is no `civic_config.json` or `civic_config.example.json`; those files have been removed.
+**District:** Pass `--district N` (1–11) to any script. User preferences and neighborhood context live in `users/<name>/USER.md` when available; use the root `USER.md` only as a generic fallback. Read the selected user profile before writing a report. There is no `civic_config.json` or `civic_config.example.json`; those files have been removed.
 
 **⚠️ Path rule — critical for any agent (CC, Codex, Cursor, subagent, human):**
 - All scripts must be run with the **absolute path to the scripts/ directory**
 - Find it: `scripts/` is always a sibling of this SKILL.md file
-- Example: if SKILL.md is at `/home/alice/.openclaw/workspace/skills/sf-civic-digest/SKILL.md`, then scripts are at `/home/alice/.openclaw/workspace/skills/sf-civic-digest/scripts/`
+- Example: if SKILL.md is at `/home/alice/repos/civicclaw/SKILL.md`, then scripts are at `/home/alice/repos/civicclaw/scripts/`
 - **Never use bare relative paths like `scripts/foo.py`** — they break when the working directory is anything other than the skill root
-- When in doubt: `realpath skills/sf-civic-digest/scripts/sf_civic_digest.py` gives you the absolute path
+- When in doubt: `realpath ./scripts/sf_civic_digest.py` gives you the absolute path
 
 ---
 
@@ -85,7 +85,7 @@ Use these exact key names when reading the JSON. Do not guess — if a key isn't
 
 ## All Scripts
 
-**Canonical script location:** `skills/sf-civic-digest/scripts/`
+**Canonical script location:** `scripts/` (sibling of this SKILL.md)
 
 | Script | What it does | Method | Notes |
 |--------|-------------|--------|-------|
@@ -123,7 +123,7 @@ All scripts now work without a browser. `sf_board_of_appeals.py` and `sf_rent_bo
 
 All scripts accept `--district N` (1–11). That's all you need for a basic run.
 
-User preferences and neighborhood context (streets, addresses, people to flag) live in **`USER.md`** — a human-readable profile file. There is no `civic_config.json`; that file has been removed. Read `USER.md` to understand what the user cares about before writing any report.
+User preferences and neighborhood context (streets, addresses, people to flag) live in **`users/<name>/USER.md`** when available. The root `USER.md` is a generic fallback/pointer. There is no `civic_config.json`; that file has been removed. Read the selected user profile to understand what the user cares about before writing any report.
 
 District→neighborhood mappings: `references/sf-districts.md`
 Build timeline benchmarks: `references/sf-build-timelines.md` — **Read before writing about any housing project.** Includes typical phase durations, financing tracking methods, and context for whether a project is on track or stalled.
@@ -148,7 +148,7 @@ python3 scripts/sf_volunteer_cleanups.py --district 5 --days 14 --json >> /tmp/c
 
 Give your agent the workspace path and let it orchestrate:
 
-> Read STYLE.md and USER.md. Run the scripts in scripts/ to collect data for District 5, then write a Q1 2026 civic digest. Save to reports/.
+> Read STYLE.md and the relevant user profile in users/<name>/USER.md (or root USER.md as fallback). Run the scripts in scripts/ to collect data for District 5, then write a Q1 2026 civic digest. Save to reports/.
 
 **⚠️ Path gotcha:** Agents default to wrong relative paths. Always resolve the absolute path to `scripts/` from the location of this SKILL.md before running anything. Use full absolute paths — e.g. `python3 /full/path/to/scripts/sf_housing_pipeline.py`. Never just `scripts/SCRIPTNAME.py`.
 
@@ -162,7 +162,7 @@ Read `STYLE.md` before writing any report. Key rules:
 - Rates over counts. "Up 15%" beats "95 reports."
 - Tone: pro-building, pro-tech, car-free lens. See STYLE.md for full framing guidance.
 
-Reference report: `reports/archive/2026-q1-civicclaw.md`
+Reference reports live in `reports/`.
 
 ---
 
@@ -302,11 +302,14 @@ When writing digests, check SmartTranscripts first for any meeting in the last ~
 ## File Layout
 
 ```
-skills/sf-civic-digest/
+civicclaw/
 ├── SKILL.md              ← you are here
+├── README.md             ← human-facing project overview
 ├── STYLE.md              ← report style guide (read before writing any report)
-├── USER.md               ← user profile: district, neighborhoods, streets, interests (fill this in)
-├── ROADMAP.md            ← what's built, known issues, what's next
+├── USER.md               ← generic fallback/pointer
+├── users/                ← per-user profiles (template tracked, actual USER.md files optional/ignored)
+│   ├── TEMPLATE.md
+│   └── <name>/USER.md
 ├── scripts/              ← all data pipeline scripts
 │   ├── sf_weekly_digest.py      ← master aggregator
 │   ├── sf_civic_digest.py       ← Board of Supervisors (Legistar)
@@ -330,8 +333,12 @@ skills/sf-civic-digest/
 │   ├── sf_sfcta.py              ← SF County Transportation Authority
 │   ├── sf_transcripts.py        ← SmartTranscripts parser (full meeting transcripts)
 │   └── config_loader.py         ← District config loader
-├── reports/              ← generated reports
-│   └── archive/          ← older versions
+├── reports/              ← generated or curated public reports
+├── site/                 ← static site for GitHub Pages / demo
+│   ├── index.html
+│   ├── district.html
+│   ├── style.css
+│   └── data/             ← precomputed district markdown for the site
 └── references/
     ├── sf-districts.md       ← district map, supervisor names, neighborhood lists
     └── sf-build-timelines.md ← build phase benchmarks, financing signals, project context
