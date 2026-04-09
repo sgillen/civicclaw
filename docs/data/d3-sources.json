@@ -1,0 +1,90 @@
+{
+  "district": 3,
+  "sources": [
+    {
+      "label": "CivicClaw repo",
+      "url": "https://github.com/sgillen/civicclaw",
+      "note": "project home"
+    },
+    {
+      "label": "Public Safety and Neighborhood Services Committee agenda",
+      "url": "https://sfgov.legistar.com/MeetingDetail.aspx?ID=1403975&GUID=FAEA2794-B71F-403A-A85E-957E8FCF71D6&Options=info|&Search=",
+      "note": "4/9/2026"
+    },
+    {
+      "label": "Land Use and Transportation Committee agenda",
+      "url": "https://sfgov.legistar.com/MeetingDetail.aspx?ID=1405140&GUID=509DA6FB-B122-4CB2-B14E-FDDFF256E893&Options=info|&Search=",
+      "note": "4/13/2026"
+    },
+    {
+      "label": "Rules Committee agenda",
+      "url": "https://sfgov.legistar.com/MeetingDetail.aspx?ID=1405210&GUID=89BE544E-0D00-4E43-8C77-DD5550D00789&Options=info|&Search=",
+      "note": "4/13/2026"
+    },
+    {
+      "label": "SF Standard",
+      "url": "https://sfstandard.com/2026/04/09/philz-coffee-pride-flags-removal-nonprofits/",
+      "note": "Philz corporate overlords want Pride flags to come down. SF baristas say hell no"
+    },
+    {
+      "label": "Mission Local",
+      "url": "https://missionlocal.org/2026/04/sf-school-board-meet-the-candidates/",
+      "note": "Meet the S.F. school board candidates: What is your No. 1 priority?"
+    },
+    {
+      "label": "Mission Local",
+      "url": "https://missionlocal.org/2026/04/sf-matt-dorsey-evict-drug-use/",
+      "note": "S.F. supe Matt Dorsey says he\u2019d have deserved to be evicted for drug-use, as his legislation now proposes"
+    },
+    {
+      "label": "SF Standard",
+      "url": "https://sfstandard.com/2026/04/09/fog-clouds-california-henge-sunrise/",
+      "note": "Long lenses, longer faces: Crowds awaiting \u2018California Henge\u2019 sunrise snap clouds instead"
+    },
+    {
+      "label": "Mission Local",
+      "url": "https://missionlocal.org/2026/04/bayview-buzz-new-gym/",
+      "note": "Bayview Buzz: How to drink wine and meet D10\u2019s would-be supervisors"
+    },
+    {
+      "label": "1365 COLUMBUS AVE 94133 PIM",
+      "url": "https://sfplanninggis.org/pim?search=2025-006124PRJ",
+      "note": "Under Review"
+    },
+    {
+      "label": "777 SUTTER ST 94109 PIM",
+      "url": "https://sfplanninggis.org/pim?search=2024-008754PRJ",
+      "note": "Closed - Approval Ltr Issued"
+    },
+    {
+      "label": "1324 POWELL ST 94133 PIM",
+      "url": "https://sfplanninggis.org/pim?search=2024-006735PRJ",
+      "note": "Closed - Approval Ltr Issued"
+    },
+    {
+      "label": "875 SANSOME ST 94111 PIM",
+      "url": "https://sfplanninggis.org/pim?search=2024-006874PRJ",
+      "note": "Closed - Approval Ltr Issued"
+    },
+    {
+      "label": "Maggie Dong   430 Green Street contact",
+      "url": "mailto:dakota.spycher@sfgov.org",
+      "note": "2025-003856CUAVAR"
+    },
+    {
+      "label": "Maggie Dong   1030 Leavenworth Street contact",
+      "url": "mailto:michelle.langlie@sfgov.org",
+      "note": "2025-010791PRJ"
+    },
+    {
+      "label": "SFMTA engineering hearing",
+      "url": "https://www.sfmta.com/public-notices",
+      "note": "2026-04-17"
+    },
+    {
+      "label": "Volunteer cleanups",
+      "url": "https://refuserefusesf.org/cleanups",
+      "note": "signup page"
+    }
+  ]
+}

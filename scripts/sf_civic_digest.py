@@ -18,6 +18,7 @@ import sys
 import re
 import json
 import os
+import time
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from html import unescape
@@ -31,6 +32,17 @@ DEFAULT_CONFIG_FILE = os.path.join(SCRIPT_DIR, "civic_config.json")  # optional 
 DEFAULT_STATE_FILE = os.path.join(SCRIPT_DIR, "sf_civic_state.json")
 ARCHIVE_FILE = os.path.join(SCRIPT_DIR, "sf_civic_digest_archive.json")
 ARCHIVE_MAX = 5000
+
+# Runtime budget — set in main(), checked by fetch/enrichment code
+_deadline = None       # wall-clock deadline (time.time() epoch)
+_parcel_lookups = 0    # counter for parcel API calls
+_PARCEL_LOOKUP_CAP = 30  # max parcel lookups per run
+
+
+def _over_budget():
+    """True if the wall-clock deadline has passed."""
+    return _deadline is not None and time.time() > _deadline
+
 
 # District → supervisor + default neighborhoods
 DISTRICT_MAP = {
@@ -101,6 +113,12 @@ def build_keywords(config):
 
 
 def fetch(url, timeout=20):
+    if _over_budget():
+        raise TimeoutError("script deadline exceeded")
+    # Clamp socket timeout to remaining budget so we don't overshoot
+    if _deadline is not None:
+        remaining = _deadline - time.time()
+        timeout = min(timeout, max(remaining, 3))
     req = urllib.request.Request(url, headers={
         "User-Agent": "sf-civic-digest/1.0",
         "Accept": "text/html,*/*"
@@ -155,6 +173,10 @@ def extract_parcels(text):
 
 def lookup_district_by_parcel(block, lot):
     """Look up supervisor district from the SF parcels dataset."""
+    global _parcel_lookups
+    if _over_budget() or _parcel_lookups >= _PARCEL_LOOKUP_CAP:
+        return None
+    _parcel_lookups += 1
     try:
         where = urllib.request.quote(f"block_num='{block}' AND lot_num='{lot}'")
         url = f"{PARCELS_API}?$select=supervisor_district&$where={where}&$limit=1"
@@ -413,14 +435,28 @@ def fetch_meeting_detail(url):
 
 
 def get_meetings_in_range(start, end, state, keywords, mode="weekly"):
-    cal_html = fetch(LEGISTAR_CALENDAR)
+    if _over_budget():
+        print(f"  Skipped {start}–{end} (deadline already passed)", file=sys.stderr)
+        return []
+    try:
+        cal_html = fetch(LEGISTAR_CALENDAR)
+    except (TimeoutError, OSError) as e:
+        print(f"  Calendar fetch failed: {e}", file=sys.stderr)
+        return []
     stubs = parse_meeting_ids(cal_html)
+
+    total = len(stubs)
+    print(f"  Found {total} calendar entries, filtering to {start}–{end}...", file=sys.stderr)
 
     results = []
     new_state = dict(state["seen_meetings"])
 
-    for stub in stubs:
+    for i, stub in enumerate(stubs):
+        if _over_budget():
+            print(f"  Timeout after {i}/{total} meetings — returning partial results", file=sys.stderr)
+            break
         mid = stub["id"]
+        print(f"  [{i+1}/{total}] meeting {mid}...", file=sys.stderr)
         try:
             detail = fetch_meeting_detail(stub["url"])
         except Exception as e:
@@ -549,7 +585,12 @@ def main():
     parser.add_argument("--days", type=int, default=7, help="Look-ahead window in days")
     parser.add_argument("--district", type=int, help="Supervisorial district (1-11)")
     parser.add_argument("--config", help="Path to config JSON file")
+    parser.add_argument("--timeout", type=int, default=120,
+                        help="Max wall-clock seconds before returning partial results (default 120)")
     args = parser.parse_args()
+
+    global _deadline
+    _deadline = time.time() + args.timeout
 
     daily_mode = args.daily
     as_json = args.json
