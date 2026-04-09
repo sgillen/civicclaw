@@ -1,4 +1,4 @@
-# CivicClaw — SF Civic Intelligence Skill
+# CivicClaw — San Francisco Civic Intelligence
 
 > Who has time to read Board of Supervisors transcripts? Nobody. That's the gap CivicClaw fills.
 
@@ -14,7 +14,9 @@ I was frustrated not knowing where decisions that affect me were being made, or 
 
 ## Getting Started
 
-Point your agent at `SKILL.md`. It'll take it from there.
+This repo is the canonical home for the CivicClaw project: the OpenClaw skill, civic data pipeline, and lightweight public site.
+
+If you want to use it as a skill, point your agent at `SKILL.md`.
 
 ---
 
