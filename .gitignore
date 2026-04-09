@@ -3,7 +3,7 @@ __pycache__/
 .env
 .env.*
 .DS_Store
-site/.DS_Store
+docs/.DS_Store
 scripts/*_state.json
 scripts/*_archive.json
 scripts/strava_tokens.json
