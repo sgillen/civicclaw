@@ -38,6 +38,9 @@
       <div class="tier-row">
         <div><strong>Want this for your city?</strong> <a href="https://github.com/sgillen/civicclaw" target="_blank">Fork it</a> — scripts, style guide, and data pipeline are all open source.</div>
       </div>
+      <div class="tier-row">
+        <div><strong>Have feedback?</strong> <a id="feedback-link" href="#">Email Sean</a> — quick reactions, bugs, confusing bits, feature ideas.</div>
+      </div>
     </div>
     <article id="report" class="report" hidden></article>
   </main>
@@ -61,6 +64,17 @@
       const file = d === "citywide" ? "data/citywide.md" : `data/d${d}.md`;
       const label = d === "citywide" ? "Citywide" : `District ${d}`;
       document.title = `CivicClaw — ${label}`;
+
+      const feedbackEmail = "seangillen1887@gmail.com";
+      const feedbackSubject = encodeURIComponent("CivicClaw feedback");
+      const feedbackBody = encodeURIComponent([
+        `page: district ${d}`,
+        `district: ${d}`,
+        "what I expected:",
+        "feedback:",
+        ""
+      ].join("\n"));
+      document.getElementById("feedback-link").href = `mailto:${feedbackEmail}?subject=${feedbackSubject}&body=${feedbackBody}`;
 
       let reportMd = "";
 

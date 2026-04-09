@@ -18,6 +18,7 @@
     <section class="districts">
       <h2>Pick Your District</h2>
       <p class="district-help">Not sure which district you're in? <a href="https://sfplanninggis.org/pim/" target="_blank">Look up your address</a></p>
+      <p class="district-help"><a id="feedback-link" href="#">Send feedback</a></p>
       <div class="district-grid" id="district-grid"></div>
     </section>
 
@@ -31,6 +32,17 @@
   </footer>
 
   <script>
+    const feedbackEmail = "seangillen1887@gmail.com";
+    const feedbackSubject = encodeURIComponent("CivicClaw feedback");
+    const feedbackBody = encodeURIComponent([
+      "page: homepage",
+      "district: ",
+      "what I expected:",
+      "feedback:",
+      ""
+    ].join("\n"));
+    document.getElementById("feedback-link").href = `mailto:${feedbackEmail}?subject=${feedbackSubject}&body=${feedbackBody}`;
+
     const districts = [
       { d: 1, supervisor: "Connie Chan", neighborhoods: "Richmond, Sea Cliff, Jordan Park" },
       { d: 2, supervisor: "Stephen Sherrill", neighborhoods: "Marina, Cow Hollow, Pacific Heights" },
