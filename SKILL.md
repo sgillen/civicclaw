@@ -334,7 +334,7 @@ civicclaw/
 │   ├── sf_transcripts.py        ← SmartTranscripts parser (full meeting transcripts)
 │   └── config_loader.py         ← District config loader
 ├── reports/              ← generated or curated public reports
-├── site/                 ← static site for GitHub Pages / demo
+├── docs/                 ← static site for GitHub Pages / demo
 │   ├── index.html
 │   ├── district.html
 │   ├── style.css
