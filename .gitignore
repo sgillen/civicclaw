@@ -3,11 +3,12 @@ __pycache__/
 .env
 .env.*
 .DS_Store
-users/
-!users/.gitkeep
 site/.DS_Store
 scripts/*_state.json
 scripts/*_archive.json
 scripts/strava_tokens.json
 scripts/*token*.json
 scripts/*secret*
+
+users/*/USER.md
+!users/TEMPLATE.md
