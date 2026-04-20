@@ -1,0 +1,91 @@
+{
+  "district": 3,
+  "generated_at": "2026-04-20T00:26:35.071937+00:00",
+  "sources": [
+    {
+      "label": "CivicClaw repo",
+      "url": "https://github.com/sgillen/civicclaw",
+      "note": "project home"
+    },
+    {
+      "label": "Land Use and Transportation Committee agenda",
+      "url": "https://sfgov.legistar.com/MeetingDetail.aspx?ID=1407191&GUID=3CEB7056-50D8-487E-A3CC-9C5FFE4F354E&Options=info|&Search=",
+      "note": "4/20/2026"
+    },
+    {
+      "label": "Rules Committee agenda",
+      "url": "https://sfgov.legistar.com/MeetingDetail.aspx?ID=1405587&GUID=5A1CC6F8-8EAB-48FB-BF9A-096C7EE3A4FC&Options=info|&Search=",
+      "note": "4/20/2026"
+    },
+    {
+      "label": "Board of Supervisors agenda",
+      "url": "https://sfgov.legistar.com/MeetingDetail.aspx?ID=1407453&GUID=52DE698B-9DC0-4B46-875E-EF1C6F7B01AD&Options=info|&Search=",
+      "note": "4/21/2026"
+    },
+    {
+      "label": "Budget and Finance Committee agenda",
+      "url": "https://sfgov.legistar.com/MeetingDetail.aspx?ID=1405969&GUID=A2151F77-F99C-435A-AA50-BD6C0F1CB17F&Options=info|&Search=",
+      "note": "4/22/2026"
+    },
+    {
+      "label": "SF Standard",
+      "url": "https://sfstandard.com/2026/04/19/sf-mayor-shanghai-china-trip/",
+      "note": "Lurie forges music, science partnerships with Shanghai on first international trip"
+    },
+    {
+      "label": "Mission Local",
+      "url": "https://missionlocal.org/2026/04/dont-stop-the-dance/",
+      "note": "Don\u2019t stop the dance"
+    },
+    {
+      "label": "SF Standard",
+      "url": "https://sfstandard.com/2026/04/19/2606-jackson-for-sale/",
+      "note": "First time on market: See inside this Olle Lundberg-designed home asking $22.5M"
+    },
+    {
+      "label": "SF Standard",
+      "url": "https://sfstandard.com/2026/04/19/warriors-steph-curry-exit-interview-fading-dynasty/",
+      "note": "Steph Curry isn\u2019t done yet, but things won\u2019t be the same"
+    },
+    {
+      "label": "SF Standard",
+      "url": "https://sfstandard.com/2026/04/19/donald-trump-presidio-firing-board-questions/",
+      "note": "Is Trump blowing up the Presidio? Here\u2019s everything we know about his plans"
+    },
+    {
+      "label": "1365 COLUMBUS AVE 94133 PIM",
+      "url": "https://sfplanninggis.org/pim?search=2025-006124PRJ",
+      "note": "Under Review"
+    },
+    {
+      "label": "777 SUTTER ST 94109 PIM",
+      "url": "https://sfplanninggis.org/pim?search=2024-008754PRJ",
+      "note": "Closed - Approval Ltr Issued"
+    },
+    {
+      "label": "1324 POWELL ST 94133 PIM",
+      "url": "https://sfplanninggis.org/pim?search=2024-006735PRJ",
+      "note": "Closed - Approval Ltr Issued"
+    },
+    {
+      "label": "875 SANSOME ST 94111 PIM",
+      "url": "https://sfplanninggis.org/pim?search=2024-006874PRJ",
+      "note": "Closed - Approval Ltr Issued"
+    },
+    {
+      "label": "Maggie Dong   430 Green Street contact",
+      "url": "mailto:dakota.spycher@sfgov.org",
+      "note": "2025-003856CUAVAR"
+    },
+    {
+      "label": "Maggie Dong   1030 Leavenworth Street contact",
+      "url": "mailto:michelle.langlie@sfgov.org",
+      "note": "2025-010791PRJ"
+    },
+    {
+      "label": "Volunteer cleanups",
+      "url": "https://refuserefusesf.org/cleanups",
+      "note": "signup page"
+    }
+  ]
+}

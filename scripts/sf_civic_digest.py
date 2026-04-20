@@ -337,8 +337,8 @@ def parse_grid_rows(html):
     return items
 
 
-def fetch_meeting_detail(url):
-    html = fetch(url)
+def fetch_meeting_detail(url, html=None):
+    html = html if html is not None else fetch(url)
 
     title_match = re.search(
         r'Meeting of (.+?) on (\d{1,2}/\d{1,2}/\d{4}) at (\d{1,2}:\d{2} [AP]M)', html)
@@ -412,20 +412,36 @@ def fetch_meeting_detail(url):
     }
 
 
-def get_meetings_in_range(start, end, state, keywords, mode="weekly"):
+def get_meetings_in_range(start, end, state, keywords, mode="weekly", detail_cache=None):
     cal_html = fetch(LEGISTAR_CALENDAR)
     stubs = parse_meeting_ids(cal_html)
 
     results = []
     new_state = dict(state["seen_meetings"])
+    detail_cache = detail_cache if detail_cache is not None else {}
 
     for stub in stubs:
         mid = stub["id"]
-        try:
-            detail = fetch_meeting_detail(stub["url"])
-        except Exception as e:
-            print(f"  Error fetching {stub['url']}: {e}", file=sys.stderr)
-            continue
+        if mid in detail_cache:
+            detail = detail_cache[mid]
+        else:
+            try:
+                html = fetch(stub["url"])
+                # Fast prefilter: extract date before full detail parsing / enrichment
+                dt = re.search(r'(\d{1,2}/\d{1,2}/\d{4})', html)
+                parsed_date = None
+                if dt:
+                    try:
+                        parsed_date = datetime.strptime(dt.group(1), "%m/%d/%Y").date()
+                    except ValueError:
+                        parsed_date = None
+                if not parsed_date or not (start <= parsed_date <= end):
+                    continue
+                detail = fetch_meeting_detail(stub["url"], html=html)
+                detail_cache[mid] = detail
+            except Exception as e:
+                print(f"  Error fetching {stub['url']}: {e}", file=sys.stderr)
+                continue
 
         d = detail.get("parsed_date")
         if not d or not (start <= d <= end):
@@ -589,11 +605,13 @@ def main():
         ahead_end = today + timedelta(days=days)
         recap_start = today - timedelta(days=7)
 
+        detail_cache = {}
+
         print(f"Fetching upcoming meetings ({today}→{ahead_end})...", file=sys.stderr)
-        upcoming = get_meetings_in_range(today, ahead_end, state, keywords, mode="weekly")
+        upcoming = get_meetings_in_range(today, ahead_end, state, keywords, mode="weekly", detail_cache=detail_cache)
 
         print(f"Fetching last week recap ({recap_start}→{today})...", file=sys.stderr)
-        recap = get_meetings_in_range(recap_start, today - timedelta(days=1), state, keywords, mode="weekly")
+        recap = get_meetings_in_range(recap_start, today - timedelta(days=1), state, keywords, mode="weekly", detail_cache=detail_cache)
         recap = [m for m in recap if m["is_past"]]
 
         update_archive(upcoming + recap)

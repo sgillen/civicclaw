@@ -26,37 +26,76 @@ try:
 except ImportError:
     _DEFAULT_DISTRICT = 5
 
+# Per-build cache so expensive scrapers (notably sf_civic_digest.py, which
+# hits Legistar and can take ~90s) only run once even if several sections
+# need the same data. Cleared between builds by design — process-lifetime only.
+_SCRIPT_CACHE: dict = {}
+
+
+def _cache_key(script_name, args):
+    return (script_name, tuple(args or []))
+
 
 def run_script(script_name, args=None, timeout=60):
-    """Run a civic script with --json flag, return parsed output or None on failure."""
+    """Run a civic script with --json flag, return parsed output or None on failure.
+
+    Results are cached per-(script, args) for the lifetime of this process
+    so the same scraper isn't invoked multiple times while building one
+    district digest.
+    """
+    key = _cache_key(script_name, args)
+    if key in _SCRIPT_CACHE:
+        return _SCRIPT_CACHE[key]
+
     cmd = [sys.executable, os.path.join(SCRIPTS_DIR, script_name), "--json"]
     if args:
         cmd.extend(args)
+    result_val = None
     try:
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
-        if result.returncode == 0 and result.stdout.strip():
-            return json.loads(result.stdout)
+        if result.returncode != 0:
+            err = (result.stderr or result.stdout or '').strip()
+            print(f"  ⚠️  {script_name} exited {result.returncode}: {err[:240]}", file=sys.stderr)
+        else:
+            stdout = result.stdout.strip()
+            if not stdout:
+                print(f"  ⚠️  {script_name} returned empty stdout", file=sys.stderr)
+            else:
+                try:
+                    result_val = json.loads(stdout)
+                except json.JSONDecodeError:
+                    preview = stdout[:240].replace('\n', ' ')
+                    print(f"  ⚠️  {script_name} returned non-JSON stdout: {preview}", file=sys.stderr)
     except subprocess.TimeoutExpired:
         print(f"  ⚠️  {script_name} timed out", file=sys.stderr)
     except Exception as e:
         print(f"  ⚠️  {script_name} failed: {e}", file=sys.stderr)
-    return None
+
+    _SCRIPT_CACHE[key] = result_val
+    return result_val
 
 
 def run_script_text(script_name, args=None, timeout=60):
-    """Run a civic script, return raw text output."""
+    """Run a civic script, return raw text output. Cached per-(script, args)."""
+    key = ("text", script_name, tuple(args or []))
+    if key in _SCRIPT_CACHE:
+        return _SCRIPT_CACHE[key]
+
     cmd = [sys.executable, os.path.join(SCRIPTS_DIR, script_name)]
     if args:
         cmd.extend(args)
+    result_val = None
     try:
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
         if result.returncode == 0:
-            return result.stdout.strip()
+            result_val = result.stdout.strip()
     except subprocess.TimeoutExpired:
         print(f"  ⚠️  {script_name} timed out", file=sys.stderr)
     except Exception as e:
         print(f"  ⚠️  {script_name} failed: {e}", file=sys.stderr)
-    return None
+
+    _SCRIPT_CACHE[key] = result_val
+    return result_val
 
 
 def fmt_date(d=None):
@@ -864,6 +903,23 @@ def collect_all_data(district=None, days=7):
     return raw
 
 
+def _safe_section(name, header, fn, *args, **kwargs):
+    """Run a section function and append header+lines to caller's buffer.
+
+    Returns (header, lines) or None if the section is empty or errored.
+    A single section crash never kills the digest.
+    """
+    print(f"  Fetching {name}...", file=sys.stderr)
+    try:
+        result = fn(*args, **kwargs)
+    except Exception as e:
+        print(f"  ⚠️  section {name!r} raised {type(e).__name__}: {e}", file=sys.stderr)
+        return None
+    if not result:
+        return None
+    return (header, result)
+
+
 def build_digest(district=None, days=7, brief=False):
     district = district or _DEFAULT_DISTRICT
     today = fmt_date()
@@ -873,142 +929,59 @@ def build_digest(district=None, days=7, brief=False):
         lines.append(f"   District {district} | Supervisor: {get_supervisor(district)}")
     lines.append("")
 
+    def append_section(entry):
+        if not entry:
+            return
+        header, section_lines = entry
+        lines.append(header)
+        lines.extend(section_lines)
+        lines.append("")
+
     # ── DISTRICT-SPECIFIC SECTIONS ──────────────────────────────────────
-
-    print("  Fetching housing pipeline...", file=sys.stderr)
-    hp = section_housing_pipeline(district, days, brief)
-    if hp:
-        lines.append("🏠 HOUSING PIPELINE")
-        lines.extend(hp)
-        lines.append("")
-
-    print("  Fetching development...", file=sys.stderr)
-    dev = section_development(district, days, brief)
-    if dev:
-        lines.append("🏗️ PLANNING & DEVELOPMENT")
-        lines.extend(dev)
-        lines.append("")
-
-    print("  Fetching historic preservation...", file=sys.stderr)
-    hpc = section_historic_preservation(district, days, brief)
-    if hpc:
-        lines.append("🏛️ HISTORIC PRESERVATION")
-        lines.extend(hpc)
-        lines.append("")
-
-    print("  Fetching street changes...", file=sys.stderr)
-    st = section_streets(district, days, brief)
-    if st:
-        lines.append("🚦 STREET CHANGES")
-        lines.extend(st)
-        lines.append("")
-
-    print("  Fetching 311...", file=sys.stderr)
-    pulse = section_pulse(district, days, brief)
-    if pulse:
-        lines.append("📞 NEIGHBORHOOD PULSE")
-        lines.extend(pulse)
-        lines.append("")
-
-    print("  Fetching ethics...", file=sys.stderr)
-    eth = section_ethics(district, days, brief)
-    if eth:
-        lines.append("⚖️ MONEY & POWER")
-        lines.extend(eth)
-        lines.append("")
+    append_section(_safe_section("housing pipeline", "🏠 HOUSING PIPELINE",
+                                 section_housing_pipeline, district, days, brief))
+    append_section(_safe_section("development", "🏗️ PLANNING & DEVELOPMENT",
+                                 section_development, district, days, brief))
+    append_section(_safe_section("historic preservation", "🏛️ HISTORIC PRESERVATION",
+                                 section_historic_preservation, district, days, brief))
+    append_section(_safe_section("street changes", "🚦 STREET CHANGES",
+                                 section_streets, district, days, brief))
+    append_section(_safe_section("311", "📞 NEIGHBORHOOD PULSE",
+                                 section_pulse, district, days, brief))
+    append_section(_safe_section("ethics", "⚖️ MONEY & POWER",
+                                 section_ethics, district, days, brief))
 
     # ── CITYWIDE SECTIONS ───────────────────────────────────────────────
-
     lines.append("━" * 50)
     lines.append("🌐 CITYWIDE")
     lines.append("")
 
-    print("  Fetching last week's recap...", file=sys.stderr)
-    recap = section_recap(district, days, brief)
-    if recap:
-        lines.append("📜 BOARD RECAP")
-        lines.extend(recap)
-        lines.append("")
-
-    print("  Fetching hearings...", file=sys.stderr)
-    h = section_hearings(district, days, brief)
-    if h:
-        lines.append("📋 HEARINGS")
-        lines.extend(h)
-        lines.append("")
-
-    print("  Fetching SFMTA Board...", file=sys.stderr)
-    transit = section_transit(district, days, brief)
-    if transit:
-        lines.append("🚌 SFMTA BOARD")
-        lines.extend(transit)
-        lines.append("")
-
-    print("  Fetching rent board...", file=sys.stderr)
-    tenant = section_tenant(brief)
-    if tenant:
-        lines.append("🏠 TENANT INFO")
-        lines.extend(tenant)
-        lines.append("")
-
-    print("  Fetching parks...", file=sys.stderr)
-    parks = section_parks(district, days, brief)
-    if parks:
-        lines.append("🌳 PARKS & OPEN SPACE")
-        lines.extend(parks)
-        lines.append("")
-
-    print("  Fetching evictions...", file=sys.stderr)
-    evictions = section_evictions(district, brief)
-    if evictions:
-        lines.append("🏚️ EVICTIONS")
-        lines.extend(evictions)
-        lines.append("")
-
-    print("  Fetching BART Board...", file=sys.stderr)
-    bart = section_bart(brief)
-    if bart:
-        lines.append("🚇 BART")
-        lines.extend(bart)
-        lines.append("")
-
-    print("  Fetching SFCTA...", file=sys.stderr)
-    sfcta = section_sfcta(brief)
-    if sfcta:
-        lines.append("🚊 TRANSPORTATION AUTHORITY")
-        lines.extend(sfcta)
-        lines.append("")
-
-    print("  Fetching SFUSD...", file=sys.stderr)
-    sfusd = section_sfusd(brief)
-    if sfusd:
-        lines.append("🏫 SCHOOL BOARD")
-        lines.extend(sfusd)
-        lines.append("")
-
-    print("  Fetching volunteer cleanups...", file=sys.stderr)
-    cleanups = section_volunteer_cleanups(district, brief)
-    if cleanups:
-        lines.append("🧹 VOLUNTEER CLEANUPS")
-        lines.extend(cleanups)
-        lines.append("")
-
-    # ── JOURNALISM (district + citywide combined) ───────────────────────
-
-    print("  Fetching journalism...", file=sys.stderr)
-    news = section_journalism(district, days, brief)
-    if news:
-        lines.append("📰 JOURNALISM")
-        lines.extend(news)
-        lines.append("")
+    append_section(_safe_section("board recap", "📜 BOARD RECAP",
+                                 section_recap, district, days, brief))
+    append_section(_safe_section("hearings", "📋 HEARINGS",
+                                 section_hearings, district, days, brief))
+    append_section(_safe_section("SFMTA board", "🚌 SFMTA BOARD",
+                                 section_transit, district, days, brief))
+    append_section(_safe_section("rent board", "🏠 TENANT INFO",
+                                 section_tenant, brief))
+    append_section(_safe_section("parks", "🌳 PARKS & OPEN SPACE",
+                                 section_parks, district, days, brief))
+    append_section(_safe_section("evictions", "🏚️ EVICTIONS",
+                                 section_evictions, district, brief))
+    append_section(_safe_section("BART board", "🚇 BART",
+                                 section_bart, brief))
+    append_section(_safe_section("SFCTA", "🚊 TRANSPORTATION AUTHORITY",
+                                 section_sfcta, brief))
+    append_section(_safe_section("SFUSD", "🏫 SCHOOL BOARD",
+                                 section_sfusd, brief))
+    append_section(_safe_section("volunteer cleanups", "🧹 VOLUNTEER CLEANUPS",
+                                 section_volunteer_cleanups, district, brief))
+    append_section(_safe_section("journalism", "📰 JOURNALISM",
+                                 section_journalism, district, days, brief))
 
     if not brief:
-        print("  Fetching upcoming...", file=sys.stderr)
-        coming = section_coming_up(district, brief)
-        if coming:
-            lines.append("📅 COMING UP")
-            lines.extend(coming)
-            lines.append("")
+        append_section(_safe_section("coming up", "📅 COMING UP",
+                                     section_coming_up, district, brief))
 
     return "\n".join(lines)
 

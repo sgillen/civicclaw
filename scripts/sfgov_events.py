@@ -28,6 +28,16 @@ SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
 ARCHIVE_FILE = os.path.join(SCRIPTS_DIR, "sfgov_events_archive.json")
 ARCHIVE_MAX = 5000
 
+POLITICIAN_EVENT_SOURCES = [
+    {
+        "name": "Scott Wiener",
+        "office": "CA Senate District 11",
+        "events_url": "https://sd11.senate.ca.gov/events",
+        "base_url": "https://sd11.senate.ca.gov",
+        "keywords": ["wiener", "senator scott wiener", "legislative town hall", "virtual town hall"],
+    },
+]
+
 # ---------------------------------------------------------------------------
 # Relevance filter
 # ---------------------------------------------------------------------------
@@ -119,6 +129,15 @@ def fetch_json(url, timeout=20):
     })
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return json.loads(r.read().decode("utf-8"))
+
+
+def fetch_text(url, timeout=20):
+    req = urllib.request.Request(url, headers={
+        "User-Agent": UA,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    })
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read().decode("utf-8", errors="replace")
 
 
 # ---------------------------------------------------------------------------
@@ -229,7 +248,117 @@ def parse_meeting_detail(detail):
         "public_comment_email": public_comment_email,
         "pdf_links": pdf_links,
         "source_url": meta.get("html_url", ""),
+        "event_type": "meeting",
+        "host": agency_name,
+        "source_kind": "sf_gov_meeting",
     }
+
+
+# ---------------------------------------------------------------------------
+# Politician-hosted events
+# ---------------------------------------------------------------------------
+
+def _strip_tags(text):
+    text = re.sub(r"<script\b[^>]*>.*?</script>", " ", text, flags=re.I | re.S)
+    text = re.sub(r"<style\b[^>]*>.*?</style>", " ", text, flags=re.I | re.S)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"&nbsp;", " ", text)
+    text = re.sub(r"&amp;", "&", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _normalize_date_string(text):
+    text = text.strip()
+    for fmt in (
+        "%B %d, %Y",
+        "%b %d, %Y",
+        "%B %d %Y",
+        "%b %d %Y",
+    ):
+        try:
+            return datetime.strptime(text, fmt).date().isoformat()
+        except ValueError:
+            continue
+    return ""
+
+
+def get_politician_events(days=14):
+    today = date.today()
+    cutoff = today + timedelta(days=days)
+    results = []
+
+    for source in POLITICIAN_EVENT_SOURCES:
+        try:
+            html = fetch_text(source["events_url"], timeout=20)
+        except Exception as e:
+            print(f"  Error fetching politician events for {source['name']}: {e}", file=sys.stderr)
+            continue
+
+        for match in re.finditer(r'href="([^"]+/event/[^"]+)"', html, flags=re.I):
+            href = match.group(1)
+            if href.startswith("/"):
+                url = source["base_url"].rstrip("/") + href
+            elif href.startswith("http"):
+                url = href
+            else:
+                url = source["base_url"].rstrip("/") + "/" + href.lstrip("/")
+
+            try:
+                event_html = fetch_text(url, timeout=20)
+            except Exception:
+                continue
+
+            text = _strip_tags(event_html)
+            title_match = re.search(r"<title>(.*?)</title>", event_html, flags=re.I | re.S)
+            title = _strip_tags(title_match.group(1)) if title_match else source["name"] + " event"
+            title = title.replace("| Senator Scott Wiener", "").strip()
+
+            date_match = re.search(r"([A-Z][a-z]+\s+\d{1,2},\s+\d{4})", text)
+            event_date = _normalize_date_string(date_match.group(1)) if date_match else ""
+            if not event_date:
+                continue
+            if event_date < today.isoformat() or event_date > cutoff.isoformat():
+                continue
+
+            time_match = re.search(r"(\d{1,2}:\d{2}\s*(?:AM|PM|am|pm))", text)
+            event_time = time_match.group(1).upper().replace(" ", "") if time_match else ""
+            if event_time.endswith("AM") or event_time.endswith("PM"):
+                try:
+                    event_time = datetime.strptime(event_time, "%I:%M%p").strftime("%H:%M")
+                except ValueError:
+                    pass
+
+            location = ""
+            loc_match = re.search(r"(?:Location|Where)\s*:?\s*([^|]{5,160})", text, flags=re.I)
+            if loc_match:
+                location = loc_match.group(1).strip(" :-")
+
+            results.append({
+                "slug": re.sub(r"[^a-z0-9-]+", "-", url.lower()).strip("-"),
+                "title": title,
+                "agency": source["office"],
+                "agency_url": source["events_url"],
+                "date": event_date,
+                "time": event_time,
+                "end_time": "",
+                "is_all_day": False,
+                "cancelled": False,
+                "address": location,
+                "online_link": "",
+                "phone": "",
+                "agenda_items": [],
+                "public_comment_email": "",
+                "pdf_links": [],
+                "source_url": url,
+                "event_type": "politician_event",
+                "host": source["name"],
+                "source_kind": "politician_events_page",
+            })
+
+    deduped = {}
+    for item in results:
+        deduped[item["source_url"]] = item
+    return sorted(deduped.values(), key=lambda x: (x["date"], x["time"], x["title"]))
 
 
 # ---------------------------------------------------------------------------
@@ -473,6 +602,7 @@ def main():
     days = 14
     include_all = "--all" in sys.argv
     as_json = "--json" in sys.argv
+    include_politicians = "--politicians" in sys.argv or "--all" in sys.argv
 
     args = sys.argv[1:]
     for i, arg in enumerate(args):
@@ -490,6 +620,10 @@ def main():
     print(f"Fetching sf.gov meetings (next {days} days)...", file=sys.stderr)
     meetings = get_upcoming_meetings(district=district, days=days,
                                      include_all=include_all)
+    if include_politicians:
+        print(f"Fetching politician-hosted events (next {days} days)...", file=sys.stderr)
+        meetings.extend(get_politician_events(days=days))
+        meetings.sort(key=lambda x: (x["date"], x["time"], x["title"]))
     update_archive(meetings)
 
     if as_json:

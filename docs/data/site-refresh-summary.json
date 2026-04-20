@@ -1,0 +1,98 @@
+{
+  "generated_at": "2026-04-20T03:19:47.536066+00:00",
+  "generated_at_epoch_ms": 1776655187536,
+  "generated_at_display_utc": "2026-04-20 03:19 UTC",
+  "completed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "failed": [],
+  "districts": [
+    {
+      "district": 1,
+      "status": "ok",
+      "seconds": 106.41,
+      "report_path": "docs/data/d1.md",
+      "log_path": "logs/site-build/d1.log"
+    },
+    {
+      "district": 2,
+      "status": "ok",
+      "seconds": 103.23,
+      "report_path": "docs/data/d2.md",
+      "log_path": "logs/site-build/d2.log"
+    },
+    {
+      "district": 3,
+      "status": "ok",
+      "seconds": 93.17,
+      "report_path": "docs/data/d3.md",
+      "log_path": "logs/site-build/d3.log"
+    },
+    {
+      "district": 4,
+      "status": "ok",
+      "seconds": 155.65,
+      "report_path": "docs/data/d4.md",
+      "log_path": "logs/site-build/d4.log"
+    },
+    {
+      "district": 5,
+      "status": "ok",
+      "seconds": 128.6,
+      "report_path": "docs/data/d5.md",
+      "log_path": "logs/site-build/d5.log"
+    },
+    {
+      "district": 6,
+      "status": "ok",
+      "seconds": 102.08,
+      "report_path": "docs/data/d6.md",
+      "log_path": "logs/site-build/d6.log"
+    },
+    {
+      "district": 7,
+      "status": "ok",
+      "seconds": 86.52,
+      "report_path": "docs/data/d7.md",
+      "log_path": "logs/site-build/d7.log"
+    },
+    {
+      "district": 8,
+      "status": "ok",
+      "seconds": 134.47,
+      "report_path": "docs/data/d8.md",
+      "log_path": "logs/site-build/d8.log"
+    },
+    {
+      "district": 9,
+      "status": "ok",
+      "seconds": 166.07,
+      "report_path": "docs/data/d9.md",
+      "log_path": "logs/site-build/d9.log"
+    },
+    {
+      "district": 10,
+      "status": "ok",
+      "seconds": 212.23,
+      "report_path": "docs/data/d10.md",
+      "log_path": "logs/site-build/d10.log"
+    },
+    {
+      "district": 11,
+      "status": "ok",
+      "seconds": 95.17,
+      "report_path": "docs/data/d11.md",
+      "log_path": "logs/site-build/d11.log"
+    }
+  ]
+}
