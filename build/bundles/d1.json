@@ -1,0 +1,4951 @@
+{
+  "district": 1,
+  "supervisor": "Connie Chan",
+  "date": "2026-04-20",
+  "days": 7,
+  "legistar": null,
+  "permits": [
+    {
+      "permit_number": "202604169566",
+      "address": "346 32nd Av",
+      "type": "otc alterations permit",
+      "description": "2nd & 3rd floor interior remodel, open kitchen, dining & family room, relocate powder room, remodel stair at 2nd floor, remodel 3 bedrooms, add a new master bathroom, remodel existing roofdeck, replace all rear & side windows with aluminum & replace all doors, add a new deck at rear of the house for",
+      "cost": "120000.0",
+      "date": "2026-04-16",
+      "status": "filed",
+      "tier": "high",
+      "new": true,
+      "block": "1402",
+      "lot": "033"
+    },
+    {
+      "permit_number": "202604169551",
+      "address": "403 Arguello Bl",
+      "type": "otc alterations permit",
+      "description": "reroofing no hot work, install new 4337 sqft of new comp. shingles and flat roof.",
+      "cost": "100000.0",
+      "date": "2026-04-16",
+      "status": "issued",
+      "tier": "high",
+      "new": true,
+      "block": "1433",
+      "lot": "037"
+    },
+    {
+      "permit_number": "202604139315",
+      "address": "755 12th Av",
+      "type": "otc alterations permit",
+      "description": "1-story extension at rear of bldg. remove (e) 1 story deck, re-built 1-story extension in same location on g/f. convert (e) sunroom to full bath at 3/f.",
+      "cost": "120000.0",
+      "date": "2026-04-13",
+      "status": "filed",
+      "tier": "high",
+      "new": true,
+      "block": "1655",
+      "lot": "014"
+    },
+    {
+      "permit_number": "S20260417569",
+      "address": "143 17th Av",
+      "type": "9",
+      "description": "solar permit: mounted: roof, ballasted: n, including 1 energy storage unit, of 240 vac, with 13.5 kwh each in capacity, ess units will not be closer than 3 feet | (1) tesla powerwall 3 [1707000-xx-y] (1) tesla backup switch [1624171-xx-y]",
+      "cost": "19350.0",
+      "date": "2026-04-17",
+      "status": "triage",
+      "tier": "medium",
+      "new": true,
+      "block": "1377",
+      "lot": "010"
+    },
+    {
+      "permit_number": "202604179666",
+      "address": "2338 Fulton St",
+      "type": "otc alterations permit",
+      "description": "reroofing -no hot works",
+      "cost": "53700.0",
+      "date": "2026-04-17",
+      "status": "issued",
+      "tier": "medium",
+      "new": true,
+      "block": "1169",
+      "lot": "004"
+    },
+    {
+      "permit_number": "202604179666",
+      "address": "2342 Fulton St",
+      "type": "otc alterations permit",
+      "description": "reroofing -no hot works",
+      "cost": "53700.0",
+      "date": "2026-04-17",
+      "status": "issued",
+      "tier": "medium",
+      "new": true,
+      "block": "1169",
+      "lot": "004"
+    },
+    {
+      "permit_number": "202604179633",
+      "address": "677 48th Av",
+      "type": "otc alterations permit",
+      "description": "install (n) retaining wall, remove (e) retaining wall. grading maximum 15 yards.",
+      "cost": "25000.0",
+      "date": "2026-04-17",
+      "status": "filed",
+      "tier": "medium",
+      "new": true,
+      "block": "1591",
+      "lot": "012"
+    },
+    {
+      "permit_number": "202604169582",
+      "address": "542 34th Av",
+      "type": "otc alterations permit",
+      "description": "reconstruct retaining wall at rear property line between two lots. the address of the lots are 542 34th av. and 543 33rd av.",
+      "cost": "25000.0",
+      "date": "2026-04-16",
+      "status": "filed",
+      "tier": "medium",
+      "new": true,
+      "block": "1511",
+      "lot": "035"
+    },
+    {
+      "permit_number": "202604169552",
+      "address": "376 21st Av",
+      "type": "otc alterations permit",
+      "description": "reroofing- no torch down",
+      "cost": "20000.0",
+      "date": "2026-04-16",
+      "status": "issued",
+      "tier": "medium",
+      "new": true,
+      "block": "1452",
+      "lot": "046"
+    },
+    {
+      "permit_number": "202604159465",
+      "address": "151 Beaumont Av",
+      "type": "otc alterations permit",
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "cost": "27000.0",
+      "date": "2026-04-15",
+      "status": "issued",
+      "tier": "medium",
+      "new": true,
+      "block": "1138",
+      "lot": "001"
+    },
+    {
+      "permit_number": "202604028804",
+      "address": "555 28th Av",
+      "type": "additions alterations or repairs",
+      "description": "remove and replace (e) rear exterior deck and add new lift at rear.",
+      "cost": "80000.0",
+      "date": "2026-04-15",
+      "status": "filed",
+      "tier": "medium",
+      "new": true,
+      "block": "1516",
+      "lot": "008B"
+    },
+    {
+      "permit_number": "202604028804",
+      "address": "553 28th Av",
+      "type": "additions alterations or repairs",
+      "description": "remove and replace (e) rear exterior deck and add new lift at rear.",
+      "cost": "80000.0",
+      "date": "2026-04-15",
+      "status": "filed",
+      "tier": "medium",
+      "new": true,
+      "block": "1516",
+      "lot": "008B"
+    },
+    {
+      "permit_number": "202604159491",
+      "address": "221 05th Av",
+      "type": "otc alterations permit",
+      "description": "recommenecement and completion of work approved under 201310038332 , 201312113874,201407312691",
+      "cost": "11200.0",
+      "date": "2026-04-15",
+      "status": "issued",
+      "tier": "medium",
+      "new": true,
+      "block": "1428",
+      "lot": "003"
+    },
+    {
+      "permit_number": "202604159496",
+      "address": "5416 Fulton St",
+      "type": "otc alterations permit",
+      "description": "#5416: add 2 bedrooms. relocate kitchen. remodel bathrooms. add shower stall.",
+      "cost": "89500.0",
+      "date": "2026-04-15",
+      "status": "filed",
+      "tier": "medium",
+      "new": true,
+      "block": "1673",
+      "lot": "023"
+    },
+    {
+      "permit_number": "202604159508",
+      "address": "265 19th Av",
+      "type": "otc alterations permit",
+      "description": "markoff spc termite report #25623: all items.",
+      "cost": "9000.0",
+      "date": "2026-04-15",
+      "status": "issued",
+      "tier": "medium",
+      "new": true,
+      "block": "1414",
+      "lot": "012"
+    },
+    {
+      "permit_number": "202604159537",
+      "address": "6001 California St",
+      "type": "otc alterations permit",
+      "description": "new stair as second means of egress from basement level to sidewalk level. along 22nd ave new trash enclosure at 22nd ave. ref encrochment #26mse-00066-6001 cal st.",
+      "cost": "20000.0",
+      "date": "2026-04-15",
+      "status": "filed",
+      "tier": "medium",
+      "new": true,
+      "block": "1411",
+      "lot": "001"
+    },
+    {
+      "permit_number": "202604159508",
+      "address": "263 19th Av",
+      "type": "otc alterations permit",
+      "description": "markoff spc termite report #25623: all items.",
+      "cost": "9000.0",
+      "date": "2026-04-15",
+      "status": "issued",
+      "tier": "medium",
+      "new": true,
+      "block": "1414",
+      "lot": "012"
+    },
+    {
+      "permit_number": "202604149376",
+      "address": "435 Parker Av",
+      "type": "otc alterations permit",
+      "description": "recommencement and completion of work approved under pa# 202502261156.",
+      "cost": "63000.0",
+      "date": "2026-04-14",
+      "status": "issued",
+      "tier": "medium",
+      "new": true,
+      "block": "1137",
+      "lot": "005"
+    },
+    {
+      "permit_number": "S20260413554",
+      "address": "730 18th Av",
+      "type": "9",
+      "description": "solar permit: installing 9 solar pv modules, 450 watts per module, total no. of rating 4.05 kw. mounted: roof, ballasted: n, including 1 energy storage unit, with 13.5 kwh each in capacity, ess units will not be closer than 3 feet | residential roof mount solar pv wit",
+      "cost": "25781.0",
+      "date": "2026-04-13",
+      "status": "filed",
+      "tier": "medium",
+      "new": true,
+      "block": "1660",
+      "lot": "038"
+    },
+    {
+      "permit_number": "202604139289",
+      "address": "485 17th Av",
+      "type": "otc alterations permit",
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "cost": "10000.0",
+      "date": "2026-04-13",
+      "status": "issued",
+      "tier": "medium",
+      "new": true,
+      "block": "1527",
+      "lot": "021"
+    },
+    {
+      "permit_number": "202604139278",
+      "address": "47 Temescal Tr",
+      "type": "otc alterations permit",
+      "description": "re-roofing no torch or hot work, flat roof.",
+      "cost": "27000.0",
+      "date": "2026-04-13",
+      "status": "issued",
+      "tier": "medium",
+      "new": true,
+      "block": "1145A",
+      "lot": "006"
+    },
+    {
+      "permit_number": "202604139286",
+      "address": "297 30th Av",
+      "type": "otc alterations permit",
+      "description": "reroofing with in kind materials 5a plybase & 5a moddified bitumen, no hot works.",
+      "cost": "29000.0",
+      "date": "2026-04-13",
+      "status": "issued",
+      "tier": "medium",
+      "new": true,
+      "block": "1390",
+      "lot": "003E"
+    },
+    {
+      "permit_number": "202604169563",
+      "address": "1555 Clement St",
+      "type": "otc alterations permit",
+      "description": "commercial tenant improvement new restaurant at existing ground floor commercial space, new finishes and equipment, no structural work, new mechanical and plumbing work, electrical and lighting (title 24) to be under separate permit.",
+      "cost": "140000.0",
+      "date": "2026-04-16",
+      "status": "filed",
+      "tier": "low",
+      "new": true,
+      "block": "1448",
+      "lot": "037"
+    },
+    {
+      "permit_number": "202604139296",
+      "address": "302 02nd Av",
+      "type": "otc alterations permit",
+      "description": "replace hall bathroom bath tub for bathtub, wall tiles, plumbing fixtures, replace gfci outlets, replace wall lights and fixtures. all replacement in kind.",
+      "cost": "6250.0",
+      "date": "2026-04-13",
+      "status": "issued",
+      "tier": "low",
+      "new": true,
+      "block": "1433",
+      "lot": "033"
+    },
+    {
+      "permit_number": "202604139309",
+      "address": "420 Stanyan St",
+      "type": "otc alterations permit",
+      "description": "unit 3: remodel two bathrooms, one with shower, one with tub, repair plumbing and electrical as necessary, new flooring in hallways.",
+      "cost": "55000.0",
+      "date": "2026-04-13",
+      "status": "issued",
+      "tier": "low",
+      "new": true,
+      "block": "1191",
+      "lot": "044"
+    }
+  ],
+  "planning_notices": [
+    {
+      "address": "Wesley Wong   735-737 40th Avenue",
+      "record": "2025-011548PRJ",
+      "codes": [
+        "PRJ"
+      ],
+      "type_labels": [
+        "Section 311 Neighbor Notice"
+      ],
+      "neighborhood": "Richmond",
+      "hearing_body": "Section 311 Notice (no hearing)",
+      "date_posted": "03/18/2026",
+      "expiration": "04/15/2026",
+      "hearing_date": "N/A",
+      "contact_email": "max.setyadiputra@sfgov.org"
+    },
+    {
+      "address": "Jeffrey Speirs   657 Arguello Boulevard",
+      "record": "2025-008784PRJ",
+      "codes": [
+        "PRJ"
+      ],
+      "type_labels": [
+        "Section 311 Neighbor Notice"
+      ],
+      "neighborhood": "Richmond",
+      "hearing_body": "Section 311 Notice (no hearing)",
+      "date_posted": "02/04/2026",
+      "expiration": "03/06/2026",
+      "hearing_date": "N/A",
+      "contact_email": "max.setyadiputra@sfgov.org"
+    },
+    {
+      "address": "John Dacey   540 Arguello Boulevard",
+      "record": "2025-004088VAR",
+      "codes": [
+        "VAR"
+      ],
+      "type_labels": [
+        "Zoning Variance"
+      ],
+      "neighborhood": "Richmond",
+      "hearing_body": "Zoning Administrator (Variance)",
+      "date_posted": "02/04/2026",
+      "expiration": "02/25/2026",
+      "hearing_date": "N/A",
+      "contact_email": "manushi.mathur@sfgov.org"
+    },
+    {
+      "address": "Sharon Young   378 Funston Avenue",
+      "record": "2025-008753VAR",
+      "codes": [
+        "VAR"
+      ],
+      "type_labels": [
+        "Zoning Variance"
+      ],
+      "neighborhood": "Richmond",
+      "hearing_body": "Zoning Administrator (Variance)",
+      "date_posted": "01/06/2026",
+      "expiration": "01/28/2026",
+      "hearing_date": "N/A",
+      "contact_email": "jeffrey.horn@sfgov.org"
+    }
+  ],
+  "sfmta": null,
+  "sfmta_board": [
+    {
+      "date": "2026-04-07",
+      "url": "https://www.sfmta.com/calendar/board-directors-meeting-april-7-2026",
+      "agenda_pdf": "https://www.sfmta.com/reports/4-7-26-mtab-agenda",
+      "item_count": 7,
+      "high_count": 1,
+      "items": [
+        {
+          "item_number": "10.5",
+          "title": "FY 26-27 &amp; 27-28 Muni Service Equity Strategy Report",
+          "category": "consent",
+          "tier": "high",
+          "new": true,
+          "report_url": "https://www.sfmta.com/reports/4-7-26-mtab-item-105-fy-26-27-27-28-muni-service-equity-strategy-report"
+        },
+        {
+          "item_number": "10.2",
+          "title": "Traffic Modifications",
+          "category": "consent",
+          "tier": "medium",
+          "new": true,
+          "report_url": "https://www.sfmta.com/reports/4-7-26-mtab-item-102-traffic-modifications"
+        },
+        {
+          "item_number": "10.3",
+          "title": "Roadway Shared Spaces - Various Streets",
+          "category": "consent",
+          "tier": "medium",
+          "new": true,
+          "report_url": "https://www.sfmta.com/reports/4-7-26-mtab-item-103-roadway-shared-spaces-various-streets"
+        },
+        {
+          "item_number": "11",
+          "title": "FY 2026-2027 and FY 2027-2028 Operating and Capital Budget Update",
+          "category": "regular",
+          "tier": "medium",
+          "new": true,
+          "report_url": "https://www.sfmta.com/reports/4-7-26-mtab-item-11-fy-2026-2027-and-fy-2027-2028-operating-and-capital-budget-update"
+        },
+        {
+          "item_number": "12",
+          "title": "TC Amendment - Curbside EV Charging Program",
+          "category": "regular",
+          "tier": "medium",
+          "new": true,
+          "report_url": "https://www.sfmta.com/reports/4-7-26-mtab-item-12-tc-amendment-curbside-ev-charging-program"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-21",
+      "url": "https://www.sfmta.com/calendar/board-directors-meeting-april-21-2026",
+      "agenda_pdf": "https://www.sfmta.com/reports/4-21-26-mtab-agenda",
+      "item_count": 7,
+      "high_count": 0,
+      "items": [
+        {
+          "item_number": "10.1",
+          "title": "Traffic Modifications",
+          "category": "consent",
+          "tier": "medium",
+          "new": true,
+          "report_url": "https://www.sfmta.com/reports/4-21-26-mtab-item-101-traffic-modifications"
+        },
+        {
+          "item_number": "11",
+          "title": "Job Vacancy Reporting",
+          "category": "regular",
+          "tier": "medium",
+          "new": true,
+          "report_url": "https://www.sfmta.com/reports/4-21-26-mtab-item-11-job-vacancy-reporting"
+        },
+        {
+          "item_number": "12A",
+          "title": "FY2027-FY2031 Capital Improvement Program (CIP)",
+          "category": "regular",
+          "tier": "medium",
+          "new": true,
+          "report_url": "https://www.sfmta.com/reports/4-21-26-mtab-item-12a-fy2027-fy2031-capital-improvement-program-cip"
+        },
+        {
+          "item_number": "12B",
+          "title": "FY26-27 and FY27-28 Consolidated Budget",
+          "category": "regular",
+          "tier": "medium",
+          "new": true,
+          "report_url": "https://www.sfmta.com/reports/4-21-26-mtab-item-12b-fy26-27-and-fy27-28-consolidated-budget"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "url": "https://www.sfmta.com/calendar/board-directors-meeting-may-5-2026",
+      "agenda_pdf": null,
+      "item_count": 0,
+      "high_count": 0,
+      "items": []
+    },
+    {
+      "date": "2026-05-19",
+      "url": "https://www.sfmta.com/calendar/board-directors-meeting-may-19-2026",
+      "agenda_pdf": null,
+      "item_count": 0,
+      "high_count": 0,
+      "items": []
+    },
+    {
+      "date": "2026-06-02",
+      "url": "https://www.sfmta.com/calendar/board-directors-meeting-june-2-2026",
+      "agenda_pdf": null,
+      "item_count": 0,
+      "high_count": 0,
+      "items": []
+    },
+    {
+      "date": "2026-06-16",
+      "url": "https://www.sfmta.com/calendar/board-directors-meeting-june-16-2026",
+      "agenda_pdf": null,
+      "item_count": 0,
+      "high_count": 0,
+      "items": []
+    }
+  ],
+  "311": {
+    "district": 1,
+    "days": 7,
+    "spike_threshold": 5,
+    "total_cases": 808,
+    "prior_total_cases": 891,
+    "categories": [
+      {
+        "service_name": "Parking Enforcement",
+        "category": "Parking Enforcement",
+        "count": 270,
+        "prior_count": 323,
+        "trend": "-16%",
+        "spike": false,
+        "routine": true,
+        "most_recent_address": "2354 CLEMENT ST, SAN FRANCISCO, CA 94121",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003897193",
+            "address": "2354 CLEMENT ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T23:10:42.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.78213675593876",
+            "long": "-122.48473991620712"
+          },
+          {
+            "case_id": "101003897183",
+            "address": "2501 BALBOA ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T23:07:43.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.7761562988381",
+            "long": "-122.48572032898664"
+          },
+          {
+            "case_id": "101003897134",
+            "address": "151 WILLARD ST NORTH, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T22:28:10.000",
+            "status": "Open",
+            "neighborhood": "Lone Mountain",
+            "lat": "37.776645116054354",
+            "long": "-122.45678885306256"
+          },
+          {
+            "case_id": "101003896895",
+            "address": "430 45TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T20:52:34.000",
+            "status": "Closed",
+            "neighborhood": "Sutro Heights",
+            "lat": "37.78042757",
+            "long": "-122.50610031"
+          },
+          {
+            "case_id": "101003896839",
+            "address": "549 19TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T20:38:08.000",
+            "status": "Closed",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.777527620078274",
+            "long": "-122.47835183829923"
+          }
+        ]
+      },
+      {
+        "service_name": "Street and Sidewalk Cleaning",
+        "category": "Street and Sidewalk Cleaning",
+        "count": 252,
+        "prior_count": 245,
+        "trend": "flat",
+        "spike": false,
+        "routine": true,
+        "most_recent_address": "2010 BALBOA ST, SAN FRANCISCO, CA 94121",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003896743",
+            "address": "2010 BALBOA ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T20:06:52.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77654628",
+            "long": "-122.48031424"
+          },
+          {
+            "case_id": "101003896742",
+            "address": "2010 BALBOA ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T20:05:55.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77654628",
+            "long": "-122.48031424"
+          },
+          {
+            "case_id": "101003896287",
+            "address": "431 15TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T17:59:52.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.77983887175496",
+            "long": "-122.47418757854729"
+          },
+          {
+            "case_id": "101003896179",
+            "address": "310 11TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T17:30:17.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78242857459196",
+            "long": "-122.46978191060379"
+          },
+          {
+            "case_id": "101003896172",
+            "address": "330 24TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T17:28:58.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.783324617899744",
+            "long": "-122.4838776513934"
+          }
+        ]
+      },
+      {
+        "service_name": "Graffiti Public",
+        "category": "Graffiti Public",
+        "count": 45,
+        "prior_count": 53,
+        "trend": "-15%",
+        "spike": true,
+        "routine": false,
+        "most_recent_address": "5650 GEARY BLVD, SAN FRANCISCO, CA 94121",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003896150",
+            "address": "5650 GEARY BLVD, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T17:26:21.000",
+            "status": "Closed",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.78050570788733",
+            "long": "-122.48041760176422"
+          },
+          {
+            "case_id": "101003894793",
+            "address": "4143 GEARY BLVD, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T13:07:38.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78094002524385",
+            "long": "-122.46371883898972"
+          },
+          {
+            "case_id": "101003894625",
+            "address": "598 MASONIC AVE, SAN FRANCISCO, CA 94117",
+            "opened": "2026-04-18T12:35:17.000",
+            "status": "Open",
+            "neighborhood": "Lone Mountain",
+            "lat": "37.775931573743165",
+            "long": "-122.44624827057123"
+          },
+          {
+            "case_id": "101003894610",
+            "address": "598 MASONIC AVE, SAN FRANCISCO, CA 94117",
+            "opened": "2026-04-18T12:33:16.000",
+            "status": "Open",
+            "neighborhood": "Lone Mountain",
+            "lat": "37.77594376403707",
+            "long": "-122.44625933468342"
+          },
+          {
+            "case_id": "101003894605",
+            "address": "596 MASONIC AVE, SAN FRANCISCO, CA 94117",
+            "opened": "2026-04-18T12:32:34.000",
+            "status": "Open",
+            "neighborhood": "Lone Mountain",
+            "lat": "37.77596257948676",
+            "long": "-122.44626168161632"
+          }
+        ]
+      },
+      {
+        "service_name": "General Request",
+        "category": "General Request",
+        "count": 44,
+        "prior_count": 57,
+        "trend": "-23%",
+        "spike": false,
+        "routine": true,
+        "most_recent_address": "2790 GOLDEN GATE AVE, SAN FRANCISCO, CA 94118",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003896075",
+            "address": "2790 GOLDEN GATE AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T17:05:57.000",
+            "status": "Open",
+            "neighborhood": "Lone Mountain",
+            "lat": "37.77698731",
+            "long": "-122.45652438"
+          },
+          {
+            "case_id": "101003896061",
+            "address": "382 19TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T17:02:02.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78064241315442",
+            "long": "-122.4782826626284"
+          },
+          {
+            "case_id": "101003895616",
+            "address": "690 44TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T15:25:11.000",
+            "status": "Closed",
+            "neighborhood": "Sutro Heights",
+            "lat": "37.77557381422278",
+            "long": "-122.50474691390993"
+          },
+          {
+            "case_id": "101003893797",
+            "address": "1201 CLEMENT ST, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T10:20:52.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78250977",
+            "long": "-122.47204922"
+          },
+          {
+            "case_id": "101003893068",
+            "address": "875 LA PLAYA, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T08:04:54.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77169166666669",
+            "long": "-122.51004166666665"
+          }
+        ]
+      },
+      {
+        "service_name": "RPD General",
+        "category": "RPD General",
+        "count": 43,
+        "prior_count": 33,
+        "trend": "+30%",
+        "spike": false,
+        "routine": true,
+        "most_recent_address": "8 12TH AVE, SAN FRANCISCO, CA 94118",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003896485",
+            "address": "8 12TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T18:56:17.000",
+            "status": "Open",
+            "neighborhood": "Presidio Terrace",
+            "lat": "37.787113823551586",
+            "long": "-122.4714617650083"
+          },
+          {
+            "case_id": "101003895311",
+            "address": "GGP Arguello Entrance I POI, SAN FRANCISCO, CA 94122",
+            "opened": "2026-04-18T14:34:46.000",
+            "status": "Open",
+            "neighborhood": "Golden Gate Park",
+            "lat": "37.77346561596156",
+            "long": "-122.45842154822422"
+          },
+          {
+            "case_id": "101003895158",
+            "address": "INTERSECTION FULTON ST, FUNSTON AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T14:08:16.000",
+            "status": "Open",
+            "neighborhood": "Golden Gate Park",
+            "lat": "37.7731619838",
+            "long": "-122.4712400538"
+          },
+          {
+            "case_id": "101003895148",
+            "address": "GGP Bison Paddock I POI, SAN FRANCISCO, CA 94122",
+            "opened": "2026-04-18T14:05:59.000",
+            "status": "Open",
+            "neighborhood": "Golden Gate Park",
+            "lat": "37.769934832",
+            "long": "-122.4980652"
+          },
+          {
+            "case_id": "101003894813",
+            "address": "INTERSECTION FULTON ST, 33RD AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T13:10:28.000",
+            "status": "Open",
+            "neighborhood": "Golden Gate Park",
+            "lat": "37.771557513543236",
+            "long": "-122.49268133193254"
+          }
+        ]
+      },
+      {
+        "service_name": "Encampment",
+        "category": "Encampment",
+        "count": 31,
+        "prior_count": 25,
+        "trend": "+24%",
+        "spike": true,
+        "routine": false,
+        "most_recent_address": "654 CLEMENT ST, SAN FRANCISCO, CA 94118",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003897226",
+            "address": "654 CLEMENT ST, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T23:25:51.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78301125",
+            "long": "-122.46639664"
+          },
+          {
+            "case_id": "101003896808",
+            "address": "370 FUNSTON AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T20:26:08.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.7813407813976",
+            "long": "-122.4716711914"
+          },
+          {
+            "case_id": "101003896064",
+            "address": "573 GREAT HWY, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T17:02:28.000",
+            "status": "Open",
+            "neighborhood": "Sutro Heights",
+            "lat": "37.775453333333324",
+            "long": "-122.51182000000003"
+          },
+          {
+            "case_id": "101003893799",
+            "address": "293 4TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T10:21:26.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78323492",
+            "long": "-122.46251628"
+          },
+          {
+            "case_id": "101003891521",
+            "address": "5600 GEARY BLVD, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-17T18:12:31.000",
+            "status": "Closed",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.7806224212087",
+            "long": "-122.47953405639063"
+          }
+        ]
+      },
+      {
+        "service_name": "Street Defect",
+        "category": "Street Defect",
+        "count": 17,
+        "prior_count": 19,
+        "trend": "-11%",
+        "spike": true,
+        "routine": false,
+        "most_recent_address": "4471 GEARY BLVD, SAN FRANCISCO, CA 94118",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003896453",
+            "address": "4471 GEARY BLVD, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T18:48:43.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78074055",
+            "long": "-122.46712744"
+          },
+          {
+            "case_id": "101003894050",
+            "address": "576 17TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T10:53:36.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.77719325",
+            "long": "-122.47576925"
+          },
+          {
+            "case_id": "101003891599",
+            "address": "3857 GEARY BLVD, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-17T18:29:56.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78103561",
+            "long": "-122.4605784"
+          },
+          {
+            "case_id": "101003891038",
+            "address": "318 8TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-17T16:48:53.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78246239",
+            "long": "-122.46646604"
+          },
+          {
+            "case_id": "101003884127",
+            "address": "886 26TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-16T16:23:10.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77282132",
+            "long": "-122.48512451"
+          }
+        ]
+      },
+      {
+        "service_name": "Tree Maintenance",
+        "category": "Tree Maintenance",
+        "count": 15,
+        "prior_count": 20,
+        "trend": "-25%",
+        "spike": true,
+        "routine": false,
+        "most_recent_address": "291 8TH AVE, SAN FRANCISCO, CA 94118",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003897210",
+            "address": "291 8TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T23:19:32.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78306532",
+            "long": "-122.46675597"
+          },
+          {
+            "case_id": "101003896300",
+            "address": "7001 GEARY BLVD, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T18:02:41.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77951539749021",
+            "long": "-122.49453371308326"
+          },
+          {
+            "case_id": "101003895921",
+            "address": "4650 BALBOA ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T16:29:29.000",
+            "status": "Open",
+            "neighborhood": "Sutro Heights",
+            "lat": "37.775292944695046",
+            "long": "-122.50892024682689"
+          },
+          {
+            "case_id": "101003885959",
+            "address": "600 20TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-17T06:44:17.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77641471",
+            "long": "-122.47893716"
+          },
+          {
+            "case_id": "101003885887",
+            "address": "600 20TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-17T06:06:59.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77641471",
+            "long": "-122.47893716"
+          }
+        ]
+      },
+      {
+        "service_name": "Litter Receptacle Maintenance",
+        "category": "Litter Receptacle Maintenance",
+        "count": 12,
+        "prior_count": 9,
+        "trend": "+33%",
+        "spike": false,
+        "routine": true,
+        "most_recent_address": "170 24TH AVE, SAN FRANCISCO, CA 94121",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003895535",
+            "address": "170 24TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T15:08:41.000",
+            "status": "Open",
+            "neighborhood": "Lake Street",
+            "lat": "37.78632809163231",
+            "long": "-122.48411011300203"
+          },
+          {
+            "case_id": "101003894077",
+            "address": "3255 BALBOA ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T10:59:22.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77568600989957",
+            "long": "-122.49393329763328"
+          },
+          {
+            "case_id": "101003893746",
+            "address": "7777 GEARY BLVD, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T10:13:42.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77918164118912",
+            "long": "-122.50256110786603"
+          },
+          {
+            "case_id": "101003891060",
+            "address": "763 4TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-17T16:50:52.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.77449169",
+            "long": "-122.46180158"
+          },
+          {
+            "case_id": "101003888307",
+            "address": "2745 MCALLISTER ST, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-17T11:23:06.000",
+            "status": "Open",
+            "neighborhood": "Lone Mountain",
+            "lat": "37.77536207277254",
+            "long": "-122.45732076466085"
+          }
+        ]
+      },
+      {
+        "service_name": "Sewer",
+        "category": "Sewer",
+        "count": 11,
+        "prior_count": 35,
+        "trend": "-69%",
+        "spike": true,
+        "routine": false,
+        "most_recent_address": "483 22ND AVE, SAN FRANCISCO, CA 94121",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003894984",
+            "address": "483 22ND AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T13:37:42.000",
+            "status": "Closed",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77858354630832",
+            "long": "-122.48162349172952"
+          },
+          {
+            "case_id": "101003891631",
+            "address": "INTERSECTION COOK ST, ANZA ST, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-17T18:37:46.000",
+            "status": "Closed",
+            "neighborhood": "Lone Mountain",
+            "lat": "37.7804928439",
+            "long": "-122.4518690942"
+          },
+          {
+            "case_id": "101003883384",
+            "address": "671 34TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-16T14:46:24.000",
+            "status": "Closed",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77641308",
+            "long": "-122.49428276"
+          },
+          {
+            "case_id": "101003883063",
+            "address": "150 23RD AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-16T14:12:16.000",
+            "status": "Closed",
+            "neighborhood": "Lake Street",
+            "lat": "37.7848967",
+            "long": "-122.48277728"
+          },
+          {
+            "case_id": "101003882931",
+            "address": "1426 CABRILLO ST, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-16T13:57:27.000",
+            "status": "Closed",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.77505713",
+            "long": "-122.47410448"
+          }
+        ]
+      },
+      {
+        "service_name": "Sidewalk and Curb",
+        "category": "Sidewalk and Curb",
+        "count": 9,
+        "prior_count": 9,
+        "trend": "flat",
+        "spike": true,
+        "routine": false,
+        "most_recent_address": "GGP Fuschia Dell I POI, SAN FRANCISCO, CA 94122",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003896118",
+            "address": "GGP Fuschia Dell I POI, SAN FRANCISCO, CA 94122",
+            "opened": "2026-04-18T17:18:36.000",
+            "status": "Closed",
+            "neighborhood": "Golden Gate Park",
+            "lat": "37.773575637192685",
+            "long": "-122.45738317583294"
+          },
+          {
+            "case_id": "101003882547",
+            "address": "INTERSECTION 37TH AVE, UNNAMED 010, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-16T13:17:23.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.78020952366088",
+            "long": "-122.49763394717361"
+          },
+          {
+            "case_id": "101003880684",
+            "address": "195 16TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-16T10:07:01.000",
+            "status": "Closed",
+            "neighborhood": "Lake Street",
+            "lat": "37.78442364369745",
+            "long": "-122.47550223964038"
+          },
+          {
+            "case_id": "101003879221",
+            "address": "880 26TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-16T07:19:46.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77294462614789",
+            "long": "-122.48508330434561"
+          },
+          {
+            "case_id": "101003869232",
+            "address": "1601 LAKE ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-14T14:05:45.000",
+            "status": "Closed",
+            "neighborhood": "Lake Street",
+            "lat": "37.786050727646",
+            "long": "-122.47677553548405"
+          }
+        ]
+      },
+      {
+        "service_name": "Noise",
+        "category": "Noise",
+        "count": 8,
+        "prior_count": 10,
+        "trend": "-20%",
+        "spike": true,
+        "routine": false,
+        "most_recent_address": "840 PARK PRESIDIO BYPASS DR, SAN FRANCISCO, CA 94117",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003894758",
+            "address": "840 PARK PRESIDIO BYPASS DR, SAN FRANCISCO, CA 94117",
+            "opened": "2026-04-18T12:57:08.000",
+            "status": "Open",
+            "neighborhood": "Golden Gate Park",
+            "lat": "37.772318590467584",
+            "long": "-122.4723197614052"
+          },
+          {
+            "case_id": "101003892844",
+            "address": "506 20TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T07:00:55.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77821509871839",
+            "long": "-122.47917037457229"
+          },
+          {
+            "case_id": "101003891278",
+            "address": "660 18TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-17T17:27:28.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.77571683734501",
+            "long": "-122.47668446285441"
+          },
+          {
+            "case_id": "101003872032",
+            "address": "622 10TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-15T04:54:32.000",
+            "status": "Closed",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.776551819755795",
+            "long": "-122.46803610623718"
+          },
+          {
+            "case_id": "101003865414",
+            "address": "6001 GEARY BLVD, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-14T05:47:28.000",
+            "status": "Closed",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77992434",
+            "long": "-122.48391959"
+          }
+        ]
+      },
+      {
+        "service_name": "MTA Parking Traffic Signs Normal Priority",
+        "category": "MTA Parking Traffic Signs Normal Priority",
+        "count": 7,
+        "prior_count": 6,
+        "trend": "+17%",
+        "spike": false,
+        "routine": true,
+        "most_recent_address": "INTERSECTION CALIFORNIA ST, 2ND AVE, SAN FRANCISCO, CA 94118",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003897159",
+            "address": "INTERSECTION CALIFORNIA ST, 2ND AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T22:43:21.000",
+            "status": "Open",
+            "neighborhood": "Presidio Terrace",
+            "lat": "37.785549044003176",
+            "long": "-122.46032484036445"
+          },
+          {
+            "case_id": "101003891071",
+            "address": "757 4TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-17T16:51:52.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.77455656",
+            "long": "-122.46180627"
+          },
+          {
+            "case_id": "101003890133",
+            "address": "2750 FULTON ST, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-17T14:49:52.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.77408992",
+            "long": "-122.46145712"
+          },
+          {
+            "case_id": "101003888611",
+            "address": "2135 CLEMENT ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-17T12:00:56.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.78207443212184",
+            "long": "-122.48216606676577"
+          },
+          {
+            "case_id": "101003878384",
+            "address": "398 PARK PRESIDIO BLVD, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-15T20:08:00.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78067318138628",
+            "long": "-122.47216679155827"
+          }
+        ]
+      },
+      {
+        "service_name": "Graffiti Private",
+        "category": "Graffiti Private",
+        "count": 7,
+        "prior_count": 6,
+        "trend": "+17%",
+        "spike": true,
+        "routine": false,
+        "most_recent_address": "INTERSECTION ARGUELLO BLVD, FULTON ST, SAN FRANCISCO, CA 94117",
+        "most_recent_date": "2026-04-17",
+        "cases": [
+          {
+            "case_id": "101003891889",
+            "address": "INTERSECTION ARGUELLO BLVD, FULTON ST, SAN FRANCISCO, CA 94117",
+            "opened": "2026-04-17T19:41:59.000",
+            "status": "Open",
+            "neighborhood": "Golden Gate Park",
+            "lat": "37.7743087881",
+            "long": "-122.4583711457"
+          },
+          {
+            "case_id": "101003891161",
+            "address": "377 32ND AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-17T17:05:58.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.78212054548788",
+            "long": "-122.49278855986779"
+          },
+          {
+            "case_id": "101003884702",
+            "address": "4801 GEARY BLVD, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-16T18:07:51.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78051286261735",
+            "long": "-122.47098293155432"
+          },
+          {
+            "case_id": "101003877740",
+            "address": "1 EWING TER, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-15T17:51:26.000",
+            "status": "Closed",
+            "neighborhood": "Lone Mountain",
+            "lat": "37.77997797076053",
+            "long": "-122.44714640410385"
+          },
+          {
+            "case_id": "101003870592",
+            "address": "330 CLEMENT ST, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-14T16:44:24.000",
+            "status": "Closed",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78315790136859",
+            "long": "-122.46281495666636"
+          }
+        ]
+      },
+      {
+        "service_name": "Damage Property",
+        "category": "Damage Property",
+        "count": 6,
+        "prior_count": 10,
+        "trend": "-40%",
+        "spike": true,
+        "routine": false,
+        "most_recent_address": "420 STANYAN ST, SAN FRANCISCO, CA 94117",
+        "most_recent_date": "2026-04-17",
+        "cases": [
+          {
+            "case_id": "101003891388",
+            "address": "420 STANYAN ST, SAN FRANCISCO, CA 94117",
+            "opened": "2026-04-17T17:47:52.000",
+            "status": "Open",
+            "neighborhood": "Lone Mountain",
+            "lat": "37.77442188",
+            "long": "-122.45441837"
+          },
+          {
+            "case_id": "101003888793",
+            "address": "INTERSECTION POINT LOBOS AVE, 48TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-17T12:22:08.000",
+            "status": "Open",
+            "neighborhood": "Sutro Heights",
+            "lat": "37.77985099",
+            "long": "-122.5094327805"
+          },
+          {
+            "case_id": "101003882300",
+            "address": "2930 FULTON ST, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-16T12:49:14.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.77325643856449",
+            "long": "-122.46288687053362"
+          },
+          {
+            "case_id": "101003881280",
+            "address": "795 PARK PRESIDIO BLVD, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-16T11:08:01.000",
+            "status": "Closed",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.77328979",
+            "long": "-122.47195841"
+          },
+          {
+            "case_id": "101003874737",
+            "address": "3635 BALBOA ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-15T11:40:30.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77554613",
+            "long": "-122.49795397"
+          }
+        ]
+      },
+      {
+        "service_name": "MTA Parking Traffic Signs High Priority",
+        "category": "MTA Parking Traffic Signs High Priority",
+        "count": 5,
+        "prior_count": 1,
+        "trend": "+400%",
+        "spike": false,
+        "routine": true,
+        "most_recent_address": "INTERSECTION 40TH AVE, CABRILLO ST, SAN FRANCISCO, CA 94121",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003894972",
+            "address": "INTERSECTION 40TH AVE, CABRILLO ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T13:36:20.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77373192064566",
+            "long": "-122.50044382551857"
+          },
+          {
+            "case_id": "101003894717",
+            "address": "4200 CABRILLO ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T12:49:55.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77359695124636",
+            "long": "-122.50367172497589"
+          },
+          {
+            "case_id": "101003894703",
+            "address": "4001 CABRILLO ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T12:48:33.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77363437688032",
+            "long": "-122.5015193129052"
+          },
+          {
+            "case_id": "101003894682",
+            "address": "INTERSECTION CABRILLO ST, 42ND AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T12:45:18.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77366931600815",
+            "long": "-122.5024302396922"
+          },
+          {
+            "case_id": "101003875485",
+            "address": "INTERSECTION CALIFORNIA ST, 23RD AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-15T12:55:16.000",
+            "status": "Closed",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.784000943616945",
+            "long": "-122.4828000189848"
+          }
+        ]
+      },
+      {
+        "service_name": "Streetlights",
+        "category": "Streetlights",
+        "count": 5,
+        "prior_count": 0,
+        "trend": "new",
+        "spike": false,
+        "routine": false,
+        "most_recent_address": "499 BALBOA ST, SAN FRANCISCO, CA 94118",
+        "most_recent_date": "2026-04-17",
+        "cases": [
+          {
+            "case_id": "101003892321",
+            "address": "499 BALBOA ST, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-17T22:18:17.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.77709296382892",
+            "long": "-122.46392417625398"
+          },
+          {
+            "case_id": "101003892067",
+            "address": "834 GREAT HWY, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-17T20:30:06.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77235284634604",
+            "long": "-122.51101431322536"
+          },
+          {
+            "case_id": "101003883035",
+            "address": "325 ARGUELLO BLVD, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-16T14:09:09.000",
+            "status": "Closed",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78459279",
+            "long": "-122.45930202"
+          },
+          {
+            "case_id": "101003871975",
+            "address": "538 34TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-15T02:04:15.000",
+            "status": "Closed",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77884499",
+            "long": "-122.49416161"
+          },
+          {
+            "case_id": "101003871967",
+            "address": "583 35TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-15T01:47:58.000",
+            "status": "Closed",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77803038",
+            "long": "-122.49547488"
+          }
+        ]
+      },
+      {
+        "service_name": "Muni Employee Feedback",
+        "category": "Muni Employee Feedback",
+        "count": 5,
+        "prior_count": 8,
+        "trend": "-38%",
+        "spike": false,
+        "routine": true,
+        "most_recent_address": "INTERSECTION 23RD AVE, GEARY BLVD, SAN FRANCISCO, CA 94121",
+        "most_recent_date": "2026-04-17",
+        "cases": [
+          {
+            "case_id": "101003888781",
+            "address": "INTERSECTION 23RD AVE, GEARY BLVD, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-17T12:21:48.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.7801895092",
+            "long": "-122.4825916563"
+          },
+          {
+            "case_id": "101003885350",
+            "address": "INTERSECTION 6TH AVE, GEARY BLVD, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-16T20:54:48.000",
+            "status": "Closed",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.7810187877",
+            "long": "-122.4642791417"
+          },
+          {
+            "case_id": "101003883990",
+            "address": "INTERSECTION GEARY BLVD, 42ND AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-16T16:04:51.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.7792573212",
+            "long": "-122.5029464817"
+          },
+          {
+            "case_id": "101003868318",
+            "address": "5340 GEARY BLVD, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-14T12:29:58.000",
+            "status": "Closed",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78054890124696",
+            "long": "-122.47666619718073"
+          },
+          {
+            "case_id": "101003862488",
+            "address": "INTERSECTION LA PLAYA, FULTON ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-13T14:17:48.000",
+            "status": "Closed",
+            "neighborhood": "Golden Gate Park",
+            "lat": "37.7713959032",
+            "long": "-122.5098947701"
+          }
+        ]
+      },
+      {
+        "service_name": "Muni Service Feedback",
+        "category": "Muni Service Feedback",
+        "count": 4,
+        "prior_count": 12,
+        "trend": "-67%",
+        "spike": false,
+        "routine": true,
+        "most_recent_address": "380 PARK PRESIDIO BLVD, SAN FRANCISCO, CA 94118",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003895422",
+            "address": "380 PARK PRESIDIO BLVD, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T14:52:45.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78112042823794",
+            "long": "-122.4721978149188"
+          },
+          {
+            "case_id": "101003881543",
+            "address": "INTERSECTION CALIFORNIA ST, 7TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-16T11:33:01.000",
+            "status": "Closed",
+            "neighborhood": "Presidio Terrace",
+            "lat": "37.7848523865",
+            "long": "-122.4656324488"
+          },
+          {
+            "case_id": "101003871303",
+            "address": "3136 FULTON ST, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-14T19:02:50.000",
+            "status": "Closed",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.77333589123376",
+            "long": "-122.46546887844423"
+          },
+          {
+            "case_id": "101003863404",
+            "address": "4201 CALIFORNIA ST, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-13T16:03:50.000",
+            "status": "Closed",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78512630824672",
+            "long": "-122.46269167965548"
+          }
+        ]
+      },
+      {
+        "service_name": "Blocked Street and Sidewalk",
+        "category": "Blocked Street and Sidewalk",
+        "count": 4,
+        "prior_count": 6,
+        "trend": "-33%",
+        "spike": false,
+        "routine": false,
+        "most_recent_address": "195 9TH AVE, SAN FRANCISCO, CA 94118",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003894857",
+            "address": "195 9TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-18T13:15:43.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78488948",
+            "long": "-122.46791878"
+          },
+          {
+            "case_id": "101003872945",
+            "address": "695 23RD AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-15T08:29:51.000",
+            "status": "Open",
+            "neighborhood": "Outer Richmond",
+            "lat": "37.77461332953189",
+            "long": "-122.4824179191924"
+          },
+          {
+            "case_id": "101003869793",
+            "address": "653 44TH AVE, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-14T15:16:32.000",
+            "status": "Closed",
+            "neighborhood": "Sutro Heights",
+            "lat": "37.77624454565204",
+            "long": "-122.50496752560137"
+          },
+          {
+            "case_id": "101003861167",
+            "address": "5454 GEARY BLVD, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-13T12:07:53.000",
+            "status": "Closed",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78058376",
+            "long": "-122.47803527"
+          }
+        ]
+      },
+      {
+        "service_name": "Residential Building",
+        "category": "Residential Building",
+        "count": 2,
+        "prior_count": 4,
+        "trend": "-50%",
+        "spike": false,
+        "routine": false,
+        "most_recent_address": "4340 CALIFORNIA ST, SAN FRANCISCO, CA 94118",
+        "most_recent_date": "2026-04-17",
+        "cases": [
+          {
+            "case_id": "101003888743",
+            "address": "4340 CALIFORNIA ST, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-17T12:18:15.000",
+            "status": "Open",
+            "neighborhood": "Presidio Terrace",
+            "lat": "37.78520338",
+            "long": "-122.46421923"
+          },
+          {
+            "case_id": "101003884941",
+            "address": "4330 GEARY BLVD, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-16T19:05:49.000",
+            "status": "Closed",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78113096",
+            "long": "-122.46592977"
+          }
+        ]
+      },
+      {
+        "service_name": "Water Quality",
+        "category": "Water Quality",
+        "count": 2,
+        "prior_count": 0,
+        "trend": "new",
+        "spike": false,
+        "routine": false,
+        "most_recent_address": "642 9TH AVE, SAN FRANCISCO, CA 94118",
+        "most_recent_date": "2026-04-17",
+        "cases": [
+          {
+            "case_id": "101003888450",
+            "address": "642 9TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-17T11:40:31.000",
+            "status": "Closed",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.77629256",
+            "long": "-122.46700011"
+          },
+          {
+            "case_id": "101003880822",
+            "address": "642 9TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-16T10:20:38.000",
+            "status": "Closed",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.77629256",
+            "long": "-122.46700011"
+          }
+        ]
+      },
+      {
+        "service_name": "Illegal Postings",
+        "category": "Illegal Postings",
+        "count": 2,
+        "prior_count": 0,
+        "trend": "new",
+        "spike": false,
+        "routine": false,
+        "most_recent_address": "596 11TH AVE, SAN FRANCISCO, CA 94118",
+        "most_recent_date": "2026-04-17",
+        "cases": [
+          {
+            "case_id": "101003888340",
+            "address": "596 11TH AVE, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-17T11:27:33.000",
+            "status": "Closed",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.77706848791185",
+            "long": "-122.46925247570127"
+          },
+          {
+            "case_id": "101003877357",
+            "address": "6701 FULTON ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-15T16:36:58.000",
+            "status": "Open",
+            "neighborhood": "Golden Gate Park",
+            "lat": "37.771588094253865",
+            "long": "-122.50363232159786"
+          }
+        ]
+      },
+      {
+        "service_name": "Shared Spaces Request",
+        "category": "Shared Spaces Request",
+        "count": 1,
+        "prior_count": 0,
+        "trend": "new",
+        "spike": false,
+        "routine": false,
+        "most_recent_address": "5501 CALIFORNIA ST, SAN FRANCISCO, CA 94121",
+        "most_recent_date": "2026-04-18",
+        "cases": [
+          {
+            "case_id": "101003894109",
+            "address": "5501 CALIFORNIA ST, SAN FRANCISCO, CA 94121",
+            "opened": "2026-04-18T11:04:42.000",
+            "status": "Open",
+            "neighborhood": "Inner Richmond",
+            "lat": "37.78412588",
+            "long": "-122.47660739"
+          }
+        ]
+      },
+      {
+        "service_name": "Autonomous Vehicle Complaints",
+        "category": "Autonomous Vehicle Complaints",
+        "count": 1,
+        "prior_count": 0,
+        "trend": "new",
+        "spike": false,
+        "routine": false,
+        "most_recent_address": "2414 FULTON ST, SAN FRANCISCO, CA 94118",
+        "most_recent_date": "2026-04-15",
+        "cases": [
+          {
+            "case_id": "101003872013",
+            "address": "2414 FULTON ST, SAN FRANCISCO, CA 94118",
+            "opened": "2026-04-15T04:10:25.000",
+            "status": "Open",
+            "neighborhood": "Lone Mountain",
+            "lat": "37.77461026",
+            "long": "-122.45670132"
+          }
+        ]
+      }
+    ]
+  },
+  "ethics": {
+    "as_of": "2026-04-20T05:10:10Z",
+    "since": "2026-04-13",
+    "notices": [
+      {
+        "title": "Campaign Finance Project to Reinforce Contribution Limits and Ensure Accountability for Violations of City Law",
+        "link": "https://sfethics.org/ethics/2026/04/campaign-finance-project-to-reinforce-contribution-limits-and-ensure-accountability-for-violations-of-city-law.html",
+        "date": "2026-04-17",
+        "categories": [
+          "Current Policy",
+          "Policy"
+        ],
+        "description": "In&#160;early&#160;2026,&#160;the Policy Division&#160;initiated&#160;work on this project to address issues&#160;identified&#160;in recent years, particularly during the 2024 election cycle.&#160;This project is currently in progress.&#160; In&#160;April of 2026, Policy Staff presented the Commissi",
+        "tracked_flags": []
+      },
+      {
+        "title": "Notice of Individual Expenditure Ceiling Adjustment(s) for One or More Publicly Financed Candidates in June 2026 Election \u2013 Supervisor District 4",
+        "link": "https://sfethics.org/ethics/2026/04/notice-of-individual-expenditure-ceiling-adjustments-for-one-or-more-publicly-financed-candidates-in-june-2026-election-supervisor-district-4-2.html",
+        "date": "2026-04-15",
+        "categories": [
+          "News",
+          "Public Finance"
+        ],
+        "description": "April 14, 2026 Based on candidate filings and reported third party expenditures, the Ethics Commission determined today that an adjustment to the Individual Expenditure Ceiling (\u201cIEC\u201d) of one or more [&#8230;]",
+        "tracked_flags": []
+      }
+    ],
+    "lobbyist_contacts": [],
+    "lobbyist_contributions": []
+  },
+  "rent_board": {
+    "body": "Rent Board Commission",
+    "rent_increase_source": "https://www.sf.gov/departments/rent-board",
+    "meetings": [
+      {
+        "title": "May 12, 2026 Rent Board Commission Meeting",
+        "date_str": "12 May 2026",
+        "date": "2026-05-12",
+        "time": "6:00 pm",
+        "location": "25 Van Ness Rm 610, San Francisco, CA 94102",
+        "url": "https://www.sf.gov/meeting--may-12-2026--may-12-2026-rent-board-commission-meeting/",
+        "agenda_pdf": "",
+        "items": [],
+        "cancelled": false
+      }
+    ],
+    "news": [],
+    "sources": {
+      "commission_page": "https://www.sf.gov/departments--rent-board-commission",
+      "events": "https://www.sf.gov/departments--rent-board-commission/events/upcoming",
+      "meeting_dates_2026": "https://www.sf.gov/2026-tentative-rent-board-commission-meeting-dates/"
+    }
+  },
+  "housing_pipeline": [
+    {
+      "record_id": "2025-000212PRJ",
+      "project_name": "3900 GEARY BLVD.",
+      "address": "3900 GEARY BLVD 94118",
+      "description": "The proposed project involves the remodel of an existing restaurant and offices to incorporate a mixed-use conversion. The existing Formula Retail restaurant, Burger King, will remain while the existing office space will be converted into nine residential units. In addition, a 1.5-story, vertical addition with a total of four stories will be constructed to accommodate the new residential units. The proposed project employs SB-423 for streamlined approval and the California State Density Bonus law to increase the allowable unit density by 80% of base density (five units), totaling nine units. The project additionally requests waivers and incentives to achieve the additional units.",
+      "pathway": "State Density Bonus",
+      "streamlined": true,
+      "tier": "STREAMLINED",
+      "status": "Closed - Approval Ltr Issued",
+      "status_changed": true,
+      "previous_status": null,
+      "units_net": 8,
+      "units_affordable": 1,
+      "district": 1,
+      "open_date": "2025-07-07",
+      "close_date": "2025-10-07",
+      "planner": "Jeffrey Horn",
+      "pim_url": "https://sfplanninggis.org/pim?search=2025-000212PRJ",
+      "new": true,
+      "watchlist_match": false,
+      "duplicate_address": false,
+      "block": "1435",
+      "lot": "013B"
+    },
+    {
+      "record_id": "2020-006779PRJ",
+      "project_name": "4200 GEARY BLVD",
+      "address": "4200 GEARY BLVD 94118",
+      "description": "Priority Project per ED 13-01\nDemolition of an existing mortuary and construction of a new 98 unit 100% affordable senior housing building with a ground floor neighborhood commercial space. No parking provided",
+      "pathway": "State Density Bonus",
+      "streamlined": true,
+      "tier": "STREAMLINED",
+      "status": "Closed",
+      "status_changed": true,
+      "previous_status": null,
+      "units_net": 98,
+      "units_affordable": 98,
+      "district": 1,
+      "open_date": "2020-07-21",
+      "close_date": "2021-02-01",
+      "planner": "Matthew Dito",
+      "pim_url": "https://sfplanninggis.org/pim?search=2020-006779PRJ",
+      "new": true,
+      "watchlist_match": false,
+      "duplicate_address": false,
+      "block": "1438",
+      "lot": "016"
+    }
+  ],
+  "hpc": [
+    {
+      "body": "HPC",
+      "date": "Wednesday, May 6, 2026",
+      "hearing_date": "2026-05-06",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-150",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, May 20, 2026",
+      "hearing_date": "2026-05-20",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-152",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, June 3, 2026",
+      "hearing_date": "2026-06-03",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-153",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, June 17, 2026",
+      "hearing_date": "2026-06-17",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-154",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, July 1, 2026",
+      "hearing_date": "2026-07-01",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-155",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, July 15, 2026",
+      "hearing_date": "2026-07-15",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-156",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, August 5, 2026",
+      "hearing_date": "2026-08-05",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-157",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, August 19, 2026",
+      "hearing_date": "2026-08-19",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-158",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, September 2, 2026",
+      "hearing_date": "2026-09-02",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-159",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, September 16, 2026",
+      "hearing_date": "2026-09-16",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-160",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, October 7, 2026",
+      "hearing_date": "2026-10-07",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-161",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, October 21, 2026",
+      "hearing_date": "2026-10-21",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-162",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, November 4, 2026",
+      "hearing_date": "2026-11-04",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-163",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, November 18, 2026",
+      "hearing_date": "2026-11-18",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-164",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, December 2, 2026",
+      "hearing_date": "2026-12-02",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-165",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    },
+    {
+      "body": "HPC",
+      "date": "Wednesday, December 16, 2026",
+      "hearing_date": "2026-12-16",
+      "url": "https://sfplanning.org/event/historic-preservation-commission-166",
+      "pdf_url": null,
+      "cancelled": false,
+      "items": []
+    }
+  ],
+  "rec_park": [
+    {
+      "date": "2026-04-16",
+      "body": "Recreation and Park Commission",
+      "clip_id": "52213",
+      "agenda_url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=52213",
+      "high_count": 0,
+      "medium_count": 10,
+      "items": [
+        {
+          "title": "1b. Budget Analyst report",
+          "tier": "medium",
+          "level": 1
+        },
+        {
+          "title": "2. PRESIDENT'S REPORT",
+          "tier": "medium",
+          "level": 0
+        },
+        {
+          "title": "3. GENERAL MANAGER'S REPORT",
+          "tier": "medium",
+          "level": 0
+        },
+        {
+          "title": "3b. Capital Report",
+          "tier": "medium",
+          "level": 1
+        },
+        {
+          "title": "3e. Park, Recreation and Open Space Advisory Committee Report",
+          "tier": "medium",
+          "level": 1
+        },
+        {
+          "title": "5. CONSENT CALENDAR",
+          "tier": "medium",
+          "level": 0
+        },
+        {
+          "title": "5B. ACCEPTANCE OF GRANTS \nGENERAL CALENDAR",
+          "tier": "medium",
+          "level": 2
+        },
+        {
+          "title": "7. MARINA IMPROVEMENT AND REMEDIATION PROJECT - CONCEPTUAL DESIGN",
+          "tier": "medium",
+          "level": 0
+        },
+        {
+          "title": "8. KOMPAN INC. COOPERATIVE PURCHASING (OMNIA PARTNERS) - CONTRACT AWARD",
+          "tier": "medium",
+          "level": 0
+        },
+        {
+          "title": "9. CROCKER AMAZON BASEBALL AND SOFTBALL FIELDS - GRANT ACCEPTANCE, GRANT AGREEMENT AND NAMING",
+          "tier": "medium",
+          "level": 0
+        }
+      ]
+    }
+  ],
+  "journalism": [
+    {
+      "title": "SF backs away from harm reduction and Housing First",
+      "link": "https://48hills.org/2026/04/sf-backs-away-from-harm-reduction-and-housing-first/",
+      "guid": "https://48hills.org/?p=215765",
+      "pub_date": "Mon, 20 Apr 2026 01:28:56 +0000",
+      "description": "Plus: Fighting back against budget cuts to job training, affordability, and public health. That's The Agenda for April 19-26. \n The post  SF backs away from harm reduction and Housing First  appeared first on  48 hills .",
+      "categories": [
+        "featured",
+        "news + politics",
+        "the agenda"
+      ],
+      "author": "Tim Redmond",
+      "outlet_key": "48_hills",
+      "outlet_name": "48 Hills",
+      "outlets": [
+        "48 Hills"
+      ],
+      "outlet_links": [
+        "https://48hills.org/2026/04/sf-backs-away-from-harm-reduction-and-housing-first/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Lurie forges music, science partnerships with Shanghai on first international trip",
+      "link": "https://sfstandard.com/2026/04/19/sf-mayor-shanghai-china-trip/",
+      "guid": "https://sfstandard.com/2026/04/19/sf-mayor-shanghai-china-trip/",
+      "pub_date": "Sun, 19 Apr 2026 15:00:00 GMT",
+      "description": "Daniel Lurie kicked off his delegation to Shanghai by signing a partnership between the SF Conservatory of Music and its counterpart 6,000 miles away.",
+      "categories": [
+        "news",
+        "china",
+        "daniel lurie",
+        "music",
+        "donald trump",
+        "london breed"
+      ],
+      "author": "Jennifer Wadsworth",
+      "outlet_key": "sf_standard",
+      "outlet_name": "SF Standard",
+      "outlets": [
+        "SF Standard"
+      ],
+      "outlet_links": [
+        "https://sfstandard.com/2026/04/19/sf-mayor-shanghai-china-trip/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Don\u2019t stop the dance",
+      "link": "https://missionlocal.org/2026/04/dont-stop-the-dance/",
+      "guid": "https://missionlocal.org/?p=847101",
+      "pub_date": "Sun, 19 Apr 2026 13:00:00 +0000",
+      "description": "On 24th Street. Photo by Walter Mackins.  \n  Don\u2019t stop the dance",
+      "categories": [
+        "snaps",
+        "mission snaps"
+      ],
+      "author": "Walter Mackins",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/dont-stop-the-dance/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "First time on market: See inside this Olle Lundberg-designed home asking $22.5M",
+      "link": "https://sfstandard.com/2026/04/19/2606-jackson-for-sale/",
+      "guid": "https://sfstandard.com/2026/04/19/2606-jackson-for-sale/",
+      "pub_date": "Sun, 19 Apr 2026 13:00:00 GMT",
+      "description": "The modern Pac Heights property was built 25 years ago by the same architect who designed Larry Ellison\u2019s house.",
+      "categories": [
+        "business",
+        "real estate",
+        "residential real estate",
+        "luxury real estate"
+      ],
+      "author": "Emily Landes",
+      "outlet_key": "sf_standard",
+      "outlet_name": "SF Standard",
+      "outlets": [
+        "SF Standard"
+      ],
+      "outlet_links": [
+        "https://sfstandard.com/2026/04/19/2606-jackson-for-sale/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Steph Curry isn\u2019t done yet, but things won\u2019t be the same",
+      "link": "https://sfstandard.com/2026/04/19/warriors-steph-curry-exit-interview-fading-dynasty/",
+      "guid": "https://sfstandard.com/2026/04/19/warriors-steph-curry-exit-interview-fading-dynasty/",
+      "pub_date": "Sun, 19 Apr 2026 13:00:00 GMT",
+      "description": "After a play-in loss to the Suns, the two-time MVP explained that the Warriors need to reframe the way they approach the season.",
+      "categories": [
+        "sports",
+        "sports",
+        "golden state warriors",
+        "steph curry",
+        "steve kerr",
+        "draymond green"
+      ],
+      "author": "Danny Emerman",
+      "outlet_key": "sf_standard",
+      "outlet_name": "SF Standard",
+      "outlets": [
+        "SF Standard"
+      ],
+      "outlet_links": [
+        "https://sfstandard.com/2026/04/19/warriors-steph-curry-exit-interview-fading-dynasty/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Is Trump blowing up the Presidio? Here\u2019s everything we know about his plans",
+      "link": "https://sfstandard.com/2026/04/19/donald-trump-presidio-firing-board-questions/",
+      "guid": "https://sfstandard.com/2026/04/19/donald-trump-presidio-firing-board-questions/",
+      "pub_date": "Sun, 19 Apr 2026 13:00:00 GMT",
+      "description": "The massacre at the Presidio Trust has San Franciscans wondering what the president wants with one of San Francisco\u2019s crown jewels. We\u2019ve got some answers.",
+      "categories": [
+        "politics",
+        "presidio",
+        "donald trump",
+        "trump vs california"
+      ],
+      "author": "Gabe Greschler",
+      "outlet_key": "sf_standard",
+      "outlet_name": "SF Standard",
+      "outlets": [
+        "SF Standard"
+      ],
+      "outlet_links": [
+        "https://sfstandard.com/2026/04/19/donald-trump-presidio-firing-board-questions/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "How a little-known founder is trying to change Calif. politics \u2014 to the tune of $1 billion",
+      "link": "https://sfstandard.com/2026/04/19/maria-davidson-california-renewal-change-politics/",
+      "guid": "https://sfstandard.com/2026/04/19/maria-davidson-california-renewal-change-politics/",
+      "pub_date": "Sun, 19 Apr 2026 13:00:00 GMT",
+      "description": "You may not have heard of Maria Davidson, but tech investors like Joe Lonsdale and Garry Tan trust her with their political ambitions.",
+      "categories": [
+        "politics",
+        "politics",
+        "garry tan",
+        "tech"
+      ],
+      "author": "Emily Shugerman",
+      "outlet_key": "sf_standard",
+      "outlet_name": "SF Standard",
+      "outlets": [
+        "SF Standard"
+      ],
+      "outlet_links": [
+        "https://sfstandard.com/2026/04/19/maria-davidson-california-renewal-change-politics/"
+      ],
+      "scope": "district"
+    },
+    {
+      "title": "Behind the scenes with Tosh Lupoi: Why Cal\u2019s new football coach was made for this job",
+      "link": "https://sfstandard.com/2026/04/19/scenes-tosh-lupoi-cal-s-new-football-coach-made-job/",
+      "guid": "https://sfstandard.com/2026/04/19/scenes-tosh-lupoi-cal-s-new-football-coach-made-job/",
+      "pub_date": "Sun, 19 Apr 2026 13:00:00 GMT",
+      "description": "Lupoi played alongside Aaron Rodgers and Marshawn Lynch during the Jeff Tedford era in Berkeley. He\u2019s back on campus, but not ready to call this a \u201chomecoming.\u201d",
+      "categories": [
+        "sports",
+        "sports",
+        "uc berkeley"
+      ],
+      "author": "Jane Kenny",
+      "outlet_key": "sf_standard",
+      "outlet_name": "SF Standard",
+      "outlets": [
+        "SF Standard"
+      ],
+      "outlet_links": [
+        "https://sfstandard.com/2026/04/19/scenes-tosh-lupoi-cal-s-new-football-coach-made-job/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Inside the 49ers\u2019 special teams overhaul, and why there\u2019s still room to improve",
+      "link": "https://sfstandard.com/2026/04/19/49ers-special-teams-epa-turnaround-brant-boyer-eddy-pineiro/",
+      "guid": "https://sfstandard.com/2026/04/19/49ers-special-teams-epa-turnaround-brant-boyer-eddy-pineiro/",
+      "pub_date": "Sun, 19 Apr 2026 13:00:00 GMT",
+      "description": "After a last-place finish in 2024, the special teams became an elite unit in 2025. With Eddy Pi\u00f1eiro and Brant Boyer returning, it\u2019s time to take on the Seahawks.",
+      "categories": [
+        "sports",
+        "sports",
+        "san francisco 49ers",
+        "state of the 49ers"
+      ],
+      "author": "David Lombardi",
+      "outlet_key": "sf_standard",
+      "outlet_name": "SF Standard",
+      "outlets": [
+        "SF Standard"
+      ],
+      "outlet_links": [
+        "https://sfstandard.com/2026/04/19/49ers-special-teams-epa-turnaround-brant-boyer-eddy-pineiro/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Plans Approved For 3458 Mount Diablo Boulevard, Lafayette",
+      "link": "https://sfyimby.com/2026/04/plans-approved-for-3458-mount-diablo-boulevard-lafayette.html",
+      "guid": "https://sfyimby.com/?p=45872",
+      "pub_date": "Sun, 19 Apr 2026 12:30:06 +0000",
+      "description": "Plans have been approved for a six-story apartment complex at  3458 Mount Diablo Boulevard  in  Lafayette ,  Contra Costa County . The project is now entitled to add 31 residential units and retail to a corner lot on the eastern end of the suburban city\u2019s commercial core.  Moraga -based Gera Develop",
+      "categories": [
+        "3458 mount diablo boulevard",
+        "ascend architecture",
+        "environmental foresight inc",
+        "gera developments"
+      ],
+      "author": "Andrew Nelson",
+      "outlet_key": "sfyimby",
+      "outlet_name": "SF YIMBY",
+      "outlets": [
+        "SF YIMBY"
+      ],
+      "outlet_links": [
+        "https://sfyimby.com/2026/04/plans-approved-for-3458-mount-diablo-boulevard-lafayette.html"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Meet Doug Rhodes, Clarion Alley\u2019s only open studio artist",
+      "link": "https://missionlocal.org/2026/04/doug-rhodes-clarion-alleys-only-open-studio-artist/",
+      "guid": "https://missionlocal.org/?p=847170",
+      "pub_date": "Sun, 19 Apr 2026 11:00:00 +0000",
+      "description": "Among other projects, Doug Rhodes is currently working on small collages made from prints of his originals. \n  Meet Doug Rhodes, Clarion Alley\u2019s only open studio artist",
+      "categories": [
+        "the arts",
+        "people we meet mission"
+      ],
+      "author": "JL Odom",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/doug-rhodes-clarion-alleys-only-open-studio-artist/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "S.F. activists display 120-foot \u2018End U.S. aid to Israel\u2019 banner on Twin Peaks",
+      "link": "https://missionlocal.org/2026/04/sf-arms-embargo-israel-banner-twin-peaks/",
+      "guid": "https://missionlocal.org/?p=847177",
+      "pub_date": "Sun, 19 Apr 2026 06:55:00 +0000",
+      "description": "Activists said they are \"urging an end to U.S. funding for Israel's killing of over 100,000 Palestinians, Lebanese, and Iranians.\" \n  S.F. activists display 120-foot \u2018End U.S. aid to Israel\u2019 banner on Twin Peaks",
+      "categories": [
+        "government"
+      ],
+      "author": "Joe Rivano Barros",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-arms-embargo-israel-banner-twin-peaks/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Before dawn, SF gathers to remember the earthquake that made it",
+      "link": "https://sfstandard.com/2026/04/18/1906-earthquake-anniversary-sf/",
+      "guid": "https://sfstandard.com/2026/04/18/1906-earthquake-anniversary-sf/",
+      "pub_date": "Sat, 18 Apr 2026 18:15:00 GMT",
+      "description": "Some 120 years after the disaster that killed 3,000 people and destroyed 80% of the city, San Francisco still shows up at 5 a.m. to mark the moment it happened.",
+      "categories": [
+        "news",
+        "culture",
+        "1906 earthquake",
+        "san francisco fire department"
+      ],
+      "author": "Ezra Wallach",
+      "outlet_key": "sf_standard",
+      "outlet_name": "SF Standard",
+      "outlets": [
+        "SF Standard"
+      ],
+      "outlet_links": [
+        "https://sfstandard.com/2026/04/18/1906-earthquake-anniversary-sf/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Karyn Gabriel\u2019s ceramic sculptures ask, \u2018Is beauty important?\u2019",
+      "link": "https://48hills.org/2026/04/karyn-gabriels-ceramic-sculptures-ask-is-beauty-important/",
+      "guid": "https://48hills.org/?p=215746",
+      "pub_date": "Sat, 18 Apr 2026 17:59:33 +0000",
+      "description": "Drawn to the mantra of repetition and the stillness of nature, the Marin artist lets each work 'percolate on its own timeline.' \n The post  Karyn Gabriel\u2019s ceramic sculptures ask, \u2018Is beauty important?\u2019  appeared first on  48 hills .",
+      "categories": [
+        "art",
+        "arts + culture",
+        "culture",
+        "featured"
+      ],
+      "author": "Mary Corbin",
+      "outlet_key": "48_hills",
+      "outlet_name": "48 Hills",
+      "outlets": [
+        "48 Hills"
+      ],
+      "outlet_links": [
+        "https://48hills.org/2026/04/karyn-gabriels-ceramic-sculptures-ask-is-beauty-important/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "How \u2018absurd grunge Cinderella\u2019 Melissa Auf der Maur embraced her wild \u201990s",
+      "link": "https://48hills.org/2026/04/absurd-grunge-cinderella-melissa-auf-der-maur-memoir-90s-hole-smashing-pumpkins/",
+      "guid": "https://48hills.org/?p=215704",
+      "pub_date": "Sat, 18 Apr 2026 15:30:49 +0000",
+      "description": "Hole and Smashing Pumpkins bassist's intense memoir 'Even the Good Girls Will Cry' peels back rock icon mythos  \n The post  How \u2018absurd grunge Cinderella\u2019 Melissa Auf der Maur embraced her wild \u201990s  appeared first on  48 hills .",
+      "categories": [
+        "arts + culture",
+        "culture",
+        "featured",
+        "lit",
+        "music"
+      ],
+      "author": "Joshua Rotter",
+      "outlet_key": "48_hills",
+      "outlet_name": "48 Hills",
+      "outlets": [
+        "48 Hills"
+      ],
+      "outlet_links": [
+        "https://48hills.org/2026/04/absurd-grunge-cinderella-melissa-auf-der-maur-memoir-90s-hole-smashing-pumpkins/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Kawakami: Did Steve Kerr just say goodbye to the Warriors?",
+      "link": "https://sfstandard.com/2026/04/18/kawakami-did-steve-kerr-just-say-goodbye-warriors/",
+      "guid": "https://sfstandard.com/2026/04/18/kawakami-did-steve-kerr-just-say-goodbye-warriors/",
+      "pub_date": "Sat, 18 Apr 2026 14:15:00 GMT",
+      "description": "\u201cThese jobs all have an expiration date,\u201d Kerr said after possibly putting a bow on his 12-year Warriors tenure.",
+      "categories": [
+        "sports",
+        "golden state warriors",
+        "steve kerr",
+        "steph curry",
+        "draymond green"
+      ],
+      "author": "Tim Kawakami",
+      "outlet_key": "sf_standard",
+      "outlet_name": "SF Standard",
+      "outlets": [
+        "SF Standard"
+      ],
+      "outlet_links": [
+        "https://sfstandard.com/2026/04/18/kawakami-did-steve-kerr-just-say-goodbye-warriors/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Police non-emergency number",
+      "link": "https://missionlocal.org/2026/04/police-non-emergency-number/",
+      "guid": "https://missionlocal.org/?p=847097",
+      "pub_date": "Sat, 18 Apr 2026 13:00:00 +0000",
+      "description": "At Hyde and Turk Streets. Photo by Beth Winegarner.  \n  Police non-emergency number",
+      "categories": [
+        "snaps",
+        "tenderloin snaps"
+      ],
+      "author": "Beth Winegarner",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/police-non-emergency-number/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "The Warriors\u2019 season fizzles out with a play-in loss to Suns, tipping off a seismic summer",
+      "link": "https://sfstandard.com/2026/04/18/warriors-eliminated-suns-play-in-steve-kerr-future/",
+      "guid": "https://sfstandard.com/2026/04/18/warriors-eliminated-suns-play-in-steve-kerr-future/",
+      "pub_date": "Sat, 18 Apr 2026 13:00:00 GMT",
+      "description": "Golden State\u2019s season, marred by injuries, ended without a playoff berth. Now the focus shifts to decisions that will dictate the franchise\u2019s future.",
+      "categories": [
+        "sports",
+        "golden state warriors",
+        "steve kerr",
+        "steph curry",
+        "draymond green"
+      ],
+      "author": "Danny Emerman",
+      "outlet_key": "sf_standard",
+      "outlet_name": "SF Standard",
+      "outlets": [
+        "SF Standard"
+      ],
+      "outlet_links": [
+        "https://sfstandard.com/2026/04/18/warriors-eliminated-suns-play-in-steve-kerr-future/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Updated Plans Published For 705 Veterans Boulevard, Redwood City",
+      "link": "https://sfyimby.com/2026/04/updated-plans-published-for-705-veterans-boulevard-redwood-city.html",
+      "guid": "https://sfyimby.com/?p=45908",
+      "pub_date": "Sat, 18 Apr 2026 12:30:30 +0000",
+      "description": "Updated plans have been published for the five-story affordable project at  705 Veterans Boulevard  in  Redwood City ,  San Mateo County . The project is looking to add affordable senior housing just outside of the city\u2019s downtown core.  Hayward -based non-profit developer  Eden Housing  is the proj",
+      "categories": [
+        "705 veterans boulevard",
+        "bar architects & interiors",
+        "eden housing"
+      ],
+      "author": "Andrew Nelson",
+      "outlet_key": "sfyimby",
+      "outlet_name": "SF YIMBY",
+      "outlets": [
+        "SF YIMBY"
+      ],
+      "outlet_links": [
+        "https://sfyimby.com/2026/04/updated-plans-published-for-705-veterans-boulevard-redwood-city.html"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "4805 Mission has been almost finished for nearly a decade. Neighbors want to know why.",
+      "link": "https://missionlocal.org/2026/04/sf-excelsior-mystery-building-4805-mission-street/",
+      "guid": "https://missionlocal.org/?p=847086",
+      "pub_date": "Sat, 18 Apr 2026 12:00:00 +0000",
+      "description": "One of the taller new buildings on the Mission Excelsior corridor is jarringly empty \u2014\u00a0and has been for years \n  4805 Mission has been almost finished for nearly a decade. Neighbors want to know why.",
+      "categories": [
+        "housing",
+        "excelsior",
+        "housing"
+      ],
+      "author": "Xueer Lu",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-excelsior-mystery-building-4805-mission-street/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Driver Runs Red, Hits Cyclist, Speeds Off",
+      "link": "https://sf.streetsblog.org/2026/04/17/mercedes-driver-runs-red-hits-cyclist-speeds-off",
+      "guid": "https://sf.streetsblog.org/?p=488914",
+      "pub_date": "Fri, 17 Apr 2026 22:41:24 +0000",
+      "description": "More evidence that San Francisco drivers are out of control\u2014and that SFMTA must start incorporating concrete into its designs if it wants to reduce crashes \n The post  Driver Runs Red, Hits Cyclist, Speeds Off  appeared first on  Streetsblog San Francisco .",
+      "categories": [
+        "bike lane",
+        "enforcement",
+        "hit-and-run",
+        "protected bike lane",
+        "safety",
+        "promoted"
+      ],
+      "author": "Roger Rudick",
+      "outlet_key": "streetsblog",
+      "outlet_name": "Streetsblog SF",
+      "outlets": [
+        "Streetsblog SF"
+      ],
+      "outlet_links": [
+        "https://sf.streetsblog.org/2026/04/17/mercedes-driver-runs-red-hits-cyclist-speeds-off"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "District 4 candidates name neglected places in the Sunset \u2014 and what they can do",
+      "link": "https://missionlocal.org/2026/04/meet-the-district-4-candidates-neglected-places-sunset/",
+      "guid": "https://missionlocal.org/?p=847029",
+      "pub_date": "Fri, 17 Apr 2026 19:26:27 +0000",
+      "description": "Among the front-runners: bus stops without trash cans, missing trees, and the blocked drains of Sunset Boulevard. \n  District 4 candidates name neglected places in the Sunset \u2014 and what they can do",
+      "categories": [
+        "election coverage",
+        "election 2026",
+        "meet the candidates",
+        "sunset"
+      ],
+      "author": "Junyao Yang",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/meet-the-district-4-candidates-neglected-places-sunset/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Long-awaited trashcans hit S.F. streets, a Tenderloin roadway mural, and more",
+      "link": "https://missionlocal.org/2026/04/sf-tenderloin-buzz-trashcans/",
+      "guid": "https://missionlocal.org/?p=847013",
+      "pub_date": "Fri, 17 Apr 2026 19:00:00 +0000",
+      "description": "In this Tenderloin Buzz: A new Larkin Street event series, a monthly street corner activation, and new \"Slim Silhouette\" trashcans are here. \n  Long-awaited trashcans hit S.F. streets, a Tenderloin roadway mural, and more",
+      "categories": [
+        "business",
+        "community",
+        "business buzz",
+        "tenderloin",
+        "tenderloin buzz"
+      ],
+      "author": "Eleni Balakrishnan",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-tenderloin-buzz-trashcans/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "With Supe Wong absent, District 4 candidates blast \u2018big money\u2019 and mayor\u2019s influence",
+      "link": "https://missionlocal.org/2026/04/sf-sunset-district-4-election-big-money-mayor/",
+      "guid": "https://missionlocal.org/?p=846987",
+      "pub_date": "Fri, 17 Apr 2026 17:46:33 +0000",
+      "description": "Facing some 60 Sunset residents, candidates both stick together and attempt to distinguish themselves at the two-hour forum. \n  With Supe Wong absent, District 4 candidates blast \u2018big money\u2019 and mayor\u2019s influence",
+      "categories": [
+        "election coverage",
+        "elections",
+        "sunset"
+      ],
+      "author": "Junyao Yang",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-sunset-district-4-election-big-money-mayor/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Headlines, April 17",
+      "link": "https://sf.streetsblog.org/2026/04/17/headlines-april-17-3",
+      "guid": "https://sf.streetsblog.org/?p=488950",
+      "pub_date": "Fri, 17 Apr 2026 15:00:58 +0000",
+      "description": "The post  Headlines, April 17  appeared first on  Streetsblog San Francisco .",
+      "categories": [
+        "safety",
+        "today's headlines"
+      ],
+      "author": "Roger Rudick",
+      "outlet_key": "streetsblog",
+      "outlet_name": "Streetsblog SF",
+      "outlets": [
+        "Streetsblog SF",
+        "Streetsblog SF",
+        "Streetsblog SF"
+      ],
+      "outlet_links": [
+        "https://sf.streetsblog.org/2026/04/17/headlines-april-17-3",
+        "https://sf.streetsblog.org/2026/04/16/headlines-april-16-3",
+        "https://sf.streetsblog.org/2026/04/15/headlines-april-15-2"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Under the Stars: Irreversible Entanglements channel peace vibrations",
+      "link": "https://48hills.org/2026/04/under-the-stars-irreversible-entanglements-channel-peace-vibrations/",
+      "guid": "https://48hills.org/?p=215702",
+      "pub_date": "Fri, 17 Apr 2026 13:43:25 +0000",
+      "description": "Plus: DJ Platurn goes shopping, Earth Tongue jams and slithers, another winner from Bar Part Time, more music \n The post  Under the Stars: Irreversible Entanglements channel peace vibrations  appeared first on  48 hills .",
+      "categories": [
+        "arts + culture",
+        "culture",
+        "featured",
+        "music",
+        "music review",
+        "under the stars"
+      ],
+      "author": "John-Paul Shiver",
+      "outlet_key": "48_hills",
+      "outlet_name": "48 Hills",
+      "outlets": [
+        "48 Hills"
+      ],
+      "outlet_links": [
+        "https://48hills.org/2026/04/under-the-stars-irreversible-entanglements-channel-peace-vibrations/"
+      ],
+      "scope": "district"
+    },
+    {
+      "title": "Venenosa",
+      "link": "https://missionlocal.org/2026/04/venenosa/",
+      "guid": "https://missionlocal.org/?p=846941",
+      "pub_date": "Fri, 17 Apr 2026 13:00:00 +0000",
+      "description": "On 15th Street. Photo by Michael Santiago.  \n  Venenosa",
+      "categories": [
+        "snaps",
+        "mission snaps"
+      ],
+      "author": "Michael Santiago",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/venenosa/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Permits Filed for Affordable Development at 2700 International Boulevard in Oakland",
+      "link": "https://sfyimby.com/2026/04/permits-filed-for-affordable-development-at-2700-international-boulevard-in-oakland.html",
+      "guid": "https://sfyimby.com/?p=45978",
+      "pub_date": "Fri, 17 Apr 2026 12:30:45 +0000",
+      "description": "The main building permits were filed for a new six-story affordable housing development located at 2700 International Boulevard in Oakland. The site is being developed by The Unity Council, and will consist of a mixed-use 100% affordable housing in keeping with the non-profit\u2019s model for development",
+      "categories": [
+        "2700 international boulevard",
+        "pyatok",
+        "the unity council"
+      ],
+      "author": "Gabriel Clark-Clough",
+      "outlet_key": "sfyimby",
+      "outlet_name": "SF YIMBY",
+      "outlets": [
+        "SF YIMBY"
+      ],
+      "outlet_links": [
+        "https://sfyimby.com/2026/04/permits-filed-for-affordable-development-at-2700-international-boulevard-in-oakland.html"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Affordable Housing Opens at 811 Pine Street in West Oakland",
+      "link": "https://sfyimby.com/2026/04/affordable-housing-opens-at-811-pine-street-in-west-oakland.html",
+      "guid": "https://sfyimby.com/?p=45969",
+      "pub_date": "Fri, 17 Apr 2026 12:00:12 +0000",
+      "description": "The Phoenix housing development is now opening its doors at 811 Pine Street in Oakland. The property was originally reported on by SF YIMBY under the site\u2019s previous address of 801 Pine Street. However, the site has now been broken down into five distinct buildings, with the 101-unit building at 811",
+      "categories": [
+        "801 pine street",
+        "811 pine street",
+        "allied housing inc",
+        "david baker architects",
+        "east bay asian local development corporation",
+        "lowney architecture",
+        "the phoenix"
+      ],
+      "author": "Gabriel Clark-Clough",
+      "outlet_key": "sfyimby",
+      "outlet_name": "SF YIMBY",
+      "outlets": [
+        "SF YIMBY"
+      ],
+      "outlet_links": [
+        "https://sfyimby.com/2026/04/affordable-housing-opens-at-811-pine-street-in-west-oakland.html"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "What do S.F. congressional candidates think about tech, AI, and crypto?",
+      "link": "https://missionlocal.org/2026/04/sf-congress-connie-chan-saikat-chakrabarti-scott-wiener-tech-ai-crypto/",
+      "guid": "https://missionlocal.org/?p=846637",
+      "pub_date": "Fri, 17 Apr 2026 12:00:00 +0000",
+      "description": "Congress will involve a good deal of tech policy chops, and Mission Local decided to ask the hopefuls how they would approach Silicon Valley. \n  What do S.F. congressional candidates think about tech, AI, and crypto?",
+      "categories": [
+        "election coverage",
+        "connie chan",
+        "election 2026",
+        "saikat chakrabarti",
+        "scott wiener",
+        "tech"
+      ],
+      "author": "Yujie Zhou",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-congress-connie-chan-saikat-chakrabarti-scott-wiener-tech-ai-crypto/"
+      ],
+      "scope": "district"
+    },
+    {
+      "title": "Reduced Plans Filed For 2031 K Street, Sacramento",
+      "link": "https://sfyimby.com/2026/04/reduced-plans-filed-for-2031-k-street-sacramento.html",
+      "guid": "https://sfyimby.com/?p=45952",
+      "pub_date": "Fri, 17 Apr 2026 11:30:30 +0000",
+      "description": "Reduced plans have been filed for the corner lot at  2031 K Street  in  Midtown ,  Sacramento . The updated proposal, dubbed 21K Apartments, looks to produce just a few dozen units, a significant reduction from the nearly three-hundred-unit application filed a few years ago. The property is currentl",
+      "categories": [
+        "2031 k street",
+        "turton commercial real estate"
+      ],
+      "author": "Andrew Nelson",
+      "outlet_key": "sfyimby",
+      "outlet_name": "SF YIMBY",
+      "outlets": [
+        "SF YIMBY"
+      ],
+      "outlet_links": [
+        "https://sfyimby.com/2026/04/reduced-plans-filed-for-2031-k-street-sacramento.html"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Dannielle Spillman, SoMa hit-and-run victim, was a grandma and a rock star",
+      "link": "https://missionlocal.org/2026/04/dannielle-spillman-was-a-grandma-and-a-rockstar/",
+      "guid": "https://missionlocal.org/?p=846948",
+      "pub_date": "Fri, 17 Apr 2026 11:00:00 +0000",
+      "description": "Dannielle Spillman died on Monday afternoon in a hit-an-run incident near SoMa. Her friends remember her as kind, loving and generous woman. \n  Dannielle Spillman, SoMa hit-and-run victim, was a grandma and a rock star",
+      "categories": [
+        "community",
+        "obituary",
+        "soma",
+        "south van ness avenue"
+      ],
+      "author": "Oscar Palma",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/dannielle-spillman-was-a-grandma-and-a-rockstar/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Friday Video(s): Kidical Mass, Night-Biking in Tokyo, and More",
+      "link": "https://usa.streetsblog.org/2026/04/17/friday-videos-kidical-mass-night-biking-in-tokyo-and-more",
+      "guid": "https://usa.streetsblog.org/?p=289664",
+      "pub_date": "Fri, 17 Apr 2026 04:03:00 +0000",
+      "description": "There were great urbanism-adjacent YouTube videos for every taste this week; here are six of our favorites. \n The post  Friday Video(s): Kidical Mass, Night-Biking in Tokyo, and More  appeared first on  Streetsblog San Francisco .",
+      "categories": [
+        "friday video",
+        "safety"
+      ],
+      "author": "Streetsblog",
+      "outlet_key": "streetsblog",
+      "outlet_name": "Streetsblog SF",
+      "outlets": [
+        "Streetsblog SF"
+      ],
+      "outlet_links": [
+        "https://usa.streetsblog.org/2026/04/17/friday-videos-kidical-mass-night-biking-in-tokyo-and-more"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "The best and worst of CA housing policy, on display at UCLA conference",
+      "link": "https://48hills.org/2026/04/the-best-and-worst-of-ca-housing-policy-on-display-at-ucla-conference/",
+      "guid": "https://48hills.org/?p=215683",
+      "pub_date": "Thu, 16 Apr 2026 23:14:45 +0000",
+      "description": "Some rational discussion based on facts, and some Yimby presentations with no facts \n The post  The best and worst of CA housing policy, on display at UCLA conference  appeared first on  48 hills .",
+      "categories": [
+        "featured",
+        "housing",
+        "news + politics"
+      ],
+      "author": "Tim Redmond",
+      "outlet_key": "48_hills",
+      "outlet_name": "48 Hills",
+      "outlets": [
+        "48 Hills"
+      ],
+      "outlet_links": [
+        "https://48hills.org/2026/04/the-best-and-worst-of-ca-housing-policy-on-display-at-ucla-conference/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Jay Cheng resigns as head of wealthy S.F. political pressure group",
+      "link": "https://missionlocal.org/2026/04/sf-jay-cheng-neighbors-for-a-better-san-francisco/",
+      "guid": "https://missionlocal.org/?p=846911",
+      "pub_date": "Thu, 16 Apr 2026 23:10:45 +0000",
+      "description": "The head of Neighbors for a Better San Francisco, one of the city's wealthiest political pressure groups, is out. \n  Jay Cheng resigns as head of wealthy S.F. political pressure group",
+      "categories": [
+        "community"
+      ],
+      "author": "Io Yeh Gilman and Joe Rivano Barros",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-jay-cheng-neighbors-for-a-better-san-francisco/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Mayor Gloria\u2019s Budget Has Deep Cuts for Safety and Bicycle Program for the San Diego Department of Transportation",
+      "link": "https://cal.streetsblog.org/2026/04/16/mayor-glorias-budget-has-deep-cuts-for-safety-and-bicycle-program-for-the-san-diego-department-of-transportation",
+      "guid": "https://cal.streetsblog.org/?p=74517",
+      "pub_date": "Thu, 16 Apr 2026 23:08:45 +0000",
+      "description": "Gloria when running for re-election in 2024, \"Even in a difficult budget year we still put good money towards our Vision Zero plans.\u201d Gloria's 2026 budget: Elimination of funding for the multi-modal team at SDDOT. \nThe post Mayor Gloria\u2019s Budget Has Deep Cuts for Safety and Bicycle Program for the S",
+      "categories": [
+        "circulate san diego",
+        "safety",
+        "san diego"
+      ],
+      "author": "",
+      "outlet_key": "streetsblog",
+      "outlet_name": "Streetsblog SF",
+      "outlets": [
+        "Streetsblog SF"
+      ],
+      "outlet_links": [
+        "https://cal.streetsblog.org/2026/04/16/mayor-glorias-budget-has-deep-cuts-for-safety-and-bicycle-program-for-the-san-diego-department-of-transportation"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Crocker Amazon turf war heads to S.F. supes",
+      "link": "https://missionlocal.org/2026/04/sf-crocker-amazon-giants-28-million-grant/",
+      "guid": "https://missionlocal.org/?p=846878",
+      "pub_date": "Thu, 16 Apr 2026 22:00:09 +0000",
+      "description": "Rec and Park commission unanimously approves to recommend the Board of Supervisors accept ballpark renovation grant from SF Giants. \n  Crocker Amazon turf war heads to S.F. supes",
+      "categories": [
+        "government",
+        "excelsior",
+        "parks"
+      ],
+      "author": "Xueer Lu",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-crocker-amazon-giants-28-million-grant/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Hundreds rally against health care cuts",
+      "link": "https://48hills.org/2026/04/hundreds-rally-against-health-care-cuts/",
+      "guid": "https://48hills.org/?p=215693",
+      "pub_date": "Thu, 16 Apr 2026 21:27:00 +0000",
+      "description": "Layoffs and service reductions will harm the city's most vulnerable residents \n The post  Hundreds rally against health care cuts  appeared first on  48 hills .",
+      "categories": [
+        "featured",
+        "labor",
+        "news + politics"
+      ],
+      "author": "Serena Finney",
+      "outlet_key": "48_hills",
+      "outlet_name": "48 Hills",
+      "outlets": [
+        "48 Hills"
+      ],
+      "outlet_links": [
+        "https://48hills.org/2026/04/hundreds-rally-against-health-care-cuts/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "AI boom is city\u2019s weirdest tech boom, says S.F.\u2019s chief economist",
+      "link": "https://missionlocal.org/2026/04/ai-boom-controller-economist-egan-wagner/",
+      "guid": "https://missionlocal.org/?p=846866",
+      "pub_date": "Thu, 16 Apr 2026 21:00:50 +0000",
+      "description": "San Francisco controller Greg Wagner and chief economist Ted Egan get into the numbers with Mission Local reporter Io Yeh Gilman. \n  AI boom is city\u2019s weirdest tech boom, says S.F.\u2019s chief economist",
+      "categories": [
+        "government",
+        "government"
+      ],
+      "author": "Yujie Zhou",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/ai-boom-controller-economist-egan-wagner/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Sunset Dunes opponents appeal S.F. court decision to keep Great Highway a park",
+      "link": "https://missionlocal.org/2026/04/sf-great-highway-lawsuit-appeal-sunset-dunes/",
+      "guid": "https://missionlocal.org/?p=846826",
+      "pub_date": "Thu, 16 Apr 2026 19:06:28 +0000",
+      "description": "Their first four arguments were tossed out in court back in January, but Sunset residents are back with a new one: CEQA.  \n  Sunset Dunes opponents appeal S.F. court decision to keep Great Highway a park",
+      "categories": [
+        "community",
+        "elections",
+        "parks",
+        "sunset"
+      ],
+      "author": "Junyao Yang",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-great-highway-lawsuit-appeal-sunset-dunes/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Mission Buzz: New murals coming to Wiese, pop-ups join forces and El Faro for sale",
+      "link": "https://missionlocal.org/2026/04/mission-buzz-pop-ups-join-forces-and-murals-coming-to-wiese-street/",
+      "guid": "https://missionlocal.org/?p=846646",
+      "pub_date": "Thu, 16 Apr 2026 19:02:34 +0000",
+      "description": "Friendship House will train 20 people in environmental literacy and certify them as environmental specialists. Also, El Faro is up for sale. \n  Mission Buzz: New murals coming to Wiese, pop-ups join forces and El Faro for sale",
+      "categories": [
+        "business",
+        "16th street",
+        "folsom street",
+        "mission buzz",
+        "mission street"
+      ],
+      "author": "Oscar Palma",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/mission-buzz-pop-ups-join-forces-and-murals-coming-to-wiese-street/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Saikat Chakrabarti spends $5M running for Congress. It\u2019s just a down payment.",
+      "link": "https://missionlocal.org/2026/04/sf-congress-fundraising-scott-wiener-saikat-chakrabarti-connie-chan/",
+      "guid": "https://missionlocal.org/?p=846785",
+      "pub_date": "Thu, 16 Apr 2026 16:31:18 +0000",
+      "description": "Scott Wiener leads direct fundraising with $3.5 million. Connie Chan trails far behind her competitors with $459,000 raised. \n  Saikat Chakrabarti spends $5M running for Congress. It\u2019s just a down payment.",
+      "categories": [
+        "election coverage",
+        "connie chan",
+        "election 2026",
+        "saikat chakrabarti",
+        "scott wiener"
+      ],
+      "author": "Kelly Waldron, Io Yeh Gilman and Yujie Zhou",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-congress-fundraising-scott-wiener-saikat-chakrabarti-connie-chan/"
+      ],
+      "scope": "district"
+    },
+    {
+      "title": "Talking Headways Podcast: Second-Hand E-Bikes Can Be The Way Forward",
+      "link": "https://usa.streetsblog.org/2026/04/16/talking-headways-podcast-second-hand-e-bikes-can-be-the-way-forward",
+      "guid": "https://usa.streetsblog.org/?p=289622",
+      "pub_date": "Thu, 16 Apr 2026 14:00:00 +0000",
+      "description": "Upway is helping people, even AOC, get an e-bike. \n The post  Talking Headways Podcast: Second-Hand E-Bikes Can Be The Way Forward  appeared first on  Streetsblog San Francisco .",
+      "categories": [
+        "e-bikes",
+        "ebikes",
+        "electric bikes",
+        "podcast",
+        "podcasts",
+        "safety",
+        "talking headways podcast",
+        "transportation policy"
+      ],
+      "author": "Jeff Wood",
+      "outlet_key": "streetsblog",
+      "outlet_name": "Streetsblog SF",
+      "outlets": [
+        "Streetsblog SF"
+      ],
+      "outlet_links": [
+        "https://usa.streetsblog.org/2026/04/16/talking-headways-podcast-second-hand-e-bikes-can-be-the-way-forward"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Tell your friends",
+      "link": "https://missionlocal.org/2026/04/tell-your-friends/",
+      "guid": "https://missionlocal.org/?p=830090",
+      "pub_date": "Thu, 16 Apr 2026 13:00:00 +0000",
+      "description": "At San Francisco Public Library, the Richmond branch. Photo by Junyao Yang.  \n  Tell your friends",
+      "categories": [
+        "snaps",
+        "richmond snaps"
+      ],
+      "author": "Junyao Yang",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/tell-your-friends/"
+      ],
+      "scope": "district"
+    },
+    {
+      "title": "\u2018Moderates\u2019 helped Bilal Mahmood oust S.F.\u2019s leftiest supe. Now, some say he\u2019s too progressive.",
+      "link": "https://missionlocal.org/2026/04/sf-moderates-bilal-mahmood-oust-leftiest-supe/",
+      "guid": "https://missionlocal.org/?p=846647",
+      "pub_date": "Thu, 16 Apr 2026 12:00:00 +0000",
+      "description": "Bilal Mahmood\u2019s support for a tax on companies with highly paid CEOs has some in the C-suite mad. \n  \u2018Moderates\u2019 helped Bilal Mahmood oust S.F.\u2019s leftiest supe. Now, some say he\u2019s too progressive.",
+      "categories": [
+        "government",
+        "bilal mahmood",
+        "district 5",
+        "elections",
+        "tenderloin"
+      ],
+      "author": "Eleni Balakrishnan",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-moderates-bilal-mahmood-oust-leftiest-supe/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Don\u2019t you dare cut our city internships, say S.F. teens",
+      "link": "https://missionlocal.org/2026/04/dont-you-dare-cut-our-city-internships-say-city-teens/",
+      "guid": "https://missionlocal.org/?p=846653",
+      "pub_date": "Thu, 16 Apr 2026 04:05:11 +0000",
+      "description": "San Francisco high schoolers protested proposed cuts that would eliminate more than 320 paid internships for low-income youth. \n  Don\u2019t you dare cut our city internships, say S.F. teens",
+      "categories": [
+        "government",
+        "budget"
+      ],
+      "author": "Clara-Sophia Daly",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/dont-you-dare-cut-our-city-internships-say-city-teens/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Florida Town Gives New Residents Free Golf Carts to Replace Their Cars",
+      "link": "https://usa.streetsblog.org/2026/04/16/this-florida-town-is-buying-residents-golf-carts-to-replace-their-cars",
+      "guid": "https://usa.streetsblog.org/?p=289602",
+      "pub_date": "Thu, 16 Apr 2026 04:02:00 +0000",
+      "description": "...and recording their highest sales numbers ever. \n The post  Florida Town Gives New Residents Free Golf Carts to Replace Their Cars  appeared first on  Streetsblog San Francisco .",
+      "categories": [
+        "communities",
+        "florida",
+        "minimobility",
+        "safety"
+      ],
+      "author": "Kea Wilson",
+      "outlet_key": "streetsblog",
+      "outlet_name": "Streetsblog SF",
+      "outlets": [
+        "Streetsblog SF"
+      ],
+      "outlet_links": [
+        "https://usa.streetsblog.org/2026/04/16/this-florida-town-is-buying-residents-golf-carts-to-replace-their-cars"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Commentary: Is a Transporter Bridge the  100-Year-Old Solution for the Estuary Crossing We\u2019ve all been Looking for?",
+      "link": "https://sf.streetsblog.org/2026/04/15/commentary-is-a-transporter-bridge-the-100-year-old-solution-for-the-estuary-crossing-weve-all-been-looking-for",
+      "guid": "https://sf.streetsblog.org/?p=488808",
+      "pub_date": "Thu, 16 Apr 2026 00:19:08 +0000",
+      "description": "A kooky but real technology called a \"transporter bridge\" may solve Western Alameda's \"you can't get there from here\" issue for cyclists and pedestrians. Not only that, it could become a major attraction for the Bay Area \n The post  Commentary: Is a Transporter Bridge the  100-Year-Old Solution for ",
+      "categories": [
+        "alameda",
+        "newsletter",
+        "safety",
+        "promoted"
+      ],
+      "author": "Roger Rudick",
+      "outlet_key": "streetsblog",
+      "outlet_name": "Streetsblog SF",
+      "outlets": [
+        "Streetsblog SF"
+      ],
+      "outlet_links": [
+        "https://sf.streetsblog.org/2026/04/15/commentary-is-a-transporter-bridge-the-100-year-old-solution-for-the-estuary-crossing-weve-all-been-looking-for"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Meet the S.F. school board candidates: Do you support dipping into reserves?",
+      "link": "https://missionlocal.org/2026/04/sf-school-board-meet-the-candidates-reserves/",
+      "guid": "https://missionlocal.org/?p=846614",
+      "pub_date": "Wed, 15 Apr 2026 21:40:17 +0000",
+      "description": "Despite receiving the coveted endorsement of the teachers union, union pick Virginia Cheung diverges on key issue.  \n  Meet the S.F. school board candidates: Do you support dipping into reserves?",
+      "categories": [
+        "education",
+        "sfusd"
+      ],
+      "author": "Marina Newman",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-school-board-meet-the-candidates-reserves/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Puff, puff \u2026 past: S.F. supervisor proposes ban on smoking in outdoor patios",
+      "link": "https://missionlocal.org/2026/04/bar-patio-smoking-ban/",
+      "guid": "https://missionlocal.org/?p=846594",
+      "pub_date": "Wed, 15 Apr 2026 19:25:55 +0000",
+      "description": "An ordinance to ban smoking from outdoor patios at bars is currently under review by the board of supervisors. Time for a smoke break? \n  Puff, puff \u2026 past: S.F. supervisor proposes ban on smoking in outdoor patios",
+      "categories": [
+        "business",
+        "board of supervisors",
+        "city hall",
+        "mission",
+        "richmond",
+        "sunset"
+      ],
+      "author": "Nicholas David",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/bar-patio-smoking-ban/"
+      ],
+      "scope": "district"
+    },
+    {
+      "title": "SFPD police chief and watchdog to be evaluated following Mission Local reporting",
+      "link": "https://missionlocal.org/2026/04/sfpd-police-chief-watchdog-evaluation/",
+      "guid": "https://missionlocal.org/?p=846590",
+      "pub_date": "Wed, 15 Apr 2026 18:47:20 +0000",
+      "description": "Mission Local revealed that the San Francisco police chief and the city\u2019s police watchdog haven't been reviewed in nearly 10 years. \n  SFPD police chief and watchdog to be evaluated following Mission Local reporting",
+      "categories": [
+        "covering the police",
+        "department of police accountability",
+        "sfpd"
+      ],
+      "author": "Eleni Balakrishnan",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sfpd-police-chief-watchdog-evaluation/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Live Shots: Lamb of God took the Masonic \u2018Into Oblivion\u2019",
+      "link": "https://48hills.org/2026/04/live-shots-lamb-of-god-took-the-masonic-into-oblivion/",
+      "guid": "https://48hills.org/?p=215646",
+      "pub_date": "Wed, 15 Apr 2026 14:19:58 +0000",
+      "description": "Virginia heavy metal legends' full-throttle show transformed venue onto vortex of cathartic aggression.  \n The post  Live Shots: Lamb of God took the Masonic \u2018Into Oblivion\u2019  appeared first on  48 hills .",
+      "categories": [
+        "arts + culture",
+        "culture",
+        "featured",
+        "live shots",
+        "music"
+      ],
+      "author": "D.A. Mission",
+      "outlet_key": "48_hills",
+      "outlet_name": "48 Hills",
+      "outlets": [
+        "48 Hills"
+      ],
+      "outlet_links": [
+        "https://48hills.org/2026/04/live-shots-lamb-of-god-took-the-masonic-into-oblivion/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Drama Masks: Of tyrannical kings and dancing kilts",
+      "link": "https://48hills.org/2026/04/drama-masks-of-tyrannical-kings-and-dancing-kilts/",
+      "guid": "https://48hills.org/?p=215639",
+      "pub_date": "Wed, 15 Apr 2026 13:26:30 +0000",
+      "description": "SF Ballet's 'La Sylphyde' goads us to run to the woods; NCTC's 'how to make an American son' picks at the myth of meritocracy \n The post  Drama Masks: Of tyrannical kings and dancing kilts  appeared first on  48 hills .",
+      "categories": [
+        "arts + culture",
+        "culture",
+        "dance",
+        "drama masks",
+        "featured",
+        "onstage",
+        "performance",
+        "stage review"
+      ],
+      "author": "Charles Lewis III",
+      "outlet_key": "48_hills",
+      "outlet_name": "48 Hills",
+      "outlets": [
+        "48 Hills"
+      ],
+      "outlet_links": [
+        "https://48hills.org/2026/04/drama-masks-of-tyrannical-kings-and-dancing-kilts/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "This is a sign",
+      "link": "https://missionlocal.org/2026/04/this-is-a-sign/",
+      "guid": "https://missionlocal.org/?p=846522",
+      "pub_date": "Wed, 15 Apr 2026 13:00:00 +0000",
+      "description": "At Ellis and Larkin Streets. Photo by B\u00e9atrice Valli\u00e8res.  \n  This is a sign",
+      "categories": [
+        "snaps",
+        "tenderloin snaps"
+      ],
+      "author": "B\u00e9atrice Valli\u00e8res",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/this-is-a-sign/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "SFMTA is cracking down on sidewalk parking. In Bayview, it\u2019s coming with cops",
+      "link": "https://missionlocal.org/2026/04/sf-bayview-parking-crackdown-police/",
+      "guid": "https://missionlocal.org/?p=846553",
+      "pub_date": "Wed, 15 Apr 2026 12:00:00 +0000",
+      "description": "San Francisco is levying $108 tickets for sidewalk parking, but also for cars sticking out of the driveway. Residents are confused and angry.  \n  SFMTA is cracking down on sidewalk parking. In Bayview, it\u2019s coming with cops",
+      "categories": [
+        "covering the police",
+        "bayview"
+      ],
+      "author": "Marina Newman",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-bayview-parking-crackdown-police/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Q&A: \u2018Democracy Now!\u2019 host Amy Goodman urges S.F. residents to \u2018Steal This Story, Please!\u2019",
+      "link": "https://missionlocal.org/2026/04/amy-goodman-democracy-now-steal-this-story-please/",
+      "guid": "https://missionlocal.org/?p=846419",
+      "pub_date": "Wed, 15 Apr 2026 11:20:00 +0000",
+      "description": "Documentary marking 30th year of \u2018Democracy Now!\u2019 hits the Roxie Theater for a weeklong run starting April 17 \n  Q&A: \u2018Democracy Now!\u2019 host Amy Goodman urges S.F. residents to \u2018Steal This Story, Please!\u2019",
+      "categories": [
+        "the arts"
+      ],
+      "author": "Claire Wu",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/amy-goodman-democracy-now-steal-this-story-please/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Where the Hottest Blocks in Your City Are \u2014 And How To Cool Them Down",
+      "link": "https://usa.streetsblog.org/2026/04/15/where-the-hottest-blocks-in-your-city-are-and-how-to-cool-them-down",
+      "guid": "https://usa.streetsblog.org/?p=289566",
+      "pub_date": "Wed, 15 Apr 2026 04:32:19 +0000",
+      "description": "A cutting-edge tool is helping city leaders identify where they most badly need street trees, bus shelters, and more. \n The post  Where the Hottest Blocks in Your City Are \u2014 And How To Cool Them Down  appeared first on  Streetsblog San Francisco .",
+      "categories": [
+        "heat resilience",
+        "heat waves",
+        "heatwaves",
+        "safety",
+        "urban heat islands",
+        "weather"
+      ],
+      "author": "Kea Wilson",
+      "outlet_key": "streetsblog",
+      "outlet_name": "Streetsblog SF",
+      "outlets": [
+        "Streetsblog SF"
+      ],
+      "outlet_links": [
+        "https://usa.streetsblog.org/2026/04/15/where-the-hottest-blocks-in-your-city-are-and-how-to-cool-them-down"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Screen Grabs: In the trenches of democracy with Amy Goodman",
+      "link": "https://48hills.org/2026/04/screen-grabs-in-the-trenches-of-democracy-with-amy-goodman/",
+      "guid": "https://48hills.org/?p=215619",
+      "pub_date": "Wed, 15 Apr 2026 00:28:05 +0000",
+      "description": "Bracing 'Steal This Story, Please!' Plus: Soderbergh's intelligent 'The Christophers,' biting 'Continental '25,' spectral 'Dry Leaf'  \n The post  Screen Grabs: In the trenches of democracy with Amy Goodman  appeared first on  48 hills .",
+      "categories": [
+        "arts + culture",
+        "culture",
+        "featured",
+        "movie reviews",
+        "movies",
+        "screen grabs"
+      ],
+      "author": "Dennis Harvey",
+      "outlet_key": "48_hills",
+      "outlet_name": "48 Hills",
+      "outlets": [
+        "48 Hills"
+      ],
+      "outlet_links": [
+        "https://48hills.org/2026/04/screen-grabs-in-the-trenches-of-democracy-with-amy-goodman/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "What the new Chakrabarti poll really shows",
+      "link": "https://48hills.org/2026/04/what-the-new-chakrabarti-poll-really-shows/",
+      "guid": "https://48hills.org/?p=215621",
+      "pub_date": "Tue, 14 Apr 2026 23:42:15 +0000",
+      "description": "The real question is not just percentage\u2014it's who votes \n The post  What the new Chakrabarti poll really shows  appeared first on  48 hills .",
+      "categories": [
+        "campaign trail",
+        "featured",
+        "news + politics",
+        "uncategorized"
+      ],
+      "author": "Tim Redmond",
+      "outlet_key": "48_hills",
+      "outlet_name": "48 Hills",
+      "outlets": [
+        "48 Hills"
+      ],
+      "outlet_links": [
+        "https://48hills.org/2026/04/what-the-new-chakrabarti-poll-really-shows/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "MAGA WhatsApp co-founder gives $250K to pro-Lurie PAC",
+      "link": "https://missionlocal.org/2026/04/sf-jan-koum-daniel-lurie-campaign-finance/",
+      "guid": "https://missionlocal.org/?p=846446",
+      "pub_date": "Tue, 14 Apr 2026 20:54:10 +0000",
+      "description": "Jan Koum, WhatsApp cofounder and MAGA donor, gives a quarter million to a Lurie-linked PAC spending on the mayor's priorities. \n  MAGA WhatsApp co-founder gives $250K to pro-Lurie PAC",
+      "categories": [
+        "election coverage",
+        "daniel lurie",
+        "election 2026"
+      ],
+      "author": "Joe Rivano Barros",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-jan-koum-daniel-lurie-campaign-finance/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "Meet the District 2 candidates: How should SFUSD students be assigned to schools?",
+      "link": "https://missionlocal.org/2026/04/sf-district-2-candidates-sherrill-brooke-sfusd-assignments/",
+      "guid": "https://missionlocal.org/?p=846387",
+      "pub_date": "Tue, 14 Apr 2026 19:00:00 +0000",
+      "description": "For the past 24 years, SFUSD has used a lottery system to assign students to schools. Is it time for a change? \n  Meet the District 2 candidates: How should SFUSD students be assigned to schools?",
+      "categories": [
+        "election coverage",
+        "district 2",
+        "election 2026",
+        "stephen sherrill"
+      ],
+      "author": "Io Yeh Gilman",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-district-2-candidates-sherrill-brooke-sfusd-assignments/"
+      ],
+      "scope": "district"
+    },
+    {
+      "title": "Best Collateral",
+      "link": "https://missionlocal.org/2026/04/best-collateral/",
+      "guid": "https://missionlocal.org/?p=845894",
+      "pub_date": "Tue, 14 Apr 2026 13:00:00 +0000",
+      "description": "On Mission Street. Photo by Angel Mayorga.  \n  Best Collateral",
+      "categories": [
+        "snaps",
+        "mission snaps"
+      ],
+      "author": "Angel Mayorga",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/best-collateral/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "These billionaires were against Daniel Lurie. Now they\u2019re for him\u2014to the tune of $4 million.",
+      "link": "https://missionlocal.org/2026/04/sf-money-donors-june-november-election/",
+      "guid": "https://missionlocal.org/?p=846317",
+      "pub_date": "Tue, 14 Apr 2026 13:00:00 +0000",
+      "description": "Michael Moritz and Chris Larsen were on opposite sides of 2024 mayor\u2019s race and sought to defeat Daniel Lurie. Now, they're bankrolling his agenda.  \n  These billionaires were against Daniel Lurie. Now they\u2019re for him\u2014to the tune of $4 million.",
+      "categories": [
+        "government",
+        "campaign finance",
+        "politics"
+      ],
+      "author": "Kelly Waldron",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-money-donors-june-november-election/"
+      ],
+      "scope": "citywide"
+    },
+    {
+      "title": "More than 400 people in S.F. have sought to self-deport, many with no good options",
+      "link": "https://missionlocal.org/2026/04/sf-ice-immigration-voluntary-departure-self-deporting/",
+      "guid": "https://missionlocal.org/?p=845902",
+      "pub_date": "Tue, 14 Apr 2026 12:00:00 +0000",
+      "description": "Hundreds of Bay Area asylum-seekers are accepting voluntary departures as feds seek their removal to 3rd countries. \n  More than 400 people in S.F. have sought to self-deport, many with no good options",
+      "categories": [
+        "immigration",
+        "630 sansome",
+        "asylum",
+        "immigration"
+      ],
+      "author": "Sage R\u00edos Mace",
+      "outlet_key": "mission_local",
+      "outlet_name": "Mission Local",
+      "outlets": [
+        "Mission Local"
+      ],
+      "outlet_links": [
+        "https://missionlocal.org/2026/04/sf-ice-immigration-voluntary-departure-self-deporting/"
+      ],
+      "scope": "citywide"
+    }
+  ],
+  "events": null,
+  "cleanups": [
+    {
+      "name": "Fort Miley Cleanup and Workday",
+      "date": "2026-04-23",
+      "date_display": "Thu Apr 23",
+      "time": "10:00am-12:00pm",
+      "neighborhood": "Outer Richmond",
+      "organizer": "Holden, Pam",
+      "location": "Fort Miley (Battery Chester)",
+      "source": "Refuse Refuse SF",
+      "signup_url": "https://refuserefusesf.org/cleanups"
+    },
+    {
+      "name": "Outer Richmond Cleanup",
+      "date": "2026-04-24",
+      "date_display": "Fri Apr 24",
+      "time": "5:00pm-6:15pm",
+      "neighborhood": "Outer Richmond",
+      "organizer": "Brian",
+      "location": "The Art Bistro (2960 Clement St)",
+      "source": "Refuse Refuse SF",
+      "signup_url": "https://refuserefusesf.org/cleanups"
+    },
+    {
+      "name": "Outer Richmond Cleanup",
+      "date": "2026-04-25",
+      "date_display": "Sat Apr 25",
+      "time": "10:00am-11:30am",
+      "neighborhood": "Outer Richmond",
+      "organizer": "Matt",
+      "location": "Walgreens (25 Point Lobos Ave)",
+      "source": "Refuse Refuse SF",
+      "signup_url": "https://refuserefusesf.org/cleanups"
+    },
+    {
+      "name": "KEEP Ocean Beach Clean",
+      "date": "2026-04-25",
+      "date_display": "Sat Apr 25",
+      "time": "10:00am-11:30am",
+      "neighborhood": "Outer Richmond",
+      "organizer": "Bobak",
+      "location": "Ocean Beach Cafe (734 La Playa St)",
+      "source": "Refuse Refuse SF",
+      "signup_url": "https://refuserefusesf.org/cleanups"
+    },
+    {
+      "name": "Kaiser Permanente Cleanup",
+      "date": "2026-04-25",
+      "date_display": "Sat Apr 25",
+      "time": "10:00am-12:00pm",
+      "neighborhood": "Inner Richmond",
+      "organizer": "Vince",
+      "location": "Kaiser Permanente French Campus (4141 Geary Blvd)",
+      "source": "Refuse Refuse SF",
+      "signup_url": "https://refuserefusesf.org/cleanups"
+    },
+    {
+      "name": "City Hall Cleanup",
+      "date": "2026-04-28",
+      "date_display": "Tue Apr 28",
+      "time": "2:00pm-3:00pm",
+      "neighborhood": "Inner Richmond",
+      "organizer": "Vince",
+      "location": "San Francisco City Hall (1 Dr Carlton B Goodlett Pl)",
+      "source": "Refuse Refuse SF",
+      "signup_url": "https://refuserefusesf.org/cleanups"
+    },
+    {
+      "name": "Fort Miley Cleanup and Workday",
+      "date": "2026-04-30",
+      "date_display": "Thu Apr 30",
+      "time": "10:00am-12:00pm",
+      "neighborhood": "Outer Richmond",
+      "organizer": "Holden, Pam",
+      "location": "Fort Miley (Battery Chester)",
+      "source": "Refuse Refuse SF",
+      "signup_url": "https://refuserefusesf.org/cleanups"
+    },
+    {
+      "name": "Morning Coffee Cleanup",
+      "date": "2026-05-01",
+      "date_display": "Fri May 1",
+      "time": "8:00am-9:00am",
+      "neighborhood": "Inner Richmond",
+      "organizer": "Vince",
+      "location": "Cinderella Bakery & Cafe (436 Balboa St)",
+      "source": "Refuse Refuse SF",
+      "signup_url": "https://refuserefusesf.org/cleanups"
+    },
+    {
+      "name": "KEEP Ocean Beach Clean",
+      "date": "2026-05-02",
+      "date_display": "Sat May 2",
+      "time": "10:00am-11:30am",
+      "neighborhood": "Outer Richmond",
+      "organizer": "Bobak",
+      "location": "Ocean Beach Cafe (734 La Playa St)",
+      "source": "Refuse Refuse SF",
+      "signup_url": "https://refuserefusesf.org/cleanups"
+    }
+  ],
+  "civic_actions": [
+    {
+      "id": "indybay-/newsitems/2026/03/04/18884739.php",
+      "source": "indybay",
+      "title": "Robert Reed: Waste Zero With Recology",
+      "date": "2026-04-19",
+      "time": "9:30 am",
+      "event_type": "community",
+      "event_type_raw": "Speaker",
+      "tier": "medium",
+      "organizer": "",
+      "location": "San Francisco",
+      "url": "https://www.indybay.org/newsitems/2026/03/04/18884739.php",
+      "description": "Categories: San Francisco | Environment & Forest Defense",
+      "tags": [
+        "San Francisco",
+        "Environment & Forest Defense"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "one-time event"
+    },
+    {
+      "id": "mobilize-938865",
+      "source": "mobilize",
+      "title": "Join Brady San Francisco to honor victims at SFPD Headquarters (LOCATION CHANGE DUE TO WEATHER)",
+      "date": "2026-04-20",
+      "time": "23:30 - 00:30 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Brady",
+      "location": "LOBBY OF SFPD POLICE HEADQUARTERS, 1245 3rd STREET, San Francisco, CA",
+      "url": "https://www.mobilize.us/brady/event/938865/",
+      "description": "Police Chief Derrick Lew and District Attorney Brooke Jenkins cordially invite Brady volunteers to join them to observe National Crime Victims' Week at this annual event in San Francisco. We will rais...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "medium",
+      "scale_reason": "coordinated campaign; one-time event"
+    },
+    {
+      "id": "indybay-/newsitems/2026/04/18/18885632.php",
+      "source": "indybay",
+      "title": "No Monarchs Monday: Weekly Protest at Tesla in San Francisco",
+      "date": "2026-04-20",
+      "time": "12:30 pm",
+      "event_type": "protest",
+      "event_type_raw": "Protest",
+      "tier": "high",
+      "organizer": "",
+      "location": "San Francisco",
+      "url": "https://www.indybay.org/newsitems/2026/04/18/18885632.php",
+      "description": "Categories: San Francisco | Government & Elections | Immigrant Rights",
+      "tags": [
+        "San Francisco",
+        "Government & Elections",
+        "Immigrant Rights"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "one-time event"
+    },
+    {
+      "id": "mobilize-937214",
+      "source": "mobilize",
+      "title": "Stop the $45M Public Health Cuts \u2014 Show Up for Our Communities",
+      "date": "2026-04-20",
+      "time": "22:00 - 03:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "MEETING",
+      "tier": "medium",
+      "organizer": "San Francisco Rising Action Fund",
+      "location": "San Francisco City Hall, 1 Dr Carlton B Goodlett Pl, San Francisco, CA",
+      "url": "https://www.mobilize.us/sfrisingactionfund/event/937214/",
+      "description": "On April 20 at 3pm, the Department of Public Health is set to announce $45 million in devastating cuts. These cuts mean clinic closures, layoffs of frontline workers, and rollbacks to harm reduction s...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "one-time event"
+    },
+    {
+      "id": "indybay-/newsitems/2026/03/23/18885134.php",
+      "source": "indybay",
+      "title": "San Francisco Board of Supervisors, District 2 Candidate Forum",
+      "date": "2026-04-20",
+      "time": "6:00 pm",
+      "event_type": "community",
+      "event_type_raw": "Meeting",
+      "tier": "medium",
+      "organizer": "",
+      "location": "San Francisco",
+      "url": "https://www.indybay.org/newsitems/2026/03/23/18885134.php",
+      "description": "Categories: San Francisco | Government & Elections",
+      "tags": [
+        "San Francisco",
+        "Government & Elections"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "one-time event"
+    },
+    {
+      "id": "mobilize-932961",
+      "source": "mobilize",
+      "title": "No Monarch Mondays",
+      "date": "2026-04-20",
+      "time": "19:30 - 20:30 UTC",
+      "event_type": "other",
+      "event_type_raw": "VISIBILITY_EVENT",
+      "tier": "low",
+      "organizer": "Indivisible San Francisco",
+      "location": "999 Van Ness Ave, San Francisco, CA",
+      "url": "https://www.mobilize.us/indivisiblesf/event/932961/",
+      "description": "Join us to stand up for democracy, civil liberties, and the planet, and against the fascist/authoritarian Trump Regime! ABOLISH ICE! NO WAR ON IRAN! Bring a sign if you have one and meet us in front o...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "recurring (6 timeslots)"
+    },
+    {
+      "id": "mobilize-874620",
+      "source": "mobilize",
+      "title": "REI (NA) Happy Hour Cleanup",
+      "date": "2026-04-21",
+      "time": "23:00 - 00:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "REI, 840 Brannan St, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/874620/",
+      "description": "Are you ready for a cleanup with REI?!?! Join REI, Refuse Refuse, SF Public Works, and the community for a friendly neighborhood cleanup!\n\nVolunteers will meet at REI (840 Brannan St) to grab our supp...",
+      "tags": [
+        "Cleanup",
+        "Community Service",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "one-time event"
+    },
+    {
+      "id": "mobilize-869782",
+      "source": "mobilize",
+      "title": "Heart of the City Farmers Market",
+      "date": "2026-04-22",
+      "time": "17:00 - 18:30 UTC",
+      "event_type": "canvass",
+      "event_type_raw": "CANVASS",
+      "tier": "medium",
+      "organizer": "Scott Wiener for Congress",
+      "location": "Fulton Plaza, 147 Fulton St, San Francisco, CA",
+      "url": "https://www.mobilize.us/scottwienerforcongress/event/869782/",
+      "description": "Join Team Wiener at your local Farmers Market! \ud83c\udf31\n\nWe\u2019ll be connecting with voters, handing out literature, and spreading the word about Senator Scott Wiener\u2019s campaign for Congress. This is a fun and...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "coordinated campaign; recurring (57 timeslots)"
+    },
+    {
+      "id": "mobilize-936553",
+      "source": "mobilize",
+      "title": "Family Affordability Budget Hearing",
+      "date": "2026-04-22",
+      "time": "20:00 - 22:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "MEETING",
+      "tier": "medium",
+      "organizer": "San Francisco Rising Action Fund",
+      "location": "San Francisco City Hall, 1 Dr Carlton B Goodlett Pl, San Francisco, CA",
+      "url": "https://www.mobilize.us/sfrisingactionfund/event/936553/",
+      "description": "Join us for a critical hearing on family affordability in San Francisco, where we will center the real impacts of city budget decisions on low-income and immigrant families.\n\nAt this hearing, communit...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "one-time event"
+    },
+    {
+      "id": "mobilize-929088",
+      "source": "mobilize",
+      "title": "Tuesday IN-PERSON Phone Banking at IBEW Local 6",
+      "date": "2026-04-22",
+      "time": "00:00 - 02:00 UTC",
+      "event_type": "phone_bank",
+      "event_type_raw": "PHONE_BANK",
+      "tier": "medium",
+      "organizer": "Connie Chan for Congress (CA Working Families Party)",
+      "location": "IBEW Local 6 Union Hall, 55 Fillmore St, San Francisco, CA",
+      "url": "https://www.mobilize.us/conniechansf/event/929088/",
+      "description": "We'll be meeting every Tuesday at IBEW Local 6 to persuade voters over phone calls to vote Connie Chan for Congress!\n\nBring your headphones and a laptop or tablet, and we'll have everything else you n...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "coordinated campaign; recurring (12 timeslots)"
+    },
+    {
+      "id": "mobilize-756119",
+      "source": "mobilize",
+      "title": "Trinity+St. Peter's Cleanup",
+      "date": "2026-04-22",
+      "time": "19:00 - 21:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "Trinity+St. Peter's Episcopal Church, 1620 Gough St, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/756119/",
+      "description": "Join the community and Trinity+St. Peter's Episcopal Church for a friendly neighborhood cleanup!\n\nVolunteers will meet at Trinity+St. Peter's Episcopal Church (1620 Gough St) to grab our supplies and...",
+      "tags": [
+        "Community Service",
+        "Cleanup",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "recurring (9 timeslots)"
+    },
+    {
+      "id": "indybay-/newsitems/2026/03/21/18885099.php",
+      "source": "indybay",
+      "title": "Free movie screening + panel discussion: \u201cNo Place to Grow Old\u201d",
+      "date": "2026-04-22",
+      "time": "6:00 pm",
+      "event_type": "screening",
+      "event_type_raw": "Screening",
+      "tier": "low",
+      "organizer": "",
+      "location": "San Francisco",
+      "url": "https://www.indybay.org/newsitems/2026/03/21/18885099.php",
+      "description": "Categories: San Francisco | Health, Housing & Public Services",
+      "tags": [
+        "San Francisco",
+        "Health, Housing & Public Services"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "one-time event"
+    },
+    {
+      "id": "indybay-/newsitems/2026/04/16/18885604.php",
+      "source": "indybay",
+      "title": "Tell Target to Stand Up To ICE!",
+      "date": "2026-04-23",
+      "time": "4:00 pm",
+      "event_type": "protest",
+      "event_type_raw": "Protest",
+      "tier": "high",
+      "organizer": "",
+      "location": "San Francisco",
+      "url": "https://www.indybay.org/newsitems/2026/04/16/18885604.php",
+      "description": "Categories: San Francisco | Immigrant Rights",
+      "tags": [
+        "San Francisco",
+        "Immigrant Rights"
+      ],
+      "is_virtual": false,
+      "scale": "medium",
+      "scale_reason": "2 orgs listing this event; one-time event"
+    },
+    {
+      "id": "mobilize-932963",
+      "source": "mobilize",
+      "title": "Tell Target to STAND UP TO ICE! weekly protest",
+      "date": "2026-04-23",
+      "time": "23:00 - 01:00 UTC",
+      "event_type": "other",
+      "event_type_raw": "ADVOCACY",
+      "tier": "high",
+      "organizer": "Indivisible San Francisco",
+      "location": "789 Mission St, San Francisco, CA",
+      "url": "https://www.mobilize.us/indivisiblesf/event/932963/",
+      "description": "Until Target acts to protect its workers and guests from ICE, we will not shop at Target! Demand that Target stores cease their cooperation with ICE and implement measures to reduce the risk of uncons...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "2 orgs listing this event; recurring (6 timeslots)"
+    },
+    {
+      "id": "indybay-/newsitems/2026/02/28/18884548.php",
+      "source": "indybay",
+      "title": "Screening of \"Earth's Greatest Enemy\" with Abby Martin Q&A",
+      "date": "2026-04-23",
+      "time": "8:00 pm",
+      "event_type": "screening",
+      "event_type_raw": "Screening",
+      "tier": "low",
+      "organizer": "",
+      "location": "San Francisco",
+      "url": "https://www.indybay.org/newsitems/2026/02/28/18884548.php",
+      "description": "Categories: San Francisco | Anti-War | Environment & Forest Defense",
+      "tags": [
+        "San Francisco",
+        "Anti-War",
+        "Environment & Forest Defense"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "one-time event"
+    },
+    {
+      "id": "mobilize-913712",
+      "source": "mobilize",
+      "title": "HOUSE MAJORITY RUNS THROUGH CALIFORNIA | Phone Banks!",
+      "date": "2026-04-24",
+      "time": "00:30 - 02:30 UTC",
+      "event_type": "phone_bank",
+      "event_type_raw": "PHONE_BANK",
+      "tier": "medium",
+      "organizer": "California Democratic Party",
+      "location": "San Francisco, CA",
+      "url": "https://www.mobilize.us/cadems/event/913712/",
+      "description": "**In 2025, California made history by passing Prop 50. Now it\u2019s time to turn that victory into lasting change by Taking Back the House!**\n\nWe're going to reach out to voters in our targeted districts...",
+      "tags": [],
+      "is_virtual": true,
+      "scale": "small",
+      "scale_reason": "coordinated campaign; recurring (53 timeslots)"
+    },
+    {
+      "id": "mobilize-928211",
+      "source": "mobilize",
+      "title": "Thursday Canvassing at IBEW Local 6",
+      "date": "2026-04-24",
+      "time": "00:00 - 03:00 UTC",
+      "event_type": "canvass",
+      "event_type_raw": "CANVASS",
+      "tier": "medium",
+      "organizer": "Connie Chan for Congress (CA Working Families Party)",
+      "location": "This event\u2019s address is private. Sign up for more details, This event\u2019s address is private. Sign up for more details, San Francisco, CA",
+      "url": "https://www.mobilize.us/conniechansf/event/928211/",
+      "description": "We'll be meeting every Thursday at IBEW Local 6 to persuade voters through door knocking to vote Connie Chan for Congress!\n\nWear comfortable shoes! We'll have everything else you need to get trained a...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "coordinated campaign; recurring (6 timeslots)"
+    },
+    {
+      "id": "indybay-/newsitems/2026/02/18/18884220.php",
+      "source": "indybay",
+      "title": "Sean Dorsey Dance's 22nd Annual Home Season: We Choose Each Other",
+      "date": "2026-04-24",
+      "time": "8:00 pm",
+      "event_type": "other",
+      "event_type_raw": "Concert/Show",
+      "tier": "low",
+      "organizer": "",
+      "location": "San Francisco",
+      "url": "https://www.indybay.org/newsitems/2026/02/18/18884220.php",
+      "description": "Categories: San Francisco | Arts + Action | LGBTI / Queer",
+      "tags": [
+        "San Francisco",
+        "Arts + Action",
+        "LGBTI / Queer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "one-time event"
+    },
+    {
+      "id": "mobilize-938714",
+      "source": "mobilize",
+      "title": "San Francisco - Communities Not Cages: National Day of Action to Stop ICE Warehouse Detention",
+      "date": "2026-04-25",
+      "time": "19:00 - 21:00 UTC",
+      "event_type": "other",
+      "event_type_raw": "SOLIDARITY_EVENT",
+      "tier": "low",
+      "organizer": "Disappeared in America",
+      "location": "In front of San Francisco Tesla, corner of Van Ness and O'Farrell St., 999 Van Ness Ave, San Francisco, CA",
+      "url": "https://www.mobilize.us/disappearedinamerica/event/938714/",
+      "description": "Join us outside as part of a nationwide day of action to oppose the Trump administration's expansion of ICE warehouse detention and its attack on the due process rights of immigrants and all Americans...",
+      "tags": [
+        "Communities Not Cages National Day of Action"
+      ],
+      "is_virtual": false,
+      "scale": "big",
+      "scale_reason": "national movement (national day of); one-time event"
+    },
+    {
+      "id": "mobilize-882395",
+      "source": "mobilize",
+      "title": "Trump Regime Takedown Saturdays",
+      "date": "2026-04-25",
+      "time": "19:00 - 21:00 UTC",
+      "event_type": "rally",
+      "event_type_raw": "RALLY",
+      "tier": "high",
+      "organizer": "Indivisible San Francisco",
+      "location": "999 Van Ness Ave, San Francisco, CA",
+      "url": "https://www.mobilize.us/indivisiblesf/event/882395/",
+      "description": "Keep democracy alive every Saturday by showing up, taking a stand, and sticking together for the long haul. Standing together is better than standing alone. Let\u2019s get together and call out the Trump/M...",
+      "tags": [
+        "Iceoutforgoodwoa",
+        "Ice Out For Good",
+        "Trump Regime Takedown"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "2 orgs listing this event; recurring (6 timeslots)"
+    },
+    {
+      "id": "mobilize-755719",
+      "source": "mobilize",
+      "title": "Hayes Valley Community Cleanup",
+      "date": "2026-04-25",
+      "time": "17:00 - 18:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "Gambit Lounge, 581 Hayes St, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/755719/",
+      "description": "Haye, who's ready for a cleanup?!?! Join the Hayes Valley Neighborhood Association, the Civic Joy Fund, Refuse Refuse, SF Public Works, and the community for a friendly neighborhood cleanup!\n\nVoluntee...",
+      "tags": [
+        "Community Service",
+        "Cleanup",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "recurring (36 timeslots)"
+    },
+    {
+      "id": "mobilize-755819",
+      "source": "mobilize",
+      "title": "Lower Polk Weekly Cleanup",
+      "date": "2026-04-25",
+      "time": "18:00 - 19:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "Jane on Larkin, 925 Larkin St, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/755819/",
+      "description": "Join the Civic Joy Fund, Refuse Refuse, SF Public Works, and the community for a friendly neighborhood cleanup!\n\nVolunteers will meet at Jane on Larkin (925 Larkin St) to grab our supplies and form ou...",
+      "tags": [
+        "Community Service",
+        "Cleanup",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "recurring (36 timeslots)"
+    },
+    {
+      "id": "mobilize-941981",
+      "source": "mobilize",
+      "title": "Canvass with the People\u2019s Budget at Dolores Park",
+      "date": "2026-04-25",
+      "time": "18:00 - 19:30 UTC",
+      "event_type": "canvass",
+      "event_type_raw": "CANVASS",
+      "tier": "medium",
+      "organizer": "San Francisco Rising Action Fund",
+      "location": "Dolores Park Cafe, 501 Dolores St, San Francisco, CA",
+      "url": "https://www.mobilize.us/sfrisingactionfund/event/941981/",
+      "description": "Join us for a fun and energizing canvass at Dolores Park as we gear up for two key People\u2019s Budget Town Halls: the Women\u2019s Town Hall on Tuesday, April 28 and the LGBTQ+ Town Hall on Wednesday, April 2...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "one-time event"
+    },
+    {
+      "id": "mobilize-755704",
+      "source": "mobilize",
+      "title": "South Mission Weekly Cleanup",
+      "date": "2026-04-25",
+      "time": "17:00 - 18:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "Sisters Coffee Shop, 920 Valencia St, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/755704/",
+      "description": "Join the Civic Joy Fund, Refuse Refuse, SF Public Works, and the community for a friendly neighborhood cleanup!\n\nVolunteers will meet at Sisters Coffee Shop (920 Valencia St) to grab our supplies and...",
+      "tags": [
+        "Community Service",
+        "Cleanup",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "recurring (36 timeslots)"
+    },
+    {
+      "id": "mobilize-786831",
+      "source": "mobilize",
+      "title": "Castro Cleanup",
+      "date": "2026-04-25",
+      "time": "17:00 - 18:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "Hi Tops SF, 2247 Market St, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/786831/",
+      "description": "It\u2019s time to get back into the streets and clean during our Castro Cleanup! Join the Civic Joy Fund, Eureka Valley Neighborhood Association (EVNA), Refuse Refuse, SF Public Works, and the community fo...",
+      "tags": [
+        "Cleanup",
+        "Community Service",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "recurring (36 timeslots)"
+    },
+    {
+      "id": "mobilize-835089",
+      "source": "mobilize",
+      "title": "Trump Regime Takedown",
+      "date": "2026-04-25",
+      "time": "19:00 - 21:00 UTC",
+      "event_type": "other",
+      "event_type_raw": "VISIBILITY_EVENT",
+      "tier": "low",
+      "organizer": "Indivisible",
+      "location": "Corner of Van Ness and O'Farrell, 999 Van Ness Ave, San Francisco, CA",
+      "url": "https://www.mobilize.us/indivisible/event/835089/",
+      "description": "We do not consent to Trump and his billionaire allies taking a chainsaw to our government and our economy for their benefit! San Francisco is a sanctuary city and We the People need to defend the valu...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "2 orgs listing this event; recurring (6 timeslots)"
+    },
+    {
+      "id": "mobilize-934335",
+      "source": "mobilize",
+      "title": "Knock Doors With Team Wiener At Duboce Park",
+      "date": "2026-04-26",
+      "time": "23:00 - 01:00 UTC",
+      "event_type": "canvass",
+      "event_type_raw": "CANVASS",
+      "tier": "medium",
+      "organizer": "Scott Wiener for Congress",
+      "location": "Duboce Park, Duboce Park, Scott St, San Francisco, CA 94114, San Francisco, CA",
+      "url": "https://www.mobilize.us/scottwienerforcongress/event/934335/",
+      "description": "Join Team Scott to knock doors, talk with voters, and help build momentum for the Scott Wiener for Congress campaign!\n\nCanvassing is one of the most impactful ways to support the campaign. You\u2019ll be h...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "medium",
+      "scale_reason": "coordinated campaign; one-time event"
+    },
+    {
+      "id": "mobilize-928458",
+      "source": "mobilize",
+      "title": "Mid-Market Cleanup",
+      "date": "2026-04-26",
+      "time": "16:00 - 17:30 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "Cumaica: Artesanos del Cafe, 1398 Mission St, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/928458/",
+      "description": "A clean neighborhood is anything but mid, unless it's the Mid-Market Cleanup! Join MidMarket CBD, Refuse Refuse, SF Public Works, and the community for a friendly neighborhood cleanup!\n\nVolunteers wil...",
+      "tags": [
+        "Cleanup",
+        "Community Service",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "recurring (7 timeslots)"
+    },
+    {
+      "id": "mobilize-756069",
+      "source": "mobilize",
+      "title": "Tenderloin Weekly Cleanup",
+      "date": "2026-04-26",
+      "time": "20:00 - 21:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "Turk Hyde Mini Park, 201 Hyde St, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/756069/",
+      "description": "Join Refuse Refuse, SF Public Works, and the community for a friendly neighborhood cleanup!\n\nVolunteers will meet at the Turk Hyde Mini Park (201 Hyde St) to grab our supplies and form our crew. Then,...",
+      "tags": [
+        "Community Service",
+        "Cleanup",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "2 orgs listing this event; recurring (36 timeslots)"
+    },
+    {
+      "id": "mobilize-755932",
+      "source": "mobilize",
+      "title": "Manny's Weekly Neighborhood Disco Trash Cleanup",
+      "date": "2026-04-26",
+      "time": "17:00 - 18:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "Manny\u2019s, 3092 16th St, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/755932/",
+      "description": "Tired? Sunday Funday. Wired? Sunday done-day. Make our neighborhood better, brunch with cool people (sorry not sorry, we\u2019re biased), get deals to some fave local spots, and wrap it up before the Sunda...",
+      "tags": [
+        "Community Service",
+        "Cleanup",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "recurring (36 timeslots)"
+    },
+    {
+      "id": "mobilize-756099",
+      "source": "mobilize",
+      "title": "NW Potrero Hill Cleanup",
+      "date": "2026-04-26",
+      "time": "17:00 - 18:30 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "The Benches Garden, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/756099/",
+      "description": "Join the Mariposa Utah Neighborhoods Association (MUNA), Refuse Refuse, SF Public Works, and the community for a friendly neighborhood cleanup!\n\nVolunteers will meet at Benches Garden (610 San Bruno A...",
+      "tags": [
+        "Community Service",
+        "Cleanup",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "recurring (9 timeslots)"
+    },
+    {
+      "id": "mobilize-756056",
+      "source": "mobilize",
+      "title": "Lower Haight Cleanup",
+      "date": "2026-04-26",
+      "time": "17:00 - 18:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "Tarragon Cafe, 200 Fillmore St, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/756056/",
+      "description": "If you hate trash, but love SF, join the Lower Haight Cleanup! Join the Civic Joy Fund, Lower Haight Merchants & Neighbors Association (LoHaMNA), Refuse Refuse, SF Public Works, and the community for...",
+      "tags": [
+        "Community Service",
+        "Cleanup",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "recurring (36 timeslots)"
+    },
+    {
+      "id": "mobilize-755930",
+      "source": "mobilize",
+      "title": "Lower Nob Hill Weekly Cleanup",
+      "date": "2026-04-26",
+      "time": "16:45 - 18:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "Another Cafe, 1191 Pine St, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/755930/",
+      "description": "Lower Nob Hill is a vibrant community, with diverse small businesses and a lively urban spirit. We take pride in our neighborhood and want it to shine! Since July 2021, dedicated volunteers have come...",
+      "tags": [
+        "Community Service",
+        "Volunteer",
+        "Cleanup"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "2 orgs listing this event; recurring (36 timeslots)"
+    },
+    {
+      "id": "mobilize-887376",
+      "source": "mobilize",
+      "title": "City Hall Cleanup",
+      "date": "2026-04-28",
+      "time": "21:30 - 22:30 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "San Francisco City Hall, 1 Dr Carlton B Goodlett Pl, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/887376/",
+      "description": "Let's stomp out cigarette butts for good! Join Refuse Refuse, SF Public Works, and the community for a friendly neighborhood cleanup!\n\nVolunteers will meet at San Francisco City Hall (1 Dr Carlton B G...",
+      "tags": [
+        "Environmental",
+        "Community Service",
+        "Cleanup"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "one-time event"
+    },
+    {
+      "id": "mobilize-931048",
+      "source": "mobilize",
+      "title": "Duboce Park Canvass",
+      "date": "2026-04-29",
+      "time": "01:00 - 03:00 UTC",
+      "event_type": "canvass",
+      "event_type_raw": "CANVASS",
+      "tier": "medium",
+      "organizer": "Scott Wiener for Congress",
+      "location": "duboce park, Duboce Park, Scott St, San Francisco, CA 94114, San Francisco, CA",
+      "url": "https://www.mobilize.us/scottwienerforcongress/event/931048/",
+      "description": "Join Team Scott to knock doors, talk with voters, and help build momentum for the Scott Wiener for Congress campaign!\n\nCanvassing is one of the most impactful ways to support the campaign. You\u2019ll be h...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "medium",
+      "scale_reason": "coordinated campaign; one-time event"
+    },
+    {
+      "id": "mobilize-938351",
+      "source": "mobilize",
+      "title": "4/28 Phone Bank for Scott Wiener & Alice B. Toklas LGBTQ Democratic Club",
+      "date": "2026-04-29",
+      "time": "00:30 - 02:00 UTC",
+      "event_type": "phone_bank",
+      "event_type_raw": "PHONE_BANK",
+      "tier": "medium",
+      "organizer": "The Alice B. Toklas LGBTQ Democratic Club",
+      "location": "This event\u2019s address is private. Sign up for more details, This event\u2019s address is private. Sign up for more details, San Francisco, CA",
+      "url": "https://www.mobilize.us/alicelgbtqdems/event/938351/",
+      "description": "Scott Wiener for U.S. Congress (CA-11) is proudly endorsed by Alice B. Toklas LGBTQ Democratic Club!\n\nJoin the Alice B. Toklas LGBTQ Democratic Club and Team Wiener for our Phone Bank session on Tuesd...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "one-time event"
+    },
+    {
+      "id": "mobilize-894081",
+      "source": "mobilize",
+      "title": "States Win SF (formerly Sister District Project): Monthly Happy Hours",
+      "date": "2026-04-29",
+      "time": "01:30 - 03:00 UTC",
+      "event_type": "other",
+      "event_type_raw": "MEET_GREET",
+      "tier": "low",
+      "organizer": "States Win San Francisco",
+      "location": "Teeth, 2323 Mission St, San Francisco, CA",
+      "url": "https://www.mobilize.us/stateswinsanfrancisco/event/894081/",
+      "description": "Join our States Win SF Happy Hours on the last Tuesday of each month to connect in-person with volunteers and neighbors, share some good news, and celebrate our state legislative wins and discover opp...",
+      "tags": [
+        "Happy Hour"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "coordinated campaign; recurring (7 timeslots)"
+    },
+    {
+      "id": "mobilize-938681",
+      "source": "mobilize",
+      "title": "League of Women Voters of SF Congressional Candidate Forum",
+      "date": "2026-04-30",
+      "time": "00:00 - 03:00 UTC",
+      "event_type": "other",
+      "event_type_raw": "VISIBILITY_EVENT",
+      "tier": "low",
+      "organizer": "Scott Wiener for Congress",
+      "location": "UCSF Mission Bay Conference Center, 1675 Owens St UNIT 251, San Francisco, CA",
+      "url": "https://www.mobilize.us/scottwienerforcongress/event/938681/",
+      "description": "Come be visible with us in your Scott Wiener shirt (we'll get you one if needed, tell us your size in advance!) before and during the Congressional Forum at UCSF Mission Bay's conference center on Wed...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "medium",
+      "scale_reason": "coordinated campaign; one-time event"
+    },
+    {
+      "id": "mobilize-937421",
+      "source": "mobilize",
+      "title": "The Blue Wave Starts Here: An Evening in Support of Sean Frame",
+      "date": "2026-05-01",
+      "time": "01:00 - 03:00 UTC",
+      "event_type": "other",
+      "event_type_raw": "MEET_GREET",
+      "tier": "low",
+      "organizer": "Sean Frame for State Senate (CA Working Families Party)",
+      "location": "Rec Room by East Brother Beer Co., 135 4th St, San Francisco, CA",
+      "url": "https://www.mobilize.us/seanframe/event/937421/",
+      "description": "Let's kick the Blue Wave in Northern California by helping Progressive Democrat Sean Frame flip Senate District 6!\n\nTickets are available at https://secure.actblue.com/donate/sf-blue-wave",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "medium",
+      "scale_reason": "coordinated campaign; one-time event"
+    },
+    {
+      "id": "mobilize-821938",
+      "source": "mobilize",
+      "title": "6th Street Cleanup",
+      "date": "2026-05-02",
+      "time": "17:00 - 19:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "CityTeam San Francisco, 164 6th St, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/821938/",
+      "description": "Join The City Eats, Refuse Refuse, SF Public Works, and community for a friendly neighborhood cleanup!\n\nVolunteers will meet at CityTeam San Francisco (164 6th St) to grab our supplies and form our cr...",
+      "tags": [
+        "Cleanup",
+        "Community Service",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "no scale signals"
+    },
+    {
+      "id": "mobilize-889764",
+      "source": "mobilize",
+      "title": "Gathering of the Wine Moms: Wine Social with ISF and Wine Down SF",
+      "date": "2026-05-02",
+      "time": "23:00 - 02:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Indivisible San Francisco",
+      "location": "685 Folsom St, San Francisco, CA",
+      "url": "https://www.mobilize.us/indivisiblesf/event/889764/",
+      "description": "Join the Chianti-Fa! Indivisible SF, in partnership with Wine Down SF, is hosting a wine social for all.\n\nEveryone 21+ is welcome: wine moms, beer dads, adults of any beverage preferences. 21+ only, p...",
+      "tags": [
+        "Activist Networking",
+        "Wine Social",
+        "Get out the Vote"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "one-time event"
+    },
+    {
+      "id": "mobilize-931051",
+      "source": "mobilize",
+      "title": "Duboce Canvass",
+      "date": "2026-05-03",
+      "time": "23:00 - 01:00 UTC",
+      "event_type": "canvass",
+      "event_type_raw": "CANVASS",
+      "tier": "medium",
+      "organizer": "Scott Wiener for Congress",
+      "location": "duboce park, Duboce Park, Scott St, San Francisco, CA 94114, San Francisco, CA",
+      "url": "https://www.mobilize.us/scottwienerforcongress/event/931051/",
+      "description": "Join Team Scott to knock doors, talk with voters, and help build momentum for the Scott Wiener for Congress campaign!\n\nCanvassing is one of the most impactful ways to support the campaign. You\u2019ll be h...",
+      "tags": [],
+      "is_virtual": false,
+      "scale": "medium",
+      "scale_reason": "coordinated campaign; one-time event"
+    },
+    {
+      "id": "mobilize-756123",
+      "source": "mobilize",
+      "title": "The Hub Cleanup",
+      "date": "2026-05-03",
+      "time": "22:00 - 23:30 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "McCoppin Hub Plaza, 98 Valencia St, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/756123/",
+      "description": "Join Refuse Refuse, SF Public Works, and the community for a friendly neighborhood cleanup!\n\nVolunteers will meet at McCoppin Hub Plaza (98 Valencia St) to grab our supplies and form our crew. Then, c...",
+      "tags": [
+        "Community Service",
+        "Cleanup",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "recurring (8 timeslots)"
+    },
+    {
+      "id": "mobilize-808378",
+      "source": "mobilize",
+      "title": "Muttville Cleanup",
+      "date": "2026-05-03",
+      "time": "16:30 - 18:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "Muttville, 750 Florida St, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/808378/",
+      "description": "Join Muttville, Refuse Refuse, SF Public Works, and community for a friendly neighborhood cleanup!\n\nVolunteers will meet at Muttville (750 Florida St) to grab our supplies and form our crew. Then, cle...",
+      "tags": [
+        "Cleanup",
+        "Community Service",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "recurring (16 timeslots)"
+    },
+    {
+      "id": "mobilize-756121",
+      "source": "mobilize",
+      "title": "Duboce Triangle Cleanup",
+      "date": "2026-05-03",
+      "time": "19:00 - 20:00 UTC",
+      "event_type": "community",
+      "event_type_raw": "COMMUNITY",
+      "tier": "medium",
+      "organizer": "Civic Joy Fund",
+      "location": "Duboce Park, Duboce Avenue & Steiner Street, San Francisco, CA",
+      "url": "https://www.mobilize.us/civicjoyfund/event/756121/",
+      "description": "Let's try harder to keep the Triangle clean. Join the Duboce Triangle Neighborhood Association, Refuse Refuse, SF Public Works, and the community for a friendly neighborhood cleanup!\n\nVolunteers will...",
+      "tags": [
+        "Community Service",
+        "Cleanup",
+        "Volunteer"
+      ],
+      "is_virtual": false,
+      "scale": "small",
+      "scale_reason": "recurring (8 timeslots)"
+    }
+  ],
+  "evictions": {
+    "district": 1,
+    "days": 14,
+    "total_notices": 1,
+    "prior_total": 2,
+    "trend": "DOWN 50% (was 2)",
+    "by_type": [
+      {
+        "reason": "Owner Move-In",
+        "column": "owner_move_in",
+        "count": 1,
+        "prior_count": 0,
+        "trend": "UP from 0 prior",
+        "displacement_signal": true,
+        "notices": [
+          {
+            "eviction_id": "M260729",
+            "address": "500 Block Of 24th Avenue",
+            "neighborhood": "Outer Richmond",
+            "file_date": "2026-04-13T00:00:00.000",
+            "has_constraints": true
+          }
+        ]
+      }
+    ],
+    "by_neighborhood": {
+      "Outer Richmond": 1
+    },
+    "constrained_count": 1,
+    "displacement_notices": [
+      {
+        "eviction_id": "M260729",
+        "address": "500 Block Of 24th Avenue",
+        "neighborhood": "Outer Richmond",
+        "file_date": "2026-04-13T00:00:00.000",
+        "reasons": [
+          "Owner Move-In"
+        ],
+        "has_constraints": true
+      }
+    ]
+  },
+  "bart": [
+    {
+      "id": 1848,
+      "body_name": "BART Bicycle Advisory Task Force",
+      "date": "2026-04-06",
+      "time": "6:00 PM",
+      "location": "Public participation for this meeting will be via teleconference \r\nonly. Zoom link: https://us06web.zoom.us/j/89416730358",
+      "agenda_url": "https://bart.legistar1.com/bart/meetings/2026/4/1848_A_BART_Bicycle_Advisory_Task_Force_26-04-06_COMMITTEE_MEETING_AGENDA.pdf",
+      "meeting_url": "https://bart.legistar.com/MeetingDetail.aspx?LEGID=1848&GID=714&G=30B5606A-A925-486B-AC83-925D2A0D8946",
+      "agenda_status": "Final",
+      "tier": "medium"
+    },
+    {
+      "id": 1849,
+      "body_name": "Board of Directors",
+      "date": "2026-04-09",
+      "time": "9:00 AM",
+      "location": "BART Board Room, 2150 Webster Street, 1st Floor, Oakland, CA 94612\r\nZoom Link: https://us06web.zoom.us/j/89417659096",
+      "agenda_url": "https://bart.legistar1.com/bart/meetings/2026/4/1849_A_Board_of_Directors_26-04-09_BOARD_MEETING_AGENDA.pdf",
+      "meeting_url": "https://bart.legistar.com/MeetingDetail.aspx?LEGID=1849&GID=714&G=30B5606A-A925-486B-AC83-925D2A0D8946",
+      "agenda_status": "Final-revised",
+      "tier": "high"
+    },
+    {
+      "id": 1851,
+      "body_name": "BART Accessibility Task Force",
+      "date": "2026-04-23",
+      "time": "2:00 PM",
+      "location": "",
+      "agenda_url": "https://bart.legistar1.com/bart/meetings/2026/4/1851_A_BART_Accessibility_Task_Force_26-04-23_COMMITTEE_MEETING_AGENDA.pdf",
+      "meeting_url": "https://bart.legistar.com/MeetingDetail.aspx?LEGID=1851&GID=714&G=30B5606A-A925-486B-AC83-925D2A0D8946",
+      "agenda_status": "Final",
+      "tier": "medium"
+    },
+    {
+      "id": 1860,
+      "body_name": "Board of Directors",
+      "date": "2026-04-23",
+      "time": "9:00 AM",
+      "location": "BART Board Room, 2150 Webster Street, 1st Floor, Oakland, CA 94612\r\nZoom Link: https://us06web.zoom.us/j/84093109771",
+      "agenda_url": "https://bart.legistar1.com/bart/meetings/2026/4/1860_A_Board_of_Directors_26-04-23_BOARD_MEETING_AGENDA.pdf",
+      "meeting_url": "https://bart.legistar.com/MeetingDetail.aspx?LEGID=1860&GID=714&G=30B5606A-A925-486B-AC83-925D2A0D8946",
+      "agenda_status": "Final",
+      "tier": "high"
+    }
+  ],
+  "sfcta": [
+    {
+      "title": "SFCTA Community Advisory Committee",
+      "type": "CAC",
+      "relevance": "MEDIUM",
+      "date": "2026-04-22",
+      "date_display": "Wednesday, April 22, 2026",
+      "time": "06:00 PM",
+      "location": "Hearing Room, 1455 Market Street, 22nd Floor",
+      "url": "https://www.sfcta.org/events/sfcta-community-advisory-committee-24",
+      "agenda_pdf": "https://www.sfcta.org/sites/default/files/2026-04/SFCTA_CAC_AGENDA_2026-04-22.pdf",
+      "packet_pdf": "https://www.sfcta.org/sites/default/files/2026-04/SFCTA_CAC_PACKET_2026-04-22%20reduced%20v2.pdf",
+      "item_count": 17,
+      "high_count": 3,
+      "items": [
+        {
+          "number": 6,
+          "title": "Adopt a Motion of Support to Allocate $350,000 in Prop L Funds, with Conditions, for Two Requests",
+          "action_type": "ACTION",
+          "consent": false,
+          "final_approval": false,
+          "tier": "high",
+          "topics": [
+            "sales tax (Prop L)"
+          ],
+          "pdfs": [
+            "https://www.sfcta.org/sites/default/files/2026-04/SFCTA_CAC_Item6_STABlockGrantProgrammingPrioritiesMEMO_2026-04-22.pdf"
+          ]
+        },
+        {
+          "number": 7,
+          "title": "Projects: Prop L: SFMTA: District 2 Turk Boulevard Pedestrian Safety [NTP] ($200,000), Curbside Electric Vehicle Charging ($150,000)",
+          "action_type": "",
+          "consent": false,
+          "final_approval": false,
+          "tier": "high",
+          "topics": [
+            "bike/ped",
+            "sales tax (Prop L)"
+          ],
+          "pdfs": [
+            "https://www.sfcta.org/sites/default/files/2026-04/SFCTA_CAC_Item7_WoodsIslaisCreekAmendmentMEMO_2026-04-22_1.pdf"
+          ]
+        },
+        {
+          "number": 11,
+          "title": "Adopt a Motion of Support to Amend the Prop L Standard Grant Agreement for the Woods/Islais Creek Yard Electrification Phase I Project to Update the Project Scope, Schedule, Cost, and Funding Plan; and Change the Project Phase from Design to Construction",
+          "action_type": "ACTION",
+          "consent": false,
+          "final_approval": false,
+          "tier": "high",
+          "topics": [
+            "sales tax (Prop L)"
+          ],
+          "pdfs": [
+            "https://www.sfcta.org/sites/default/files/2026-04/SFCTA_CAC_Item11_SanFranciscoTransportationPlan2050%2BPRESENTATION_2026-04-22.pdf",
+            "https://www.sfcta.org/sites/default/files/2026-04/SFCTA_CAC_Item11_WestsideNetworkStudyUpdatePRESENTATION_2026-04-22.pdf"
+          ]
+        },
+        {
+          "number": 1,
+          "title": "Call to Order",
+          "action_type": "",
+          "consent": false,
+          "final_approval": false,
+          "tier": "medium",
+          "topics": [],
+          "pdfs": []
+        },
+        {
+          "number": 2,
+          "title": "Chair\u2019s Report",
+          "action_type": "INFORMATION",
+          "consent": false,
+          "final_approval": false,
+          "tier": "medium",
+          "topics": [],
+          "pdfs": []
+        },
+        {
+          "number": 4,
+          "title": "Item 4",
+          "action_type": "",
+          "consent": true,
+          "final_approval": false,
+          "tier": "medium",
+          "topics": [],
+          "pdfs": [
+            "https://www.sfcta.org/sites/default/files/2026-04/SFCTA_CAC_Item4_ExerciseContractOptionsforOn-callProjectManagement%26EngineeringServicesMEMO_2026-04-22.pdf"
+          ]
+        },
+        {
+          "number": 8,
+          "title": "Adopt a Motion of Support to Approve Programming Priorities for Up to $4,548,974 in San Francisco\u2019s State Transit Assistance County Block Grant Funds, with Conditions",
+          "action_type": "ACTION",
+          "consent": false,
+          "final_approval": false,
+          "tier": "medium",
+          "topics": [],
+          "pdfs": [
+            "https://www.sfcta.org/sites/default/files/2026-04/SFCTA_CAC_Item8_StateandFederalLegislationUpdateMEMO_2026-04-22.pdf"
+          ]
+        },
+        {
+          "number": 9,
+          "title": "Projects: STA: BART: Elevator Attendant Program ($1,243,286). SFMTA: Paratransit Program ($2,812,954). WETA: Treasure Island Electric Ferry Service ($492,734).",
+          "action_type": "",
+          "consent": false,
+          "final_approval": false,
+          "tier": "medium",
+          "topics": [
+            "BART"
+          ],
+          "pdfs": [
+            "https://www.sfcta.org/sites/default/files/2026-04/SFCTA_CAC_Item9_Mid-YearBudgetAmendmentMEMO_2026-04-22.pdf"
+          ]
+        },
+        {
+          "number": 10,
+          "title": "Item 7",
+          "action_type": "",
+          "consent": false,
+          "final_approval": false,
+          "tier": "medium",
+          "topics": [],
+          "pdfs": [
+            "https://www.sfcta.org/sites/default/files/2026-04/SFCTA_CAC_Item10_PreliminaryBudgetandWorkProgramMEMO_2026-04-22.pdf"
+          ]
+        },
+        {
+          "number": 12,
+          "title": "Adopt a Motion of Support to Approve the State and Federal Legislative Update",
+          "action_type": "ACTION",
+          "consent": false,
+          "final_approval": false,
+          "tier": "medium",
+          "topics": [],
+          "pdfs": [
+            "https://www.sfcta.org/sites/default/files/2026-04/SFCTA_CAC_Item12_BrotherhoodWaySafetyandCirculation%C2%A0PlanPRESENTATION_2026-04-22.pdf"
+          ]
+        },
+        {
+          "number": 13,
+          "title": "Adopt a Motion of Support to Amend the Adopted Fiscal Year 2025/26 Budget to Decrease Other Financing Sources by $50,000,000 for a Total Net Increase in Fund Balance of $50,000,000",
+          "action_type": "ACTION",
+          "consent": false,
+          "final_approval": false,
+          "tier": "medium",
+          "topics": [],
+          "pdfs": []
+        },
+        {
+          "number": 14,
+          "title": "Preliminary Fiscal Year 2025/26 Budget and Work Program \u2014 INFORMATION*",
+          "action_type": "INFORMATION",
+          "consent": false,
+          "final_approval": false,
+          "tier": "medium",
+          "topics": [],
+          "pdfs": []
+        },
+        {
+          "number": 15,
+          "title": "San Francisco Transportation Plan 2050+ and West Side Network Study Update - INFORMATION*",
+          "action_type": "INFORMATION",
+          "consent": false,
+          "final_approval": false,
+          "tier": "medium",
+          "topics": [],
+          "pdfs": []
+        },
+        {
+          "number": 16,
+          "title": "Brotherhood Way Safety and Circulation Plan Update \u2014 INFORMATION*",
+          "action_type": "INFORMATION",
+          "consent": false,
+          "final_approval": false,
+          "tier": "medium",
+          "topics": [],
+          "pdfs": []
+        }
+      ]
+    },
+    {
+      "title": "San Francisco Transportation Plan Town Hall",
+      "type": "Other",
+      "relevance": "MEDIUM",
+      "date": "2026-04-23",
+      "date_display": "Thursday, April 23, 2026",
+      "time": "06:00 PM",
+      "location": "Virtual Meeting",
+      "url": "https://www.sfcta.org/events/san-francisco-transportation-plan-virtual-town-hall-2",
+      "agenda_pdf": "",
+      "packet_pdf": "",
+      "item_count": 0,
+      "high_count": 0,
+      "items": []
+    },
+    {
+      "title": "Transportation Authority Board",
+      "type": "Board",
+      "relevance": "HIGH",
+      "date": "2026-04-28",
+      "date_display": "Tuesday, April 28, 2026",
+      "time": "10:00 AM",
+      "location": "Legislative Chamber, Room 250, City Hall",
+      "url": "https://www.sfcta.org/events/transportation-authority-board-128",
+      "agenda_pdf": "",
+      "packet_pdf": "",
+      "item_count": 0,
+      "high_count": 0,
+      "items": []
+    },
+    {
+      "title": "Transportation Authority Board",
+      "type": "Board",
+      "relevance": "HIGH",
+      "date": "2026-05-12",
+      "date_display": "Tuesday, May 12, 2026",
+      "time": "10:00 AM",
+      "location": "Legislative Chamber, Room 250, City Hall",
+      "url": "https://www.sfcta.org/events/transportation-authority-board-129",
+      "agenda_pdf": "",
+      "packet_pdf": "",
+      "item_count": 0,
+      "high_count": 0,
+      "items": []
+    },
+    {
+      "title": "Transportation Authority Board",
+      "type": "Board",
+      "relevance": "HIGH",
+      "date": "2026-05-19",
+      "date_display": "Tuesday, May 19, 2026",
+      "time": "10:00 AM",
+      "location": "Legislative Chamber, Room 250, City Hall",
+      "url": "https://www.sfcta.org/events/transportation-authority-board-130",
+      "agenda_pdf": "",
+      "packet_pdf": "",
+      "item_count": 0,
+      "high_count": 0,
+      "items": []
+    }
+  ],
+  "sfusd": [
+    {
+      "date": "2026-04-28",
+      "meeting_type": "regular",
+      "meeting_type_raw": "Regular Board Meeting (projected)",
+      "time": "5:00 PM",
+      "location": "555 Franklin St, San Francisco (SFUSD HQ)",
+      "notes": "Projected from standard schedule",
+      "tier": "high",
+      "source": "projected",
+      "boarddocs_url": "https://go.boarddocs.com/ca/sfusd/Board.nsf/vpublic?open",
+      "granicus_url": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=47"
+    }
+  ]
+}

@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 """Generate CivicClaw site markdown for public district pages.
 
-Canonical publish target:
-- docs/data/d{district}.md
-- docs/data/site-refresh-summary.json
+Publish pipeline:
+  1. sf_weekly_digest.py --district N --json  →  build/bundles/dN.json  (raw data bundle)
+  2. Agent reads bundle + STYLE.md + user profile  →  docs/data/dN.md  (styled narrative)
 
-Runs each district sequentially (no parallelism) so failures are isolated and
-progress is easy to watch. One slow or broken district never blocks the others.
+The bundle step is reliable and deterministic (this script handles it).
+The narrative synthesis step requires an LLM and is done by the caller/agent.
+
+Canonical output:
+- build/bundles/d{district}.json      (intermediate)
+- docs/data/d{district}.md            (final — agent-written)
+- docs/data/site-refresh-summary.json
 """
 
 from __future__ import annotations
@@ -24,6 +29,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS_DIR = REPO_ROOT / "scripts"
 DOCS_DATA_DIR = REPO_ROOT / "docs" / "data"
 LOGS_DIR = REPO_ROOT / "logs" / "site-build"
+BUNDLES_DIR = REPO_ROOT / "build" / "bundles"
 
 DISTRICTS = list(range(1, 12))
 
@@ -33,6 +39,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Generate CivicClaw site markdown for district pages")
     parser.add_argument("--district", type=int, action="append", help="Generate only the given district (repeatable)")
     parser.add_argument("--retry-failed", action="store_true", help="Read site-refresh-summary.json and rerun only failed/timeout districts")
+    parser.add_argument("--bundle-only", action="store_true", help="Only produce JSON bundles; do not write narrative markdown (for agent-driven synthesis)")
     return parser.parse_args()
 
 
@@ -128,7 +135,9 @@ def main():
     args = parse_args()
     DOCS_DATA_DIR.mkdir(parents=True, exist_ok=True)
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
+    BUNDLES_DIR.mkdir(parents=True, exist_ok=True)
 
+    bundle_only = args.bundle_only
     districts_to_run = resolve_districts(args)
     completed = []
     failed = []
@@ -138,27 +147,56 @@ def main():
         t0 = time.time()
         district_log = LOGS_DIR / f"d{district}.log"
         district_log.write_text("")
-        print(f"[D{district}] Generating markdown...", flush=True)
+        bundle_path = BUNDLES_DIR / f"d{district}.json"
+        print(f"[D{district}] Generating bundle...", flush=True)
         append_log(district_log, f"[{datetime.now(timezone.utc).isoformat()}] start district {district}")
         try:
-            cmd = [sys.executable, str(SCRIPTS_DIR / "sf_weekly_digest.py"), "--district", str(district)]
+            # Step 1: produce the JSON data bundle
+            cmd = [sys.executable, str(SCRIPTS_DIR / "sf_weekly_digest.py"), "--district", str(district), "--json"]
             result = subprocess.run(cmd, capture_output=True, text=True, timeout=DISTRICT_TIMEOUT)
             if result.stderr:
                 append_log(district_log, result.stderr)
             if result.returncode != 0:
                 raise RuntimeError(f"sf_weekly_digest.py failed: {(result.stderr or result.stdout).strip()[:300]}")
-            markdown = result.stdout
-            if not markdown or len(markdown.strip()) < 200:
-                raise RuntimeError("weekly digest returned empty or suspiciously short output")
-            (DOCS_DATA_DIR / f"d{district}.md").write_text(markdown)
-            completed.append(district)
-            district_status.append({
-                "district": district,
-                "status": "ok",
-                "seconds": round(time.time() - t0, 2),
-                "report_path": f"docs/data/d{district}.md",
-                "log_path": f"logs/site-build/d{district}.log",
-            })
+            bundle_text = result.stdout
+            if not bundle_text or not bundle_text.strip():
+                raise RuntimeError("weekly digest --json returned empty output")
+            try:
+                bundle = json.loads(bundle_text)
+            except json.JSONDecodeError as je:
+                raise RuntimeError(f"weekly digest --json returned invalid JSON: {je}")
+            write_json(bundle_path, bundle)
+            append_log(district_log, f"bundle ok at {bundle_path}")
+
+            if bundle_only:
+                # Caller/agent will synthesize narrative from bundle
+                completed.append(district)
+                district_status.append({
+                    "district": district,
+                    "status": "bundle_ok",
+                    "seconds": round(time.time() - t0, 2),
+                    "bundle_path": str(bundle_path.relative_to(REPO_ROOT)),
+                    "log_path": f"logs/site-build/d{district}.log",
+                })
+            else:
+                # Step 2 (legacy text path): use sf_weekly_digest.py text output directly
+                # This produces a data dump, not a styled narrative. For styled reports,
+                # use --bundle-only and have the agent synthesize from the bundle.
+                cmd_text = [sys.executable, str(SCRIPTS_DIR / "sf_weekly_digest.py"), "--district", str(district)]
+                result_text = subprocess.run(cmd_text, capture_output=True, text=True, timeout=DISTRICT_TIMEOUT)
+                if result_text.returncode != 0 or not result_text.stdout.strip():
+                    raise RuntimeError(f"text report failed: {result_text.stderr.strip()[:300]}")
+                (DOCS_DATA_DIR / f"d{district}.md").write_text(result_text.stdout)
+                completed.append(district)
+                district_status.append({
+                    "district": district,
+                    "status": "ok",
+                    "seconds": round(time.time() - t0, 2),
+                    "report_path": f"docs/data/d{district}.md",
+                    "bundle_path": str(bundle_path.relative_to(REPO_ROOT)),
+                    "log_path": f"logs/site-build/d{district}.log",
+                })
+
             append_log(district_log, f"[{datetime.now(timezone.utc).isoformat()}] ok in {time.time() - t0:.2f}s")
             print(f"[D{district}] OK ({time.time() - t0:.0f}s)", flush=True)
         except subprocess.TimeoutExpired:
@@ -188,8 +226,7 @@ def main():
             })
             print(f"[D{district}] FAIL after {elapsed:.0f}s: {e}", file=sys.stderr, flush=True)
 
-        # Refresh the summary after every district so a late failure doesn't
-        # wipe out metadata for districts that already succeeded.
+        # Refresh the summary after every district.
         write_json(
             DOCS_DATA_DIR / "site-refresh-summary.json",
             build_last_updated_summary(completed, failed, district_status),
