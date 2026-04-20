@@ -18,7 +18,9 @@
     <section class="districts">
       <h2>Pick Your District</h2>
       <p class="district-help">Not sure which district you're in? <a href="https://sfplanninggis.org/pim/" target="_blank">Look up your address</a></p>
+      <p class="district-help">Each district page includes both local updates and relevant citywide context.</p>
       <p class="district-help"><a id="feedback-link" href="#">Send feedback</a></p>
+      <p class="district-help" id="last-updated">Last updated: checking…</p>
       <div class="district-grid" id="district-grid"></div>
     </section>
 
@@ -35,6 +37,19 @@
     const feedbackEmail = "seangillen1887@gmail.com";
     const feedbackSubject = encodeURIComponent("CivicClaw feedback");
     document.getElementById("feedback-link").href = `mailto:${feedbackEmail}?subject=${feedbackSubject}`;
+
+    fetch('data/site-refresh-summary.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(summary => {
+        if (!summary) return;
+        const el = document.getElementById('last-updated');
+        const display = summary.generated_at_display_utc || summary.generated_at || 'unknown';
+        el.textContent = `Last updated: ${display}`;
+      })
+      .catch(() => {
+        const el = document.getElementById('last-updated');
+        if (el) el.textContent = 'Last updated: unavailable';
+      });
 
     const districts = [
       { d: 1, supervisor: "Connie Chan", neighborhoods: "Richmond, Sea Cliff, Jordan Park" },

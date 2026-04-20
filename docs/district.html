@@ -21,9 +21,12 @@
     <div id="loading" class="loading">Loading report...</div>
     <div id="no-report" class="no-report" hidden>
       <h2>No report yet</h2>
-      <p>We don't have a report for this district yet. Check back soon, or read the <a href="district.html?d=citywide">citywide report</a>.</p>
+      <p>We don't have a report for this district yet. Check back soon.</p>
     </div>
     <div id="tiers" class="tiers-stacked" hidden>
+      <div class="tier-row">
+        <div><strong>Last updated:</strong> <span id="last-updated">checking…</span></div>
+      </div>
       <div class="tier-row">
         <div>
           <strong>Want to dig deeper?</strong>
@@ -61,8 +64,8 @@
         return;
       }
 
-      const file = d === "citywide" ? "data/citywide.md" : `data/d${d}.md`;
-      const label = d === "citywide" ? "Citywide" : `District ${d}`;
+      const file = `data/d${d}.md`;
+      const label = `District ${d}`;
       document.title = `CivicClaw — ${label}`;
 
       const feedbackEmail = "seangillen1887@gmail.com";
@@ -70,11 +73,21 @@
       document.getElementById("feedback-link").href = `mailto:${feedbackEmail}?subject=${feedbackSubject}`;
 
       let reportMd = "";
+      const summaryPath = "data/site-refresh-summary.json";
 
       try {
-        const resp = await fetch(file);
+        const [resp, summaryResp] = await Promise.all([
+          fetch(file),
+          fetch(summaryPath).catch(() => null)
+        ]);
         if (!resp.ok) throw new Error(resp.status);
         reportMd = await resp.text();
+        if (summaryResp && summaryResp.ok) {
+          const summary = await summaryResp.json();
+          document.getElementById("last-updated").textContent = summary.generated_at_display_utc || summary.generated_at || "unknown";
+        } else {
+          document.getElementById("last-updated").textContent = "unavailable";
+        }
 
         document.getElementById("loading").hidden = true;
         const reportEl = document.getElementById("report");
@@ -87,10 +100,7 @@
           a.rel = "noopener";
         });
 
-        // Show tiers for district pages
-        if (d !== "citywide") {
-          document.getElementById("tiers").hidden = false;
-        }
+        document.getElementById("tiers").hidden = false;
       } catch (e) {
         document.getElementById("loading").hidden = true;
         document.getElementById("no-report").hidden = false;
