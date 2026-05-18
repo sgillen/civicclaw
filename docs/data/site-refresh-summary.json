@@ -1,19 +1,98 @@
 {
-  "generated_at": "2026-05-17T17:42:42.411826+00:00",
-  "generated_at_epoch_ms": 1779039762411,
-  "generated_at_display_utc": "2026-05-17 17:42 UTC",
+  "generated_at": "2026-05-18T00:24:05.507319+00:00",
+  "generated_at_epoch_ms": 1779063845507,
+  "generated_at_display_utc": "2026-05-18 00:24 UTC",
   "completed": [
-    9
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
   ],
   "failed": [],
   "districts": [
     {
+      "district": 1,
+      "status": "bundle_ok",
+      "seconds": 158.91,
+      "bundle_path": "build/bundles/d1.json",
+      "log_path": "logs/site-build/d1.log"
+    },
+    {
+      "district": 2,
+      "status": "bundle_ok",
+      "seconds": 116.88,
+      "bundle_path": "build/bundles/d2.json",
+      "log_path": "logs/site-build/d2.log"
+    },
+    {
+      "district": 3,
+      "status": "bundle_ok",
+      "seconds": 148.46,
+      "bundle_path": "build/bundles/d3.json",
+      "log_path": "logs/site-build/d3.log"
+    },
+    {
+      "district": 4,
+      "status": "bundle_ok",
+      "seconds": 111.44,
+      "bundle_path": "build/bundles/d4.json",
+      "log_path": "logs/site-build/d4.log"
+    },
+    {
+      "district": 5,
+      "status": "bundle_ok",
+      "seconds": 118.68,
+      "bundle_path": "build/bundles/d5.json",
+      "log_path": "logs/site-build/d5.log"
+    },
+    {
+      "district": 6,
+      "status": "bundle_ok",
+      "seconds": 119.71,
+      "bundle_path": "build/bundles/d6.json",
+      "log_path": "logs/site-build/d6.log"
+    },
+    {
+      "district": 7,
+      "status": "bundle_ok",
+      "seconds": 120.69,
+      "bundle_path": "build/bundles/d7.json",
+      "log_path": "logs/site-build/d7.log"
+    },
+    {
+      "district": 8,
+      "status": "bundle_ok",
+      "seconds": 140.02,
+      "bundle_path": "build/bundles/d8.json",
+      "log_path": "logs/site-build/d8.log"
+    },
+    {
       "district": 9,
-      "status": "ok",
-      "seconds": 266.46,
-      "report_path": "docs/data/d9.md",
+      "status": "bundle_ok",
+      "seconds": 129.13,
       "bundle_path": "build/bundles/d9.json",
       "log_path": "logs/site-build/d9.log"
+    },
+    {
+      "district": 10,
+      "status": "bundle_ok",
+      "seconds": 144.78,
+      "bundle_path": "build/bundles/d10.json",
+      "log_path": "logs/site-build/d10.log"
+    },
+    {
+      "district": 11,
+      "status": "bundle_ok",
+      "seconds": 130.56,
+      "bundle_path": "build/bundles/d11.json",
+      "log_path": "logs/site-build/d11.log"
     }
   ]
 }
