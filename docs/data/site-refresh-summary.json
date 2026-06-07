@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-31T17:31:34.874803+00:00",
-  "generated_at_epoch_ms": 1780248694874,
-  "generated_at_display_utc": "2026-05-31 17:31 UTC",
+  "generated_at": "2026-06-07T18:13:37.101641+00:00",
+  "generated_at_epoch_ms": 1780856017101,
+  "generated_at_display_utc": "2026-06-07 18:13 UTC",
   "completed": [
     5,
     9
@@ -11,7 +11,7 @@
     {
       "district": 5,
       "status": "ok",
-      "seconds": 208.33,
+      "seconds": 270.37,
       "report_path": "docs/data/d5.md",
       "bundle_path": "build/bundles/d5.json",
       "log_path": "logs/site-build/d5.log"
@@ -19,7 +19,7 @@
     {
       "district": 9,
       "status": "ok",
-      "seconds": 160.18,
+      "seconds": 248.08,
       "report_path": "docs/data/d9.md",
       "bundle_path": "build/bundles/d9.json",
       "log_path": "logs/site-build/d9.log"
