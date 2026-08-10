@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-09T18:47:10.216714+00:00",
-  "generated_at_epoch_ms": 1786301230216,
-  "generated_at_display_utc": "2026-08-09 18:47 UTC",
+  "generated_at": "2026-08-10T00:11:29.010042+00:00",
+  "generated_at_epoch_ms": 1786320689010,
+  "generated_at_display_utc": "2026-08-10 00:11 UTC",
   "completed": [
     1,
     2,
@@ -19,89 +19,78 @@
   "districts": [
     {
       "district": 1,
-      "status": "ok",
-      "seconds": 125.31,
-      "report_path": "docs/data/d1.md",
+      "status": "bundle_ok",
+      "seconds": 96.88,
       "bundle_path": "build/bundles/d1.json",
       "log_path": "logs/site-build/d1.log"
     },
     {
       "district": 2,
-      "status": "ok",
-      "seconds": 89.9,
-      "report_path": "docs/data/d2.md",
+      "status": "bundle_ok",
+      "seconds": 57.18,
       "bundle_path": "build/bundles/d2.json",
       "log_path": "logs/site-build/d2.log"
     },
     {
       "district": 3,
-      "status": "ok",
-      "seconds": 98.28,
-      "report_path": "docs/data/d3.md",
+      "status": "bundle_ok",
+      "seconds": 61.8,
       "bundle_path": "build/bundles/d3.json",
       "log_path": "logs/site-build/d3.log"
     },
     {
       "district": 4,
-      "status": "ok",
-      "seconds": 84.97,
-      "report_path": "docs/data/d4.md",
+      "status": "bundle_ok",
+      "seconds": 55.82,
       "bundle_path": "build/bundles/d4.json",
       "log_path": "logs/site-build/d4.log"
     },
     {
       "district": 5,
-      "status": "ok",
-      "seconds": 92.96,
-      "report_path": "docs/data/d5.md",
+      "status": "bundle_ok",
+      "seconds": 55.86,
       "bundle_path": "build/bundles/d5.json",
       "log_path": "logs/site-build/d5.log"
     },
     {
       "district": 6,
-      "status": "ok",
-      "seconds": 95.55,
-      "report_path": "docs/data/d6.md",
+      "status": "bundle_ok",
+      "seconds": 58.9,
       "bundle_path": "build/bundles/d6.json",
       "log_path": "logs/site-build/d6.log"
     },
     {
       "district": 7,
-      "status": "ok",
-      "seconds": 87.9,
-      "report_path": "docs/data/d7.md",
+      "status": "bundle_ok",
+      "seconds": 54.56,
       "bundle_path": "build/bundles/d7.json",
       "log_path": "logs/site-build/d7.log"
     },
     {
       "district": 8,
-      "status": "ok",
-      "seconds": 91.91,
-      "report_path": "docs/data/d8.md",
+      "status": "bundle_ok",
+      "seconds": 57.57,
       "bundle_path": "build/bundles/d8.json",
       "log_path": "logs/site-build/d8.log"
     },
     {
       "district": 9,
-      "status": "ok",
-      "seconds": 97.89,
-      "report_path": "docs/data/d9.md",
+      "status": "bundle_ok",
+      "seconds": 60.44,
       "bundle_path": "build/bundles/d9.json",
       "log_path": "logs/site-build/d9.log"
     },
     {
       "district": 10,
-      "status": "ok",
-      "seconds": 93.79,
-      "report_path": "docs/data/d10.md",
+      "status": "bundle_ok",
+      "seconds": 58.92,
       "bundle_path": "build/bundles/d10.json",
       "log_path": "logs/site-build/d10.log"
     },
     {
       "district": 11,
-      "status": "ok",
-      "seconds": 89.02,
-      "report_path": "docs/data/d11.md",
+      "status": "bundle_ok",
+      "seconds": 61.25,
       "bundle_path": "build/bundles/d11.json",
       "log_path": "logs/site-build/d11.log"
     }
